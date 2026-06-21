@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Match — trouvez le match près de chez vous</title>
+<meta name="description" content="Retrouvez tous les matchs de sport professionnel français près de chez vous : ville, stade, club, horaires et billetterie.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-bar">
+    <a class="logo" href="#/" style="text-decoration:none;color:inherit;">
+      <span>MON</span><span class="dot">MATCH</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#/" data-nav="accueil">Tableau des matchs</a>
+      <a href="#/competitions" data-nav="competitions">Compétitions</a>
+      <a href="#/a-propos" data-nav="a-propos">À propos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== VUE ACCUEIL ===================== -->
+  <section data-view="accueil">
+    <div class="hero">
+      <div class="eyebrow">Football · Rugby — saisons 2026/2027</div>
+      <h1>Quel match se joue<br><em>près de chez vous</em> ?</h1>
+      <p class="lede">Cherchez une ville, un stade, un club ou une compétition : Ligue&nbsp;1 et TOP&nbsp;14 réunis sur un même tableau d'affichage, avec horaires, lieux et billetterie.</p>
+
+      <div class="searchbar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="search-input" type="text" placeholder="Lyon, Stade Vélodrome, PSG, TOP 14…" autocomplete="off">
+        <button id="search-btn">Chercher</button>
+      </div>
+
+      <div class="filters" id="filter-chips">
+        <span class="chip active" data-filter="all">Tous</span>
+        <span class="chip" data-filter="ligue1">Ligue 1</span>
+        <span class="chip" data-filter="top14">TOP 14</span>
+        <span class="chip" data-filter="upcoming">À venir</span>
+        <span class="chip" data-filter="played">Résultats</span>
+      </div>
+    </div>
+
+    <section class="board-section">
+      <div class="board-head">
+        <h2 id="board-title">Tous les matchs</h2>
+        <span class="count" id="board-count"></span>
+      </div>
+      <div class="board" id="board"></div>
+    </section>
+
+    <div class="leagues-strip" id="leagues-strip"></div>
+  </section>
+
+  <!-- ===================== VUE COMPÉTITIONS ===================== -->
+  <section data-view="competitions">
+    <div class="hero">
+      <div class="eyebrow">Au programme</div>
+      <h1>Les <em>compétitions</em> suivies</h1>
+      <p class="lede">On démarre avec deux championnats parmi les plus suivis. D'autres arriveront bientôt : Pro D2, Top&nbsp;14 féminin, Ligue 2, basket, hand, volley et les équipes de France.</p>
+    </div>
+    <div class="leagues-strip" id="leagues-strip-2" style="margin-top:0;"></div>
+    <div class="detail" style="margin-top:10px;">
+      <div class="detail-card">
+        <div class="detail-comp">À venir sur ce site</div>
+        <p class="detail-note" style="margin-top:6px;">
+          Cette première version couvre la <b>Ligue 1</b> et le <b>TOP 14</b> avec des données réelles (calendrier officiel, stades, clubs).
+          Les prochaines compétitions à intégrer : Ligue 2 BKT, Pro D2, équipes de France (rugby, football, basket, hand, volley, hockey sur glace), D1 Arkema, Betclic Élite, ProB, LNH, Ligue Magnus, et les coupes nationales associées.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VUE À PROPOS ===================== -->
+  <section data-view="a-propos">
+    <div class="detail" style="margin-top:60px;">
+      <div class="detail-card">
+        <div class="detail-comp">Le projet</div>
+        <h2 class="detail-teams" style="font-size:1.4rem;">Pourquoi ce site ?</h2>
+        <p class="detail-note">
+          L'objectif : permettre à n'importe quel Français de savoir, en quelques secondes, quel événement de sport professionnel a lieu dans sa ville, son stade ou son arena — avec les horaires exacts, le calendrier complet, et un lien direct vers la billetterie du club concerné.
+        </p>
+        <p class="detail-note">
+          Les données viennent des sources officielles : Ligue de Football Professionnel (LFP), Ligue Nationale de Rugby (LNR) et sites des clubs. Le calendrier TOP&nbsp;14 2026/2027 sera complété dès sa publication officielle par la LNR.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VUE DÉTAIL MATCH ===================== -->
+  <section data-view="match">
+    <div class="detail">
+      <a class="back-link" href="#/">&larr; Retour au tableau des matchs</a>
+      <div class="detail-card" id="match-detail-content"></div>
+    </div>
+  </section>
+
+  <!-- ===================== VUE DÉTAIL CLUB ===================== -->
+  <section data-view="club">
+    <div class="detail">
+      <a class="back-link" href="#/">&larr; Retour au tableau des matchs</a>
+      <div class="detail-card" id="club-detail-content"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>Mon Match — données Ligue 1 (LFP) &amp; TOP 14 (LNR). Site non officiel.</div>
+    <div>
+      <a href="https://ligue1.com/fr" target="_blank" rel="noopener">Ligue 1</a> ·
+      <a href="https://top14.lnr.fr" target="_blank" rel="noopener">TOP 14</a>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
