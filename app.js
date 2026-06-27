@@ -50,8 +50,11 @@ function stadiumOf(id) {
    - competition : le nom de la compétition / sport / ligue. */
 function matchSearchFields(m) {
   const venueParts = [];
-  if (m.stadium && STADIUMS[m.stadium]) {
-    venueParts.push(STADIUMS[m.stadium].name, STADIUMS[m.stadium].city);
+  // Si le match n'a pas de stade explicite, on se rabat sur le stade
+  // habituel du club qui reçoit (cohérent avec l'affichage du tableau).
+  const venueId = m.stadium || (m.home && CLUBS[m.home] ? CLUBS[m.home].stadium : null);
+  if (venueId && STADIUMS[venueId]) {
+    venueParts.push(STADIUMS[venueId].name, STADIUMS[venueId].city);
   }
 
   const clubParts = [];
