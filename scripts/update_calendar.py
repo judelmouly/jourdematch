@@ -106,13 +106,15 @@ def get_club_list(page, base_url):
         )
         log(f"  DEBUG échantillon de href trouvés sur la page : {sample}")
 
+    GENERIC_LABELS = {"Fiche du club", "Calendrier", "Effectif"}
     clubs = {}
     for link in links:
         href = link["href"] or ""
+        text = (link["text"] or "").strip()
         m = re.search(r'/club/([a-z0-9-]+)/?$', href)
-        if m and link["text"]:
+        if m and text and text not in GENERIC_LABELS:
             slug = m.group(1)
-            clubs[slug] = link["text"]
+            clubs.setdefault(slug, text)  # garde le premier (nom du club), pas le dernier
     return clubs
 
 
