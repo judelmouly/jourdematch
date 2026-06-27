@@ -58,14 +58,54 @@ def log(msg):
     print(msg, file=sys.stderr)
 
 
+def accept_cookies(page):
+    """Tente de fermer un éventuel bandeau cookies/RGPD qui bloquerait le rendu."""
+    selectors = [
+        "button:has-text('Accepter')",
+        "button:has-text('Tout accepter')",
+        "#didomi-notice-agree-button",
+        "button[id*='accept']",
+        "button[class*='accept']",
+    ]
+    for sel in selectors:
+        try:
+            btn = page.locator(sel).first
+            if btn.is_visible(timeout=2000):
+                btn.click(timeout=2000)
+                page.wait_for_timeout(500)
+                log(f"  (bandeau cookies fermé via: {sel})")
+                return
+        except Exception:
+            continue
+
+
 def get_club_list(page, base_url):
     """Récupère la liste des clubs (nom + slug) depuis la page /clubs."""
-    page.goto(f"{base_url}/clubs", timeout=30000)
-    page.wait_for_timeout(1500)
+    page.goto(f"{base_url}/clubs", timeout=30000, wait_until="networkidle")
+    accept_cookies(page)
+    page.wait_for_timeout(2000)
+
+    # Diagnostics — utiles si la liste revient vide
+    log(f"  DEBUG titre de la page : {page.title()}")
+    all_links_count = page.eval_on_selector_all("a", "els => els.length")
+    log(f"  DEBUG nombre total de liens <a> sur la page : {all_links_count}")
+    try:
+        page.screenshot(path=f"debug-{base_url.split('//')[1].split('.')[0]}-clubs.png", full_page=True)
+        log(f"  DEBUG capture d'écran sauvegardée")
+    except Exception as e:
+        log(f"  DEBUG impossible de faire une capture : {e}")
+
     links = page.eval_on_selector_all(
         "a[href*='/club/']",
         "els => els.map(e => ({href: e.getAttribute('href'), text: e.innerText.trim()}))",
     )
+    log(f"  DEBUG nombre de liens contenant '/club/' : {len(links)}")
+    if len(links) < 5:
+        sample = page.eval_on_selector_all(
+            "a", "els => els.slice(0, 30).map(e => e.getAttribute('href'))"
+        )
+        log(f"  DEBUG échantillon de href trouvés sur la page : {sample}")
+
     clubs = {}
     for link in links:
         href = link["href"] or ""
@@ -91,7 +131,6 @@ def get_stadium_info(page, base_url, slug):
     stadium_name = name_match.group(1).strip() if name_match else None
     city = None
     if address_match:
-        # L'adresse finit généralement par le code postal + la ville
         addr = address_match.group(1).strip()
         city_match = re.search(r'\d{5}\s+(.+)$', addr)
         city = city_match.group(1).strip() if city_match else addr
@@ -185,7 +224,6 @@ def scrape_competition(page, comp_key, comp):
             log(f"  ! Erreur sur {slug}: {e}")
             continue
 
-        # IDs uniques des matchs via les liens feuille-de-match (pour dédupliquer)
         match_links = page.eval_on_selector_all(
             "a[href*='feuille-de-match']",
             "els => els.map(e => e.getAttribute('href'))",
