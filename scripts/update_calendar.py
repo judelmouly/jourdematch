@@ -1,24 +1,16 @@
 #!/usr/bin/env python3
 """
-update_calendar.py — Met à jour automatiquement le calendrier TOP14 + Pro D2
-(saison 2025-2026, à titre de test) à partir des pages officielles de la LNR.
+update_calendar.py — Met à jour le calendrier TOP14 + Pro D2 (saison 2025-2026,
+à titre de test) à partir d'allrugby.com, qui publie le calendrier complet de
+chaque compétition sur UNE seule page (bien plus simple et fiable que de
+parcourir les pages individuelles de chaque club sur le site officiel LNR).
 
-Ne récupère QUE : journée/phase, date, équipe domicile, équipe extérieur,
-compétition, et le lieu (stade du club recevant). PAS de scores.
-
-Fonctionnement :
-1. Découvre automatiquement la liste des clubs de chaque compétition
-   (page /clubs), donc s'adapte aux montées/descentes sans modification.
-2. Pour chaque club, ouvre sa page "informations" pour récupérer le nom
-   et la ville de son stade.
-3. Pour chaque club, ouvre sa page "calendrier-resultats" et extrait
-   les matchs (journée, date, équipes).
-4. Déduplique les matchs (chaque rencontre apparaît sur les 2 pages club)
-   via l'URL "feuille-de-match" qui contient un identifiant unique.
-5. Écrit le résultat dans live-calendar.json (à consommer par le site).
+Ne récupère QUE : compétition, journée/phase, date, équipe domicile, équipe
+extérieure. PAS de scores. Le lieu (stade) n'est pas récupéré ici : le site
+le retrouve lui-même via sa propre table clubs -> stade (data.js), à partir
+du nom de l'équipe à domicile.
 
 Prérequis : pip install playwright && playwright install chromium
-
 Usage : python3 update_calendar.py
 """
 
@@ -32,34 +24,47 @@ SEASON = "2025-2026"
 
 COMPETITIONS = {
     "top14": {
-        "base_url": "https://top14.lnr.fr",
+        "url": "https://www.allrugby.com/competitions/top-14/calendrier.html",
         "label": "TOP 14",
     },
     "prod2": {
-        "base_url": "https://prod2.lnr.fr",
+        "url": "https://www.allrugby.com/competitions/pro-d2/calendrier.html",
         "label": "Pro D2",
     },
 }
 
-JOURNEE_RE = re.compile(r'^J(\d+)$|^(Barrage|Demi-Finale|Finale|Accession)$', re.IGNORECASE)
-DATE_RE = re.compile(
-    r'^(lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)\s+\d{1,2}\s+'
-    r'(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)$',
-    re.IGNORECASE,
+ROUND_RE = re.compile(
+    r'^(J\d+|Barrages?|1/2 finale|Demi-Finale|Finale|Access Match)$', re.IGNORECASE
 )
 MONTHS = {
     "janvier": "01", "février": "02", "mars": "03", "avril": "04", "mai": "05",
     "juin": "06", "juillet": "07", "août": "08", "septembre": "09",
     "octobre": "10", "novembre": "11", "décembre": "12",
 }
+DATE_RE = re.compile(
+    r'^(lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)\s+'
+    r'(\d{1,2})(?:er)?\s+(\w+)\s+(\d{4})$',
+    re.IGNORECASE,
+)
 
 
 def log(msg):
     print(msg, file=sys.stderr)
 
 
+def parse_date(line):
+    m = DATE_RE.match(line.strip())
+    if not m:
+        return None
+    day, month_fr, year = m.group(2), m.group(3).lower(), m.group(4)
+    month = MONTHS.get(month_fr)
+    if not month:
+        return None
+    return f"{year}-{month}-{day.zfill(2)}"
+
+
 def accept_cookies(page):
-    """Tente de fermer un éventuel bandeau cookies/RGPD qui bloquerait le rendu."""
+    """Tente de fermer un éventuel bandeau cookies/RGPD."""
     selectors = [
         "button:has-text('Accepter')",
         "button:has-text('Tout accepter')",
@@ -79,181 +84,75 @@ def accept_cookies(page):
             continue
 
 
-def get_club_list(page, base_url):
-    """Récupère la liste des clubs (nom + slug) depuis la page /clubs."""
-    page.goto(f"{base_url}/clubs", timeout=30000, wait_until="networkidle")
-    accept_cookies(page)
-    page.wait_for_timeout(2000)
-
-    # Diagnostics — utiles si la liste revient vide
-    log(f"  DEBUG titre de la page : {page.title()}")
-    all_links_count = page.eval_on_selector_all("a", "els => els.length")
-    log(f"  DEBUG nombre total de liens <a> sur la page : {all_links_count}")
-    try:
-        page.screenshot(path=f"debug-{base_url.split('//')[1].split('.')[0]}-clubs.png", full_page=True)
-        log(f"  DEBUG capture d'écran sauvegardée")
-    except Exception as e:
-        log(f"  DEBUG impossible de faire une capture : {e}")
-
-    links = page.eval_on_selector_all(
-        "a[href*='/club/']",
-        "els => els.map(e => ({href: e.getAttribute('href'), text: e.innerText.trim()}))",
-    )
-    log(f"  DEBUG nombre de liens contenant '/club/' : {len(links)}")
-    if len(links) < 5:
-        sample = page.eval_on_selector_all(
-            "a", "els => els.slice(0, 30).map(e => e.getAttribute('href'))"
-        )
-        log(f"  DEBUG échantillon de href trouvés sur la page : {sample}")
-
-    GENERIC_LABELS = {"Fiche du club", "Calendrier", "Effectif"}
-    clubs = {}
-    for link in links:
-        href = link["href"] or ""
-        text = (link["text"] or "").strip()
-        m = re.search(r'/club/([a-z0-9-]+)/?$', href)
-        if m and text and text not in GENERIC_LABELS:
-            slug = m.group(1)
-            clubs.setdefault(slug, text)  # garde le premier (nom du club), pas le dernier
-    return clubs
-
-
-def get_stadium_info(page, base_url, slug):
-    """Récupère le nom du stade et la ville depuis la page informations du club."""
-    try:
-        page.goto(f"{base_url}/club/{slug}/informations", timeout=30000)
-        page.wait_for_timeout(1000)
-        text = page.inner_text("body")
-    except Exception as e:
-        log(f"  ! Impossible de charger les infos de {slug}: {e}")
-        return None, None
-
-    name_match = re.search(r'Nom\s*:\s*(.+)', text)
-    address_match = re.search(r'Adresse du stade\s*:\s*(.+)', text)
-    stadium_name = name_match.group(1).strip() if name_match else None
-    city = None
-    if address_match:
-        addr = address_match.group(1).strip()
-        city_match = re.search(r'\d{5}\s+(.+)$', addr)
-        city = city_match.group(1).strip() if city_match else addr
-    return stadium_name, city
-
-
-def parse_calendar_text(text, known_team_names):
-    """Parse le texte affiché de la page calendrier-resultats d'un club."""
+def parse_calendar_lines(text):
+    """Repère, dans l'ordre, le (round, date) de chaque ligne de match
+    ('... détails'). Retourne une liste parallèle aux liens 'Feuille de match'."""
     lines = [l.strip() for l in text.split("\n") if l.strip()]
-    matches = []
-    current_label = None
+    items = []
+    current_round = None
     current_date = None
-    current_teams = []
-
-    def flush():
-        if current_label and len(current_teams) == 2:
-            matches.append({
-                "label": current_label,
-                "date_text": current_date,
-                "home": current_teams[0],
-                "away": current_teams[1],
-            })
-
     for line in lines:
-        m = JOURNEE_RE.match(line)
-        if m:
-            flush()
-            current_label = line
+        if ROUND_RE.match(line):
+            current_round = line
             current_date = None
-            current_teams = []
             continue
-        if DATE_RE.match(line):
-            current_date = line
+        d = parse_date(line)
+        if d:
+            current_date = d
             continue
-        if line in known_team_names:
-            if len(current_teams) < 2:
-                current_teams.append(line)
-            continue
-        if line == "Feuille de match":
-            flush()
-            current_label = None
-            current_date = None
-            current_teams = []
-    flush()
-    return matches
-
-
-def date_text_to_iso(date_text, season_start_year=2025):
-    """Convertit 'samedi 06 septembre' en '2025-09-06' (ou 2026 selon le mois)."""
-    if not date_text:
-        return None
-    m = re.match(
-        r'(?:lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)\s+(\d{1,2})\s+(\w+)',
-        date_text, re.IGNORECASE,
-    )
-    if not m:
-        return None
-    day, month_fr = m.group(1), m.group(2).lower()
-    month = MONTHS.get(month_fr)
-    if not month:
-        return None
-    year = season_start_year if int(month) >= 7 else season_start_year + 1
-    return f"{year}-{month}-{day.zfill(2)}"
+        if line.endswith("détails"):
+            items.append({"round": current_round, "date": current_date})
+    return items
 
 
 def scrape_competition(page, comp_key, comp):
-    base_url = comp["base_url"]
     log(f"\n=== {comp['label']} ===")
-    log("Récupération de la liste des clubs...")
-    clubs = get_club_list(page, base_url)
-    log(f"{len(clubs)} clubs trouvés : {list(clubs.values())}")
+    page.goto(comp["url"], timeout=30000, wait_until="networkidle")
+    accept_cookies(page)
+    page.wait_for_timeout(1500)
 
-    known_team_names = set(clubs.values())
+    log(f"  DEBUG titre de la page : {page.title()}")
 
-    stadiums = {}
-    for slug, name in clubs.items():
-        log(f"  Stade de {name}...")
-        stadium_name, city = get_stadium_info(page, base_url, slug)
-        stadiums[slug] = {"club": name, "stadium": stadium_name, "city": city}
-        time.sleep(0.3)
+    text = page.inner_text("body")
+    items = parse_calendar_lines(text)
+    log(f"  DEBUG lignes de match repérées (round/date) : {len(items)}")
 
-    seen_match_ids = set()
+    links = page.eval_on_selector_all(
+        "a[title*='Feuille de match']",
+        "els => els.map(e => ({title: e.getAttribute('title'), href: e.getAttribute('href')}))",
+    )
+    log(f"  DEBUG liens 'Feuille de match' trouvés : {len(links)}")
+
+    if len(items) != len(links):
+        log(f"  ! ATTENTION : décalage entre le nombre de lignes ({len(items)}) "
+            f"et le nombre de liens ({len(links)}) — les données peuvent être "
+            f"mal associées.")
+
     matches = []
-    for slug, name in clubs.items():
-        log(f"  Calendrier de {name}...")
-        try:
-            page.goto(f"{base_url}/club/{slug}/calendrier-resultats", timeout=30000)
-            page.wait_for_timeout(1500)
-            text = page.inner_text("body")
-        except Exception as e:
-            log(f"  ! Erreur sur {slug}: {e}")
+    seen = set()
+    for item, link in zip(items, links):
+        title = link["title"] or ""
+        m = re.search(r'Feuille de match\s*:\s*(.+?)\s+vs\s+(.+)$', title)
+        if not m:
+            log(f"  ! Titre inattendu, ignoré : {title!r}")
             continue
-
-        parsed = parse_calendar_text(text, known_team_names)
-
-        for m in parsed:
-            iso_date = date_text_to_iso(m["date_text"])
-            # Clé de dédoublonnage robuste : date + les deux équipes (peu importe l'ordre),
-            # plutôt que de dépendre de l'ordre des liens "Feuille de match" sur la page
-            # (qui peut se désynchroniser si un match n'a pas encore de lien, par exemple).
-            match_id = (iso_date, frozenset([m["home"], m["away"]]))
-            if match_id in seen_match_ids:
-                continue
-            seen_match_ids.add(match_id)
-            home_slug = next((s for s, n in clubs.items() if n == m["home"]), None)
-            venue = stadiums.get(home_slug, {}).get("stadium") if home_slug else None
-            venue_city = stadiums.get(home_slug, {}).get("city") if home_slug else None
-            matches.append({
-                "competition": comp["label"],
-                "season": SEASON,
-                "round": m["label"],
-                "date": iso_date,
-                "home": m["home"],
-                "away": m["away"],
-                "venue": venue,
-                "city": venue_city,
-            })
-        time.sleep(0.3)
+        home, away = m.group(1).strip(), m.group(2).strip()
+        key = (item["date"], frozenset([home, away]))
+        if key in seen:
+            continue
+        seen.add(key)
+        matches.append({
+            "competition": comp["label"],
+            "season": SEASON,
+            "round": item["round"],
+            "date": item["date"],
+            "home": home,
+            "away": away,
+            "source": link["href"],
+        })
 
     matches.sort(key=lambda m: (m["date"] or "9999"))
-    log(f"Total matchs uniques pour {comp['label']} : {len(matches)}")
+    log(f"Total matchs pour {comp['label']} : {len(matches)}")
     return matches
 
 
