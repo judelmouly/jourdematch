@@ -1,5 +1,246 @@
 {
-  "generated_at": "2026-06-27T05:18:24Z",
+  "generated_at": "2026-06-27T05:36:01Z",
   "season": "2025-2026",
-  "matches": []
+  "matches": [
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-09-06",
+      "home": "Stade Français Paris",
+      "away": "US Montauban"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-09-06",
+      "home": "USA Perpignan",
+      "away": "Aviron Bayonnais"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-09-06",
+      "home": "Lyon OU",
+      "away": "Racing Métro 92"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-09-06",
+      "home": "Castres Olympique",
+      "away": "Section Paloise"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-09-06",
+      "home": "Montpellier Hérault Rugby",
+      "away": "RC Toulonnais"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-09-06",
+      "home": "Union Bordeaux Bègles",
+      "away": "Stade Rochelais"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-09-07",
+      "home": "ASM Clermont Auvergne",
+      "away": "Stade Toulousain"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-13",
+      "home": "US Montauban",
+      "away": "Lyon OU"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-13",
+      "home": "Stade Rochelais",
+      "away": "ASM Clermont Auvergne"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-13",
+      "home": "Stade Toulousain",
+      "away": "USA Perpignan"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-13",
+      "home": "Section Paloise",
+      "away": "Stade Français Paris"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-13",
+      "home": "Aviron Bayonnais",
+      "away": "Montpellier Hérault Rugby"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-13",
+      "home": "RC Toulonnais",
+      "away": "Castres Olympique"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-14",
+      "home": "Racing Métro 92",
+      "away": "Union Bordeaux Bègles"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2025-2026",
+      "round": "3",
+      "date": "2025-09-20",
+      "home": "ASM Clermont Auvergne",
+      "away": "Section Paloise"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-08-29",
+      "home": "Biarritz Olympique",
+      "away": "Béziers"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-08-29",
+      "home": "Nevers",
+      "away": "SU Agen Lot-et-Garonne"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-08-29",
+      "home": "Valence Romans Drôme Rugby",
+      "away": "US Dax"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-08-29",
+      "home": "Soyaux Angoulême XV Charente",
+      "away": "Provence"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-08-29",
+      "home": "Aurillac",
+      "away": "Carcassonne"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-08-29",
+      "home": "Mont-de-Marsan",
+      "away": "Colomiers"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-08-29",
+      "home": "Oyonnax Rugby",
+      "away": "FC Grenoble"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "1",
+      "date": "2025-08-30",
+      "home": "CA Brive",
+      "away": "Vannes"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-04",
+      "home": "Colomiers",
+      "away": "Biarritz Olympique"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-05",
+      "home": "Carcassonne",
+      "away": "Oyonnax Rugby"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-05",
+      "home": "US Dax",
+      "away": "CA Brive"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-05",
+      "home": "Provence",
+      "away": "Valence Romans Drôme Rugby"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-05",
+      "home": "FC Grenoble",
+      "away": "Aurillac"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-05",
+      "home": "Béziers",
+      "away": "Nevers"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2025-2026",
+      "round": "2",
+      "date": "2025-09-05",
+      "home": "SU Agen Lot-et-Garonne",
+      "away": "Mont-de-Marsan"
+    }
+  ]
 }
