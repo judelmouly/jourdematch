@@ -25,9 +25,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: |
-          pip install playwright
-          playwright install --with-deps chromium
+        run: pip install requests
 
       - name: Update calendar (TOP14 + Pro D2)
         run: python3 scripts/update_calendar.py
@@ -55,3 +53,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        
