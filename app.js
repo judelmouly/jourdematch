@@ -264,6 +264,8 @@ function init() {
 
   window.addEventListener("hashchange", router);
   router();
+
+  if (typeof loadLiveCalendar === "function") loadLiveCalendar();
 }
 
 document.addEventListener("DOMContentLoaded", init);

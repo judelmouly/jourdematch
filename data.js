@@ -40,6 +40,7 @@ const STADIUMS = {
   jean_dauger:        { name: "Stade Jean-Dauger",        city: "Bayonne",     capacity: 18000 },
   ggl_stadium:        { name: "GGL Stadium",              city: "Montpellier", capacity: 15697 },
   aime_giral:         { name: "Stade Aimé-Giral",         city: "Perpignan",   capacity: 14593 },
+  stade_sapiac:       { name: "Stade Sapiac",              city: "Montauban",   capacity: 12000 },
   stade_de_france:    { name: "Stade de France",          city: "Saint-Denis", capacity: 80698 },
 };
 
@@ -78,6 +79,7 @@ const CLUBS = {
   bayonne:    { name: "Aviron Bayonnais", short: "Bayonne", league: "top14", stadium: "jean_dauger", site: "https://www.avironbayonnais.fr" },
   mhr:        { name: "Montpellier Hérault Rugby", short: "Montpellier", league: "top14", stadium: "ggl_stadium", site: "https://www.montpellier-rugby.com" },
   usap:       { name: "USA Perpignan", short: "Perpignan", league: "top14", stadium: "aime_giral", site: "https://www.usap.fr" },
+  montauban:  { name: "US Montauban", short: "Montauban", league: "top14", stadium: "stade_sapiac", site: "https://www.usmontauban.com" },
 };
 
 /* Compétitions */
