@@ -226,19 +226,17 @@ def scrape_competition(page, comp_key, comp):
             log(f"  ! Erreur sur {slug}: {e}")
             continue
 
-        match_links = page.eval_on_selector_all(
-            "a[href*='feuille-de-match']",
-            "els => els.map(e => e.getAttribute('href'))",
-        )
-
         parsed = parse_calendar_text(text, known_team_names)
 
-        for i, m in enumerate(parsed):
-            match_id = match_links[i] if i < len(match_links) else f"{slug}-{m['label']}-{m['date_text']}"
+        for m in parsed:
+            iso_date = date_text_to_iso(m["date_text"])
+            # Clé de dédoublonnage robuste : date + les deux équipes (peu importe l'ordre),
+            # plutôt que de dépendre de l'ordre des liens "Feuille de match" sur la page
+            # (qui peut se désynchroniser si un match n'a pas encore de lien, par exemple).
+            match_id = (iso_date, frozenset([m["home"], m["away"]]))
             if match_id in seen_match_ids:
                 continue
             seen_match_ids.add(match_id)
-            iso_date = date_text_to_iso(m["date_text"])
             home_slug = next((s for s, n in clubs.items() if n == m["home"]), None)
             venue = stadiums.get(home_slug, {}).get("stadium") if home_slug else None
             venue_city = stadiums.get(home_slug, {}).get("city") if home_slug else None
