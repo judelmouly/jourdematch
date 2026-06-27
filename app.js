@@ -5,6 +5,7 @@
 const state = {
   query: "",
   filter: "all", // all | ligue1 | top14 | upcoming | played
+  searchMode: "all", // all | lieu | club | competition
 };
 
 const MONTHS_SHORT = ["JAN","FEV","MAR","AVR","MAI","JUN","JUL","AOU","SEP","OCT","NOV","DEC"];
@@ -40,20 +41,46 @@ function stadiumOf(id) {
 }
 
 /* -------------------- recherche -------------------- */
-function matchSearchableText(m) {
-  const parts = [m.competition, LEAGUES[m.league]?.name, LEAGUES[m.league]?.sport];
+/* Construit 3 champs de recherche séparés pour un même match :
+   - lieu : uniquement le VRAI lieu où se joue ce match (le stade du
+     club recevant, m.stadium) — pas les stades des deux clubs en
+     général, sinon "Toulouse" ressortirait aussi pour un match que
+     Toulouse joue à l'extérieur.
+   - club : les noms des deux équipes, où qu'elles jouent.
+   - competition : le nom de la compétition / sport / ligue. */
+function matchSearchFields(m) {
+  const venueParts = [];
+  if (m.stadium && STADIUMS[m.stadium]) {
+    venueParts.push(STADIUMS[m.stadium].name, STADIUMS[m.stadium].city);
+  }
+
+  const clubParts = [];
   [m.home, m.away].forEach((cid) => {
     if (cid && CLUBS[cid]) {
-      const c = CLUBS[cid];
-      parts.push(c.name, c.short);
-      const st = STADIUMS[c.stadium];
-      if (st) parts.push(st.name, st.city);
+      clubParts.push(CLUBS[cid].name, CLUBS[cid].short);
     }
   });
-  if (m.stadium && STADIUMS[m.stadium]) {
-    parts.push(STADIUMS[m.stadium].name, STADIUMS[m.stadium].city);
-  }
-  return normalize(parts.filter(Boolean).join(" "));
+
+  const compParts = [m.competition, LEAGUES[m.league]?.name, LEAGUES[m.league]?.sport];
+
+  return {
+    lieu: normalize(venueParts.filter(Boolean).join(" ")),
+    club: normalize(clubParts.filter(Boolean).join(" ")),
+    competition: normalize(compParts.filter(Boolean).join(" ")),
+  };
+}
+
+function matchMatchesQuery(m, q, mode) {
+  if (!q) return true;
+  const fields = matchSearchFields(m);
+  if (mode === "lieu") return fields.lieu.includes(q);
+  if (mode === "club") return fields.club.includes(q);
+  if (mode === "competition") return fields.competition.includes(q);
+  // mode "all" : on cherche dans les trois, mais chacun isolément
+  // (donc "Toulouse" trouve toujours les matchs JOUÉS à Toulouse,
+  // et SÉPARÉMENT les matchs où Toulouse est une des deux équipes —
+  // pas un mélange des deux qui ferait remonter de faux résultats).
+  return fields.lieu.includes(q) || fields.club.includes(q) || fields.competition.includes(q);
 }
 
 function getFilteredMatches() {
@@ -63,7 +90,7 @@ function getFilteredMatches() {
     if (state.filter === "top14" && m.league !== "top14") return false;
     if (state.filter === "upcoming" && m.status !== "upcoming") return false;
     if (state.filter === "played" && m.status !== "played") return false;
-    if (q && !matchSearchableText(m).includes(q)) return false;
+    if (!matchMatchesQuery(m, q, state.searchMode)) return false;
     return true;
   }).sort((a, b) => (a.date || "9999").localeCompare(b.date || "9999"));
 }
@@ -258,6 +285,14 @@ function init() {
       state.filter = chip.dataset.filter;
       syncChips();
       location.hash = "#/";
+      renderBoard();
+    });
+  });
+
+  document.querySelectorAll(".search-mode-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.searchMode = btn.dataset.mode;
+      document.querySelectorAll(".search-mode-btn").forEach((b) => b.classList.toggle("active", b === btn));
       renderBoard();
     });
   });

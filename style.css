@@ -168,6 +168,37 @@ nav.site-nav a:hover, nav.site-nav a.active { color: var(--chalk); border-color:
 .chip:hover { color: var(--chalk); border-color: #3a4d42; }
 .chip.active { color: #1a1306; background: var(--amber); border-color: var(--amber); }
 
+.search-mode-row {
+  max-width: 640px;
+  margin: 12px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+.search-mode-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--chalk-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 2px;
+}
+.search-mode-btn {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--chalk-dim);
+  padding: 5px 11px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .15s;
+}
+.search-mode-btn:hover { color: var(--chalk); border-color: var(--accent-rugby); }
+.search-mode-btn.active { color: var(--chalk); background: var(--bg-panel-2); border-color: var(--accent-rugby); }
+
 /* -------------------- BOARD (signature element) -------------------- */
 .board-section { padding: 40px 24px 10px; }
 .board-head {
