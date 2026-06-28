@@ -19,6 +19,7 @@
     <nav class="site-nav">
       <a href="#/" data-nav="accueil">Tableau des matchs</a>
       <a href="#/competitions" data-nav="competitions">Compétitions</a>
+      <a href="#/annuaire" data-nav="annuaire">Clubs par ville</a>
       <a href="#/a-propos" data-nav="a-propos">À propos</a>
     </nav>
   </div>
@@ -89,6 +90,26 @@
           Pour les coupes d'Europe, seuls les matchs impliquant au moins un club français sont affichés.
           Une partie du calendrier provient d'une source en direct (TheSportsDB) à titre de test — voir la page À propos pour le détail.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VUE ANNUAIRE DES CLUBS ===================== -->
+  <section data-view="annuaire">
+    <div class="hero">
+      <div class="eyebrow">Annuaire</div>
+      <h1>Tous les clubs <em>d'une ville</em></h1>
+      <p class="lede">Indépendamment du calendrier : tape une ville pour voir tous les clubs qui y sont recensés sur le site, tous sports confondus.</p>
+
+      <div class="searchbar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="directory-input" type="text" placeholder="Lyon, Toulouse, Paris…" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="detail" style="margin-top:10px; max-width: 640px;">
+      <div class="detail-card">
+        <div id="directory-results"></div>
       </div>
     </div>
   </section>

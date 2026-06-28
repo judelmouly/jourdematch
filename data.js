@@ -31,7 +31,7 @@ const STADIUMS = {
   ernest_wallon:      { name: "Stade Ernest-Wallon",      city: "Toulouse",    capacity: 19500 },
   chaban_delmas:      { name: "Stade Chaban-Delmas",      city: "Bordeaux",    capacity: 33500 },
   mayol:              { name: "Stade Mayol",              city: "Toulon",      capacity: 18910 },
-  paris_la_defense:   { name: "Paris La Défense Arena",   city: "Nanterre",    capacity: 32000 },
+  paris_la_defense:   { name: "Paris La Défense Arena",   city: "Nanterre",    capacity: 32000, metro: "Paris" },
   marcel_deflandre:   { name: "Stade Marcel-Deflandre",   city: "La Rochelle", capacity: 16000 },
   marcel_michelin:    { name: "Stade Marcel-Michelin",    city: "Clermont-Ferrand", capacity: 19200 },
   pierre_antoine:     { name: "Stade Pierre-Antoine",     city: "Castres",     capacity: 12500 },
@@ -147,7 +147,7 @@ function normalize(str) {
 Object.assign(STADIUMS, {
   // Ligue 2 BKT
   geoffroy_guichard:  { name: "Stade Geoffroy-Guichard",  city: "Saint-Étienne", capacity: 41965 },
-  stade_bauer:        { name: "Stade Bauer",              city: "Saint-Ouen",    capacity: 6500 },
+  stade_bauer:        { name: "Stade Bauer",              city: "Saint-Ouen",    capacity: 6500, metro: "Paris" },
   paul_lignon:        { name: "Stade Paul-Lignon",        city: "Rodez",         capacity: 6800 },
   auguste_delaune:    { name: "Stade Auguste-Delaune",    city: "Reims",         capacity: 21684 },
   parc_des_sports_annecy: { name: "Parc des Sports",      city: "Annecy",        capacity: 16000 },
@@ -185,14 +185,14 @@ Object.assign(STADIUMS, {
   // Betclic Élite (basket)
   arena_cholet:       { name: "Arena Cholet",             city: "Cholet",        capacity: 5700 },
   rhenus_sport:       { name: "Rhénus Sport",              city: "Strasbourg",    capacity: 6500 },
-  astroballe:         { name: "Astroballe",                city: "Villeurbanne",  capacity: 5500 },
+  astroballe:         { name: "Astroballe",                city: "Villeurbanne",  capacity: 5500, metro: "Lyon" },
   jean_weille:        { name: "Palais des Sports Jean-Weille", city: "Nancy",     capacity: 5700 },
   beaublanc:          { name: "Palais des Sports de Beaublanc", city: "Limoges", capacity: 5000 },
   ekinoxe:            { name: "EKINOXE",                   city: "Bourg-en-Bresse", capacity: 5500 },
   jean_michel_geoffroy: { name: "Palais des Sports Jean-Michel Geoffroy", city: "Dijon", capacity: 5700 },
   antares:            { name: "Antarès",                   city: "Le Mans",      capacity: 6200 },
   colisee_chalon:     { name: "Colisée",                   city: "Chalon-sur-Saône", capacity: 5700 },
-  maurice_thorez:     { name: "Palais des Sports Maurice-Thorez", city: "Nanterre", capacity: 3200 },
+  maurice_thorez:     { name: "Palais des Sports Maurice-Thorez", city: "Nanterre", capacity: 3200, metro: "Paris" },
   sportica:           { name: "Sportica",                  city: "Dunkerque",    capacity: 3600 },
   adidas_arena:       { name: "Adidas Arena",               city: "Paris",        capacity: 8000 },
   le_chaudron_portel: { name: "Le Chaudron",                city: "Le Portel",    capacity: 3000 },
@@ -236,7 +236,7 @@ Object.assign(STADIUMS, {
   vivier_mezieres:         { name: "Salle du Vivier Méziérien", city: "Charleville-Mézières", capacity: 1800 },
   le_forum_landerneau:     { name: "Le Forum",               city: "Landerneau",   capacity: 1500 },
   la_foret_roche_vendee:   { name: "La Forêt",               city: "La Roche-sur-Yon", capacity: 2000 },
-  marx_dormoy:             { name: "Salle Marx-Dormoy",       city: "Villeneuve-d'Ascq", capacity: 1800 },
+  marx_dormoy:             { name: "Salle Marx-Dormoy",       city: "Villeneuve-d'Ascq", capacity: 1800, metro: "Lille" },
   halle_chartres:          { name: "Le COSEC",                city: "Chartres",     capacity: 1500 },
 
   // Ligue Butagaz Énergie (handball féminin)
@@ -270,7 +270,7 @@ Object.assign(STADIUMS, {
   salle_sete:         { name: "Salle Léo-Lagrange",          city: "Sète",         capacity: 1500 },
   salle_saint_nazaire: { name: "Salle de l'Alvéole 12",      city: "Saint-Nazaire", capacity: 1500 },
   salle_toulouse_volley: { name: "Le PEC",                  city: "Toulouse",     capacity: 1800 },
-  salle_tourcoing:    { name: "Salle Thelu",                 city: "Tourcoing",    capacity: 1500 },
+  salle_tourcoing:    { name: "Salle Thelu",                 city: "Tourcoing",    capacity: 1500, metro: "Lille" },
 
   // Saforelle Power 6 / Ligue AF (volley féminin) — 13 clubs officiels LNV
   salle_battendier:        { name: "Salle Albert-Battendier",  city: "Béziers",      capacity: 1200 },
@@ -279,8 +279,8 @@ Object.assign(STADIUMS, {
   salle_maneval:           { name: "Salle Maneval",             city: "Chamalières",  capacity: 800 },
   espace_bayard:           { name: "Espace Bayard",             city: "Évreux",       capacity: 1200 },
   salle_le_cannet:         { name: "Salle Pierre-de-Coubertin", city: "Le Cannet",    capacity: 1000 },
-  salle_marcel_cerdan:     { name: "Palais des Sports Marcel-Cerdan", city: "Levallois-Perret", capacity: 1500 },
-  le_phenix_marcq:         { name: "Le Phénix",                 city: "Marcq-en-Barœul", capacity: 1200 },
+  salle_marcel_cerdan:     { name: "Palais des Sports Marcel-Cerdan", city: "Levallois-Perret", capacity: 1500, metro: "Paris" },
+  le_phenix_marcq:         { name: "Le Phénix",                 city: "Marcq-en-Barœul", capacity: 1200, metro: "Lille" },
   palais_sports_mulhouse:  { name: "Palais des Sports",         city: "Mulhouse",     capacity: 3000 },
   cosec_saint_die:         { name: "COSEC",                     city: "Saint-Dié-des-Vosges", capacity: 1200 },
   salle_coubertin_terville:{ name: "Salle Pierre-de-Coubertin", city: "Terville",     capacity: 1000 },
@@ -289,8 +289,8 @@ Object.assign(STADIUMS, {
   // Arkema Première Ligue (foot féminin) — stades spécifiques non partagés
   pierre_bertin:           { name: "Stade Pierre-Bertin",       city: "Fleury-Mérogis", capacity: 1500 },
   leo_lagrange_marseille:  { name: "Stade Léo-Lagrange",         city: "Marseille",    capacity: 2000 },
-  camp_des_loges:          { name: "Stade Georges-Lefèvre (Camp des Loges)", city: "Saint-Germain-en-Laye", capacity: 1500 },
-  groupama_training_center: { name: "Groupama OL Training Center", city: "Décines-Charpieu", capacity: 1500 },
+  camp_des_loges:          { name: "Stade Georges-Lefèvre (Camp des Loges)", city: "Saint-Germain-en-Laye", capacity: 1500, metro: "Paris" },
+  groupama_training_center: { name: "Groupama OL Training Center", city: "Décines-Charpieu", capacity: 1500, metro: "Lyon" },
 });
 
 Object.assign(CLUBS, {

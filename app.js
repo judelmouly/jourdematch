@@ -186,6 +186,62 @@ function renderLeaguesStrip() {
   });
 }
 
+/* -------------------- annuaire des clubs par ville -------------------- */
+function getClubsByCity(query) {
+  const q = normalize(query);
+  if (!q) return [];
+
+  const results = [];
+  Object.entries(CLUBS).forEach(([id, club]) => {
+    if (!club.stadium || !STADIUMS[club.stadium]) return;
+    const st = STADIUMS[club.stadium];
+    const cityNorm = normalize(st.city);
+    const metroNorm = normalize(st.metro || "");
+    if (cityNorm.includes(q) || (metroNorm && metroNorm.includes(q))) {
+      results.push({ id, club, stadium: st });
+    }
+  });
+
+  // Tri : sport, puis nom du club
+  results.sort((a, b) => {
+    const sa = LEAGUES[a.club.league]?.sport || "";
+    const sb = LEAGUES[b.club.league]?.sport || "";
+    return sa.localeCompare(sb, "fr") || a.club.name.localeCompare(b.club.name, "fr");
+  });
+  return results;
+}
+
+function renderClubDirectory() {
+  const input = document.getElementById("directory-input");
+  const container = document.getElementById("directory-results");
+  if (!input || !container) return;
+
+  const query = input.value.trim();
+  if (!query) {
+    container.innerHTML = `<p class="detail-note">Tape le nom d'une ville pour voir tous les clubs qui y sont recensés sur le site, tous sports confondus.</p>`;
+    return;
+  }
+
+  const results = getClubsByCity(query);
+  if (results.length === 0) {
+    container.innerHTML = `<div class="empty-state"><div class="big">Aucun club trouvé</div><p>Essaie une autre ville, ou vérifie l'orthographe.</p></div>`;
+    return;
+  }
+
+  container.innerHTML = `
+    <div class="board-head" style="margin-bottom:10px;">
+      <h2 style="font-size:1rem;">${results.length} club${results.length > 1 ? "s" : ""} trouvé${results.length > 1 ? "s" : ""} pour « ${query} »</h2>
+    </div>
+    <ul class="competitions-bullets directory-bullets">
+      ${results.map((r) => `
+        <li>
+          <span class="comp-icon" aria-hidden="true">${sportIcon(LEAGUES[r.club.league]?.sport)}</span>
+          <span class="comp-name">${r.club.name}</span>
+          <span class="comp-sport">${LEAGUES[r.club.league]?.name || ""} — ${r.stadium.name}, ${r.stadium.city}</span>
+        </li>`).join("")}
+    </ul>`;
+}
+
 /* -------------------- liste des compétitions (page Compétitions) -------------------- */
 function sportIcon(sport) {
   const s = normalize(sport || "");
@@ -270,7 +326,7 @@ function showView(name) {
   const el = document.querySelector(`[data-view="${name}"]`);
   if (el) el.classList.add("active");
   document.querySelectorAll("nav.site-nav a").forEach((a) => a.classList.remove("active"));
-  const navMap = { accueil: "accueil", competitions: "competitions", "a-propos": "a-propos" };
+  const navMap = { accueil: "accueil", competitions: "competitions", annuaire: "annuaire", "a-propos": "a-propos" };
   if (navMap[name]) {
     const navEl = document.querySelector(`nav.site-nav a[data-nav="${navMap[name]}"]`);
     if (navEl) navEl.classList.add("active");
@@ -287,6 +343,9 @@ function router() {
     renderBoard();
   } else if (parts[0] === "competitions") {
     showView("competitions");
+  } else if (parts[0] === "annuaire") {
+    showView("annuaire");
+    renderClubDirectory();
   } else if (parts[0] === "a-propos") {
     showView("a-propos");
   } else if (parts[0] === "match" && parts[1]) {
@@ -332,6 +391,11 @@ function init() {
       renderBoard();
     });
   });
+
+  const directoryInput = document.getElementById("directory-input");
+  if (directoryInput) {
+    directoryInput.addEventListener("input", renderClubDirectory);
+  }
 
   window.addEventListener("hashchange", router);
   router();
