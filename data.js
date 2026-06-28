@@ -463,11 +463,40 @@ Object.assign(LEAGUES, {
   betclic:  { name: "Betclic Élite",           sport: "Basket-ball",  accent: "var(--accent-foot)",  site: "https://www.lnb.fr" },
   starligue:{ name: "Liqui Moly Starligue",    sport: "Handball",     accent: "var(--accent-rugby)", site: "https://www.lnh.fr" },
   magnus:   { name: "Ligue Magnus",            sport: "Hockey sur glace", accent: "var(--accent-foot)", site: "https://www.liguemagnus.com" },
+  ehfcl:    { name: "EHF Champions League",    sport: "Handball (Europe)", accent: "var(--accent-rugby)", site: "https://ehfcl.eurohandball.com" },
   lfb:      { name: "La Boulangère Wonderligue", sport: "Basket-ball féminin", accent: "var(--accent-rugby)", site: "https://www.lfb.fr" },
   lfh:      { name: "Ligue Butagaz Énergie",   sport: "Handball féminin", accent: "var(--accent-foot)", site: "https://ligue-feminine-handball.fr" },
   marmara:  { name: "Marmara SpikeLigue",      sport: "Volley-ball",  accent: "var(--accent-rugby)", site: "https://www.lnv.fr" },
   ligueaf:  { name: "Saforelle Power 6 (Ligue AF)", sport: "Volley-ball féminin", accent: "var(--accent-foot)", site: "https://www.lnv.fr/competitions/ligue-a-feminine" },
   arkema:   { name: "Arkema Première Ligue",  sport: "Football féminin", accent: "var(--accent-rugby)", site: "https://epreuves.fff.fr/competition/engagement/436476-arkema-premiere-ligue" },
+
+  // ---- Divisions inférieures ----
+  national: { name: "Championnat National",   sport: "Football",    accent: "var(--accent-foot)",  site: "https://www.fff.fr" },
+  eliteb:   { name: "Pro B / Élite 2",         sport: "Basket-ball",  accent: "var(--accent-foot)",  site: "https://www.lnb.fr" },
+  nationale_rugby: { name: "Nationale",        sport: "Rugby à XV",   accent: "var(--accent-rugby)", site: "https://www.ffr.fr" },
+
+  // ---- Coupes d'Europe (clubs français uniquement) ----
+  uefacl:   { name: "UEFA Champions League",   sport: "Football (Europe)", accent: "var(--accent-foot)", site: "https://www.uefa.com/uefachampionsleague/" },
+  uefael:   { name: "UEFA Europa League",      sport: "Football (Europe)", accent: "var(--accent-foot)", site: "https://www.uefa.com/uefaeuropaleague/" },
+  uefaconf: { name: "UEFA Conference League",  sport: "Football (Europe)", accent: "var(--accent-foot)", site: "https://www.uefa.com/europaconferenceleague/" },
+  rugbycc:  { name: "Champions Cup",           sport: "Rugby (Europe)", accent: "var(--accent-rugby)", site: "https://www.epcrugby.com" },
+  rugbychall: { name: "Challenge Cup",         sport: "Rugby (Europe)", accent: "var(--accent-rugby)", site: "https://www.epcrugby.com" },
+  euroleague: { name: "Euroleague",            sport: "Basket-ball (Europe)", accent: "var(--accent-foot)", site: "https://www.euroleaguebasketball.net" },
+  eurocup:  { name: "EuroCup",                 sport: "Basket-ball (Europe)", accent: "var(--accent-foot)", site: "https://www.euroleaguebasketball.net" },
+  bcl:      { name: "Basketball Champions League", sport: "Basket-ball (Europe)", accent: "var(--accent-foot)", site: "https://www.championsleague.basketball" },
+  chl:      { name: "Champions Hockey League", sport: "Hockey sur glace (Europe)", accent: "var(--accent-rugby)", site: "https://www.championshockeyleague.com" },
+  ehfcl_f:  { name: "EHF Champions League (F)", sport: "Handball féminin (Europe)", accent: "var(--accent-rugby)", site: "https://ehfcl.eurohandball.com" },
+  ehfel:    { name: "EHF European League",     sport: "Handball (Europe)", accent: "var(--accent-rugby)", site: "https://ehfel.eurohandball.com" },
+  cevcl:    { name: "CEV Champions League",    sport: "Volley-ball (Europe)", accent: "var(--accent-rugby)", site: "https://www.cev.eu" },
+
+  // ---- Équipes de France ----
+  fra_rugby_h:  { name: "France Rugby (H)",     sport: "Rugby à XV — Équipe de France", accent: "var(--accent-rugby)", site: "https://www.ffr.fr" },
+  fra_rugby_f:  { name: "France Rugby (F)",     sport: "Rugby à XV — Équipe de France", accent: "var(--accent-rugby)", site: "https://www.ffr.fr" },
+  fra_foot_h:   { name: "France Football (H)",  sport: "Football — Équipe de France",  accent: "var(--accent-foot)",  site: "https://www.fff.fr" },
+  fra_foot_f:   { name: "France Football (F)",  sport: "Football — Équipe de France",  accent: "var(--accent-foot)",  site: "https://www.fff.fr" },
+  fra_hand_h:   { name: "France Handball (H)",  sport: "Handball — Équipe de France",  accent: "var(--accent-rugby)", site: "https://www.ff-handball.org" },
+  fra_basket_h: { name: "France Basketball (H)", sport: "Basket-ball — Équipe de France", accent: "var(--accent-foot)", site: "https://www.ffbb.com" },
+  fra_basket_f: { name: "France Basketball (F)", sport: "Basket-ball — Équipe de France", accent: "var(--accent-foot)", site: "https://www.ffbb.com" },
 });
 
 MATCHES.push(

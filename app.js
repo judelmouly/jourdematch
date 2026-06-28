@@ -186,6 +186,38 @@ function renderLeaguesStrip() {
   });
 }
 
+/* -------------------- liste des compétitions (page Compétitions) -------------------- */
+function sportIcon(sport) {
+  const s = normalize(sport || "");
+  if (s.includes("equipe de france")) return "🇫🇷";
+  if (s.includes("foot")) return "⚽";
+  if (s.includes("rugby")) return "🏉";
+  if (s.includes("basket")) return "🏀";
+  if (s.includes("hand")) return "🤾";
+  if (s.includes("volley")) return "🏐";
+  if (s.includes("hockey")) return "🏒";
+  if (s.includes("tennis de table")) return "🏓";
+  if (s.includes("badminton")) return "🏸";
+  if (s.includes("tennis")) return "🎾";
+  if (s.includes("athlet")) return "🏃";
+  return "🏆";
+}
+
+function renderCompetitionsList() {
+  const container = document.getElementById("competitions-list");
+  if (!container) return;
+
+  const entries = Object.entries(LEAGUES).sort((a, b) => a[1].name.localeCompare(b[1].name, "fr"));
+
+  container.innerHTML = `<ul class="competitions-bullets">${entries.map(([id, l]) => `
+    <li>
+      <span class="comp-icon" aria-hidden="true">${sportIcon(l.sport)}</span>
+      <span class="comp-name">${l.name}</span>
+      <span class="comp-sport">${l.sport}</span>
+    </li>`).join("")}
+  </ul>`;
+}
+
 function syncChips() {
   document.querySelectorAll(".chip").forEach((c) => {
     c.classList.toggle("active", c.dataset.filter === state.filter);
@@ -269,6 +301,7 @@ function router() {
 /* -------------------- init -------------------- */
 function init() {
   renderLeaguesStrip();
+  renderCompetitionsList();
   renderBoard();
 
   document.getElementById("search-input").addEventListener("input", (e) => {
