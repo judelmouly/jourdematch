@@ -38,8 +38,8 @@ import requests
 API_KEY = "123"
 BASE_URL = f"https://www.thesportsdb.com/api/v1/json/{API_KEY}"
 
-START_DATE = date(2026, 5, 1)
-END_DATE = date(2026, 6, 30)
+START_DATE = date(2026, 3, 1)
+END_DATE = date(2026, 4, 30)
 SLEEP_BETWEEN_CALLS = 2.1  # reste sous 30 requêtes/minute (limite gratuite)
 
 # ============================================================
