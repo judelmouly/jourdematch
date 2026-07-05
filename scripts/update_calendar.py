@@ -1,234 +1,240 @@
 #!/usr/bin/env python3
 """
-update_calendar.py — Calendrier mai-juin 2026, toutes compétitions, via
-l'API JSON gratuite de TheSportsDB.com.
+update_calendar.py — Met à jour automatiquement le calendrier TOP14 + Pro D2
+(saison 2025-2026, à titre de test) à partir des pages officielles de la LNR.
 
-Pourquoi jour par jour plutôt que saison entière : l'endpoint "saison
-complète" (eventsseason.php) est plafonné à 15 résultats sur le compte
-gratuit, ce qui renvoie les tout premiers matchs de la saison (souvent
-août/septembre) et jamais mai-juin. L'endpoint "un jour précis"
-(eventsday.php) n'a pas cette limite par saison : on l'appelle donc une
-fois par jour et par compétition sur la période voulue.
+Ne récupère QUE : journée/phase, date, équipe domicile, équipe extérieur,
+compétition, et le lieu (stade du club recevant). PAS de scores.
 
-Ne récupère QUE : compétition, date, équipe domicile, équipe extérieure.
-PAS de scores.
+Fonctionnement :
+1. Découvre automatiquement la liste des clubs de chaque compétition
+   (page /clubs), donc s'adapte aux montées/descentes sans modification.
+2. Pour chaque club, ouvre sa page "informations" pour récupérer le nom
+   et la ville de son stade.
+3. Pour chaque club, ouvre sa page "calendrier-resultats" et extrait
+   les matchs (journée, date, équipes).
+4. Déduplique les matchs (chaque rencontre apparaît sur les 2 pages club)
+   via l'URL "feuille-de-match" qui contient un identifiant unique.
+5. Écrit le résultat dans live-calendar.json (à consommer par le site).
 
-Pour les compétitions européennes, seuls les matchs impliquant au moins
-un club français sont conservés.
+Prérequis : pip install playwright && playwright install chromium
 
-Pour les équipes de France (rugby, foot, hand, basket — H et F), on
-utilise un endpoint différent (derniers/prochains matchs de l'équipe),
-plus simple, puis on filtre nous-mêmes sur la période mai-juin.
-
-Prérequis : pip install requests
 Usage : python3 update_calendar.py
-
-Documentation API : https://www.thesportsdb.com/documentation
-Clé gratuite : 123
 """
 
 import json
 import re
 import sys
 import time
-import unicodedata
-from datetime import date, timedelta
-import requests
+from playwright.sync_api import sync_playwright
 
-API_KEY = "123"
-BASE_URL = f"https://www.thesportsdb.com/api/v1/json/{API_KEY}"
+SEASON = "2025-2026"
 
-TODAY = date.today()
-START_DATE = TODAY - timedelta(days=30)
-END_DATE = TODAY + timedelta(days=60)
-SLEEP_BETWEEN_CALLS = 2.1  # reste sous 30 requêtes/minute (limite gratuite)
-
-# ============================================================
-# Compétitions françaises (championnats/cups par équipes)
-# ============================================================
-FRENCH_COMPETITIONS = {
-    "ligue1": {"league_id": 4334, "label": "Ligue 1"},
-    "ligue2": {"league_id": 4401, "label": "Ligue 2"},
-    "national": {"league_id": 4637, "label": "Championnat National"},
-    "top14": {"league_id": 4430, "label": "TOP 14"},
-    "prod2": {"league_id": 5172, "label": "Pro D2"},
-    "nationale_rugby": {"league_id": 5558, "label": "Nationale (rugby)"},
-    "starligue": {"league_id": 4536, "label": "Starligue"},
-    "betclic": {"league_id": 4423, "label": "Betclic Élite"},
-    "eliteb": {"league_id": 4577, "label": "Pro B / Élite 2"},
-    "lfb": {"league_id": 5623, "label": "La Boulangère Wonderligue"},
-    "marmara": {"league_id": 4582, "label": "Marmara SpikeLigue"},
-    "ligueaf": {"league_id": 4583, "label": "Ligue AF"},
-    "magnus": {"league_id": 4927, "label": "Ligue Magnus"},
-    "arkema": {"league_id": 5203, "label": "Arkema Première Ligue"},
+COMPETITIONS = {
+    "top14": {
+        "base_url": "https://top14.lnr.fr",
+        "label": "TOP 14",
+    },
+    "prod2": {
+        "base_url": "https://prod2.lnr.fr",
+        "label": "Pro D2",
+    },
 }
 
-# ============================================================
-# Coupes d'Europe — uniquement les matchs avec au moins un club français
-# ============================================================
-EUROPEAN_COMPETITIONS = {
-    "uefacl": {"league_id": 4480, "label": "UEFA Champions League"},
-    "uefael": {"league_id": 4481, "label": "UEFA Europa League"},
-    "uefaconf": {"league_id": 5071, "label": "UEFA Conference League"},
-    "rugbycc": {"league_id": 4550, "label": "Champions Cup (rugby)"},
-    "rugbychall": {"league_id": 5418, "label": "Challenge Cup (rugby)"},
-    "euroleague": {"league_id": 4546, "label": "Euroleague (basket)"},
-    "eurocup": {"league_id": 4547, "label": "EuroCup (basket)"},
-    "bcl": {"league_id": 4548, "label": "Basketball Champions League"},
-    "chl": {"league_id": 5277, "label": "Champions Hockey League"},
-    "ehfcl": {"league_id": 4980, "label": "EHF Champions League"},
-    "ehfcl_f": {"league_id": 5274, "label": "EHF Champions League (F)"},
-    "ehfel": {"league_id": 5275, "label": "EHF European League"},
-    "cevcl": {"league_id": 5616, "label": "CEV Champions League (volley)"},
+JOURNEE_RE = re.compile(r'^J(\d+)$|^(Barrage|Demi-Finale|Finale|Accession)$', re.IGNORECASE)
+DATE_RE = re.compile(
+    r'^(lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)\s+\d{1,2}\s+'
+    r'(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)$',
+    re.IGNORECASE,
+)
+MONTHS = {
+    "janvier": "01", "février": "02", "mars": "03", "avril": "04", "mai": "05",
+    "juin": "06", "juillet": "07", "août": "08", "septembre": "09",
+    "octobre": "10", "novembre": "11", "décembre": "12",
 }
-
-# ============================================================
-# Équipes de France — endpoint dédié (pas de boucle par jour)
-# ============================================================
-NATIONAL_TEAMS = {
-    "fra_rugby_h": {"team_id": 137128, "label": "France Rugby (H)"},
-    "fra_rugby_f": {"team_id": 150800, "label": "France Rugby (F)"},
-    "fra_foot_h": {"team_id": 133913, "label": "France Football (H)"},
-    "fra_foot_f": {"team_id": 136801, "label": "France Football (F)"},
-    "fra_hand_h": {"team_id": 140566, "label": "France Handball (H)"},
-    "fra_basket_h": {"team_id": 136725, "label": "France Basketball (H)"},
-    "fra_basket_f": {"team_id": 141525, "label": "France Basketball (F)"},
-}
-
-# Mots-clés extraits des noms de clubs français déjà connus du site
-# (voir data.js), utilisés pour repérer les clubs français dans les
-# compétitions européennes.
-FRENCH_TOKENS = ["agen", "aigles", "ajaccio", "alsace", "amand", "amiens", "angers", "anglet", "angouleme", "annecy", "arago", "ardenne", "ascq", "asvel", "atlantique", "aurillac", "aurillacois", "auxerre", "avant", "avenir", "avesnois", "aviron", "ball", "barul", "bayonnais", "bayonne", "begles", "besancon", "beziers", "biarritz", "bordeaux", "boulazac", "boulogne", "bourg", "bourges", "bourgogne", "boxers", "bresse", "brest", "brestois", "bretagne", "briancon", "brive", "bruleurs", "cannes", "cannet", "carcassonne", "carolo", "castres", "cergy", "cesson", "chalon", "chamalieres", "chambery", "chambray", "chamois", "chamonix", "champagne", "charleville", "charnay", "chartres", "chaumont", "cholet", "clermont", "cloud", "colomiers", "correze", "cuques", "diables", "dijon", "dordogne", "dragons", "drome", "ducs", "dunkerque", "elan", "essm", "estac", "etienne", "evreux", "feminines", "fenix", "flammes", "fleury", "florange", "foot", "germain", "gothiques", "gravelines", "grenoble", "guingamp", "havre", "herault", "hormadi", "istres", "jokers", "landerneau", "landes", "lattes", "laval", "lavallois", "lens", "levallois", "lille", "limoges", "limousin", "lorient", "lorraine", "losc", "loups", "lyon", "lyonnais", "lyonnes", "mans", "marcq", "marsan", "marseille", "maur", "merignac", "metz", "mezieres", "mhsc", "monaco", "mont", "montauban", "montbeliard", "montois", "montpellier", "mulhouse", "nancy", "nanterre", "nantes", "narbonne", "nazaire", "nevers", "nice", "nimes", "oyonnax", "paloise", "pauc", "perpignan", "plan", "plessis", "poitevin", "poitiers", "pontoise", "portel", "provence", "quentin", "rapaces", "raphael", "reims", "rennais", "rennes", "robinson", "roche", "rochelais", "rochelle", "rodez", "romans", "rouen", "rouges", "sambre", "saone", "sarthe", "savoie", "section", "selestat", "sete", "sluc", "sochaux", "soyaux", "spacer", "spartiates", "star", "stella", "strasbourg", "tango", "terville", "toulon", "toulousain", "toulouse", "touraine", "tourcoing", "tours", "tremblay", "troyes", "usam", "usdk", "uson", "valence", "vanduvre", "vannes", "vendee", "villeneuve", "villeurbanne", "volero"]
-FRENCH_PHRASES = ["racing 92", "racing metro 92"]
 
 
 def log(msg):
     print(msg, file=sys.stderr)
-    sys.stderr.flush()
 
 
-def normalize(s):
-    s = unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode("ascii")
-    return s.lower()
+def get_club_list(page, base_url):
+    """Récupère la liste des clubs (nom + slug) depuis la page /clubs."""
+    page.goto(f"{base_url}/clubs", timeout=30000)
+    page.wait_for_timeout(1500)
+    links = page.eval_on_selector_all(
+        "a[href*='/club/']",
+        "els => els.map(e => ({href: e.getAttribute('href'), text: e.innerText.trim()}))",
+    )
+    clubs = {}
+    for link in links:
+        href = link["href"] or ""
+        m = re.search(r'/club/([a-z0-9-]+)/?$', href)
+        if m and link["text"]:
+            slug = m.group(1)
+            clubs[slug] = link["text"]
+    return clubs
 
 
-def is_french_club(name):
-    if not name:
-        return False
-    n = normalize(name)
-    if any(phrase in n for phrase in FRENCH_PHRASES):
-        return True
-    return any(re.search(rf"\b{re.escape(tok)}", n) for tok in FRENCH_TOKENS)
+def get_stadium_info(page, base_url, slug):
+    """Récupère le nom du stade et la ville depuis la page informations du club."""
+    try:
+        page.goto(f"{base_url}/club/{slug}/informations", timeout=30000)
+        page.wait_for_timeout(1000)
+        text = page.inner_text("body")
+    except Exception as e:
+        log(f"  ! Impossible de charger les infos de {slug}: {e}")
+        return None, None
+
+    name_match = re.search(r'Nom\s*:\s*(.+)', text)
+    address_match = re.search(r'Adresse du stade\s*:\s*(.+)', text)
+    stadium_name = name_match.group(1).strip() if name_match else None
+    city = None
+    if address_match:
+        # L'adresse finit généralement par le code postal + la ville
+        addr = address_match.group(1).strip()
+        city_match = re.search(r'\d{5}\s+(.+)$', addr)
+        city = city_match.group(1).strip() if city_match else addr
+    return stadium_name, city
 
 
-def api_get(endpoint, params):
-    url = f"{BASE_URL}/{endpoint}"
-    resp = requests.get(url, params=params, timeout=30)
-    resp.raise_for_status()
-    return resp.json()
-
-
-def daterange(start, end):
-    d = start
-    while d <= end:
-        yield d
-        d += timedelta(days=1)
-
-
-def fetch_competition_by_day(comp, require_french=False):
-    label = comp["label"]
-    league_id = comp["league_id"]
-    log(f"\n=== {label} (jour par jour, {START_DATE} -> {END_DATE}) ===")
-
+def parse_calendar_text(text, known_team_names):
+    """Parse le texte affiché de la page calendrier-resultats d'un club."""
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
     matches = []
-    skipped_foreign = 0
-    days_with_matches = 0
+    current_label = None
+    current_date = None
+    current_teams = []
 
-    for d in daterange(START_DATE, END_DATE):
-        try:
-            data = api_get("eventsday.php", {"d": d.isoformat(), "l": league_id})
-        except Exception as e:
-            log(f"  ! Erreur le {d}: {e}")
-            time.sleep(SLEEP_BETWEEN_CALLS)
-            continue
-
-        events = data.get("events") or []
-        if events:
-            days_with_matches += 1
-        for ev in events:
-            home, away = ev.get("strHomeTeam"), ev.get("strAwayTeam")
-            if require_french and not (is_french_club(home) or is_french_club(away)):
-                skipped_foreign += 1
-                continue
+    def flush():
+        if current_label and len(current_teams) == 2:
             matches.append({
-                "competition": label,
-                "round": ev.get("intRound"),
-                "date": ev.get("dateEvent") or d.isoformat(),
-                "home": home,
-                "away": away,
+                "label": current_label,
+                "date_text": current_date,
+                "home": current_teams[0],
+                "away": current_teams[1],
             })
-        time.sleep(SLEEP_BETWEEN_CALLS)
 
-    if require_french:
-        log(f"  {skipped_foreign} matchs ignorés (aucun club français)")
-    log(f"  {days_with_matches} jours avec au moins un match")
-    log(f"Total matchs retenus pour {label} : {len(matches)}")
+    for line in lines:
+        m = JOURNEE_RE.match(line)
+        if m:
+            flush()
+            current_label = line
+            current_date = None
+            current_teams = []
+            continue
+        if DATE_RE.match(line):
+            current_date = line
+            continue
+        if line in known_team_names:
+            if len(current_teams) < 2:
+                current_teams.append(line)
+            continue
+        if line == "Feuille de match":
+            flush()
+            current_label = None
+            current_date = None
+            current_teams = []
+    flush()
     return matches
 
 
-def fetch_national_team(team):
-    label = team["label"]
-    team_id = team["team_id"]
-    log(f"\n=== {label} ===")
+def date_text_to_iso(date_text, season_start_year=2025):
+    """Convertit 'samedi 06 septembre' en '2025-09-06' (ou 2026 selon le mois)."""
+    if not date_text:
+        return None
+    m = re.match(
+        r'(?:lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)\s+(\d{1,2})\s+(\w+)',
+        date_text, re.IGNORECASE,
+    )
+    if not m:
+        return None
+    day, month_fr = m.group(1), m.group(2).lower()
+    month = MONTHS.get(month_fr)
+    if not month:
+        return None
+    year = season_start_year if int(month) >= 7 else season_start_year + 1
+    return f"{year}-{month}-{day.zfill(2)}"
+
+
+def scrape_competition(page, comp_key, comp):
+    base_url = comp["base_url"]
+    log(f"\n=== {comp['label']} ===")
+    log("Récupération de la liste des clubs...")
+    clubs = get_club_list(page, base_url)
+    log(f"{len(clubs)} clubs trouvés : {list(clubs.values())}")
+
+    known_team_names = set(clubs.values())
+
+    stadiums = {}
+    for slug, name in clubs.items():
+        log(f"  Stade de {name}...")
+        stadium_name, city = get_stadium_info(page, base_url, slug)
+        stadiums[slug] = {"club": name, "stadium": stadium_name, "city": city}
+        time.sleep(0.3)
+
+    seen_match_ids = set()
     matches = []
-    for endpoint in ("eventslast.php", "eventsnext.php"):
+    for slug, name in clubs.items():
+        log(f"  Calendrier de {name}...")
         try:
-            data = api_get(endpoint, {"id": team_id})
+            page.goto(f"{base_url}/club/{slug}/calendrier-resultats", timeout=30000)
+            page.wait_for_timeout(1500)
+            text = page.inner_text("body")
         except Exception as e:
-            log(f"  ! Erreur ({endpoint}): {e}")
-            time.sleep(SLEEP_BETWEEN_CALLS)
+            log(f"  ! Erreur sur {slug}: {e}")
             continue
-        events = data.get("results") or data.get("events") or []
-        for ev in events:
-            d = ev.get("dateEvent")
-            if not d or not (START_DATE.isoformat() <= d <= END_DATE.isoformat()):
+
+        # IDs uniques des matchs via les liens feuille-de-match (pour dédupliquer)
+        match_links = page.eval_on_selector_all(
+            "a[href*='feuille-de-match']",
+            "els => els.map(e => e.getAttribute('href'))",
+        )
+
+        parsed = parse_calendar_text(text, known_team_names)
+
+        for i, m in enumerate(parsed):
+            match_id = match_links[i] if i < len(match_links) else f"{slug}-{m['label']}-{m['date_text']}"
+            if match_id in seen_match_ids:
                 continue
+            seen_match_ids.add(match_id)
+            iso_date = date_text_to_iso(m["date_text"])
+            home_slug = next((s for s, n in clubs.items() if n == m["home"]), None)
+            venue = stadiums.get(home_slug, {}).get("stadium") if home_slug else None
+            venue_city = stadiums.get(home_slug, {}).get("city") if home_slug else None
             matches.append({
-                "competition": label,
-                "round": ev.get("strLeague") or ev.get("strEvent"),
-                "date": d,
-                "home": ev.get("strHomeTeam"),
-                "away": ev.get("strAwayTeam"),
-                "venue": ev.get("strVenue"),
+                "competition": comp["label"],
+                "season": SEASON,
+                "round": m["label"],
+                "date": iso_date,
+                "home": m["home"],
+                "away": m["away"],
+                "venue": venue,
+                "city": venue_city,
             })
-        time.sleep(SLEEP_BETWEEN_CALLS)
-    log(f"Total matchs retenus pour {label} (mai-juin) : {len(matches)}")
+        time.sleep(0.3)
+
+    matches.sort(key=lambda m: (m["date"] or "9999"))
+    log(f"Total matchs uniques pour {comp['label']} : {len(matches)}")
     return matches
 
 
 def main():
     all_matches = []
-    total_competitions = len(FRENCH_COMPETITIONS) + len(EUROPEAN_COMPETITIONS)
-    done = 0
-
-    for key, comp in FRENCH_COMPETITIONS.items():
-        done += 1
-        log(f"\n[{done}/{total_competitions} compétitions équipes]")
-        all_matches.extend(fetch_competition_by_day(comp, require_french=False))
-
-    for key, comp in EUROPEAN_COMPETITIONS.items():
-        done += 1
-        log(f"\n[{done}/{total_competitions} compétitions équipes]")
-        all_matches.extend(fetch_competition_by_day(comp, require_french=True))
-
-    for key, team in NATIONAL_TEAMS.items():
-        all_matches.extend(fetch_national_team(team))
-
-    all_matches.sort(key=lambda m: (m["date"] or "9999"))
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page()
+        for comp_key, comp in COMPETITIONS.items():
+            try:
+                matches = scrape_competition(page, comp_key, comp)
+                all_matches.extend(matches)
+            except Exception as e:
+                log(f"ERREUR sur {comp['label']}: {e}")
+        browser.close()
 
     output = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "period": f"{START_DATE.isoformat()} -> {END_DATE.isoformat()}",
+        "season": SEASON,
         "matches": all_matches,
     }
     with open("live-calendar.json", "w", encoding="utf-8") as f:
