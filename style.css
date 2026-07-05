@@ -79,7 +79,37 @@ nav.site-nav a {
 nav.site-nav a:hover, nav.site-nav a.active { color: var(--chalk); border-color: var(--amber); }
 
 /* -------------------- HERO -------------------- */
-.hero { padding: 56px 24px 28px; text-align: center; }
+/* -------------------- HERO WRAPPER + ILLUSTRATIONS LATÉRALES -------------------- */
+.hero-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.hero-illus {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 220px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.hero-illus.visible { opacity: 1; }
+.hero-illus-left  { left: 0; }
+.hero-illus-right { right: 0; }
+.hero-illus svg { width: 100%; height: 100%; }
+
+/* masque de fondu côté centre */
+.hero-illus-left::after, .hero-illus-right::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 80px;
+}
+.hero-illus-left::after  { right: 0; background: linear-gradient(to right, transparent, var(--bg)); }
+.hero-illus-right::after { left: 0;  background: linear-gradient(to left,  transparent, var(--bg)); }
+
+@media (max-width: 860px) { .hero-illus { display: none; } }
+
+.hero { padding: 56px 24px 28px; text-align: center; position: relative; z-index: 1; }
 .hero .eyebrow {
   font-family: var(--font-mono);
   text-transform: uppercase;
@@ -167,6 +197,55 @@ nav.site-nav a:hover, nav.site-nav a.active { color: var(--chalk); border-color:
 }
 .chip:hover { color: var(--chalk); border-color: #3a4d42; }
 .chip.active { color: #1a1306; background: var(--amber); border-color: var(--amber); }
+
+/* -------------------- FRISE ICÔNES SPORTS -------------------- */
+.sport-icons-strip {
+  max-width: 780px;
+  margin: 22px auto 0;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.sport-icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+  cursor: pointer;
+  transition: all .15s;
+  min-width: 62px;
+}
+.sport-icon-btn:hover { border-color: var(--amber-dim); transform: translateY(-2px); }
+.sport-icon-btn.active { border-color: var(--amber); background: var(--bg-panel-2); }
+.sport-icon-btn .icon { font-size: 1.5rem; line-height: 1; }
+.sport-icon-btn .icon-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--chalk-dim);
+  text-align: center;
+  white-space: nowrap;
+}
+.sport-icon-btn.active .icon-label { color: var(--amber); }
+
+/* -------------------- TAGS SPORT COLORÉS -------------------- */
+.tag-sport { font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 7px; border-radius: 5px; }
+.tag-sport.foot   { background: rgba(79,124,255,0.16); color: #9db4ff; }
+.tag-sport.rugby  { background: rgba(196,67,45,0.18);  color: #f0a08f; }
+.tag-sport.basket { background: rgba(255,140,66,0.16); color: #ffc08a; }
+.tag-sport.hand   { background: rgba(95,191,119,0.16); color: #a8d8a8; }
+.tag-sport.volley { background: rgba(255,200,87,0.16); color: #ffc857; }
+.tag-sport.hockey { background: rgba(100,181,246,0.16); color: #90caf9; }
+.tag-sport.tennis { background: rgba(174,213,129,0.16); color: #c5e1a5; }
+.tag-sport.france { background: rgba(239,83,80,0.13);  color: #ef9a9a; }
+.tag-sport.autre  { background: rgba(255,255,255,0.07); color: var(--chalk-dim); }
 
 .search-mode-row {
   max-width: 640px;
