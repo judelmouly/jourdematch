@@ -24,13 +24,44 @@ const LIVE_NAME_ALIASES = {
 const LIVE_LEAGUE_MAP = {
   "TOP 14": "top14",
   "Pro D2": "prod2",
+  "Nationale (rugby)": "nationale_rugby",
+  "Ligue 1": "ligue1",
+  "Ligue 2": "ligue2",
+  "Championnat National": "national",
   "Starligue": "starligue",
   "Betclic Élite": "betclic",
+  "Pro B / Élite 2": "eliteb",
   "La Boulangère Wonderligue": "lfb",
   "Marmara SpikeLigue": "marmara",
   "Ligue AF": "ligueaf",
   "Ligue Magnus": "magnus",
+  "Arkema Première Ligue": "arkema",
+  "UEFA Champions League": "uefacl",
+  "UEFA Europa League": "uefael",
+  "UEFA Conference League": "uefaconf",
+  "Champions Cup (rugby)": "rugbycc",
+  "Challenge Cup (rugby)": "rugbychall",
+  "Euroleague (basket)": "euroleague",
+  "EuroCup (basket)": "eurocup",
+  "Basketball Champions League": "bcl",
+  "Champions Hockey League": "chl",
   "EHF Champions League": "ehfcl",
+  "EHF Champions League (F)": "ehfcl_f",
+  "EHF European League": "ehfel",
+  "CEV Champions League (volley)": "cevcl",
+};
+
+/* Les équipes de France sont gérées à part : ce ne sont pas des clubs
+   (donc pas de stade fixe — le lieu change à chaque match), et
+   l'adversaire est un pays, pas un club de data.js. */
+const NATIONAL_TEAM_LEAGUES = {
+  "France Rugby (H)": "fra_rugby_h",
+  "France Rugby (F)": "fra_rugby_f",
+  "France Football (H)": "fra_foot_h",
+  "France Football (F)": "fra_foot_f",
+  "France Handball (H)": "fra_hand_h",
+  "France Basketball (H)": "fra_basket_h",
+  "France Basketball (F)": "fra_basket_f",
 };
 
 /* Retrouve (ou crée à la volée) l'identifiant de club correspondant
@@ -79,6 +110,35 @@ function resolveLiveClubId(name, leagueKey) {
   return newId;
 }
 
+/* Crée (si besoin) une fiche minimale pour une équipe qui n'est pas
+   un club de data.js — typacalement un pays adverse d'une équipe de
+   France. Pas de filtrage par ligue ici : un pays reste le même
+   quel que soit le sport. */
+function ensureGenericTeam(name) {
+  if (!name) return null;
+  const norm = normalize(name);
+  for (const [id, club] of Object.entries(CLUBS)) {
+    if (normalize(club.name) === norm) return id;
+  }
+  const newId = "live-team-" + norm.replace(/[^a-z0-9]+/g, "-");
+  if (!CLUBS[newId]) {
+    CLUBS[newId] = { name, short: name, league: null, stadium: null, site: null };
+  }
+  return newId;
+}
+
+/* Crée (si besoin) une fiche stade minimale à partir d'un nom de lieu
+   brut renvoyé par l'API (utile pour les matchs internationaux, dont
+   le lieu change à chaque rencontre, contrairement à un club). */
+function ensureGenericStadium(venueName) {
+  if (!venueName) return null;
+  const key = "live-stadium-" + normalize(venueName).replace(/[^a-z0-9]+/g, "-");
+  if (!STADIUMS[key]) {
+    STADIUMS[key] = { name: venueName, city: "", capacity: null };
+  }
+  return key;
+}
+
 function isFutureDate(dateStr) {
   if (!dateStr) return true;
   return new Date(dateStr + "T00:00:00") >= new Date(new Date().toDateString());
@@ -96,23 +156,38 @@ async function loadLiveCalendar() {
 
     let added = 0;
     liveMatches.forEach((m, i) => {
-      const league = LIVE_LEAGUE_MAP[m.competition];
-      if (!league) return;
-      const home = resolveLiveClubId(m.home, league);
-      const away = resolveLiveClubId(m.away, league);
-      if (!home || !away || !m.date) return;
+      const isNationalTeam = NATIONAL_TEAM_LEAGUES[m.competition];
+      const league = isNationalTeam || LIVE_LEAGUE_MAP[m.competition];
+      if (!league || !m.date) return;
+
+      let home, away, stadium, note;
+      if (isNationalTeam) {
+        // Équipe nationale : pas de club de data.js, le lieu varie à chaque match.
+        home = ensureGenericTeam(m.home);
+        away = ensureGenericTeam(m.away);
+        stadium = ensureGenericStadium(m.venue);
+        note = "Donnée de test issue du calendrier en direct.";
+      } else {
+        home = resolveLiveClubId(m.home, league);
+        away = resolveLiveClubId(m.away, league);
+        stadium = CLUBS[home] ? CLUBS[home].stadium : null;
+        note = "Donnée de test issue du calendrier en direct (échantillon limité, voir À propos).";
+      }
+      if (!home || !away) return;
 
       MATCHES.push({
         id: `live-${league}-${m.round || "x"}-${i}`,
         league,
-        competition: `${m.competition} 2025/2026 — Journée ${m.round || "?"} (test, calendrier en direct)`,
+        competition: isNationalTeam
+          ? `${m.competition}${m.round ? " — " + m.round : ""} (test, calendrier en direct)`
+          : `${m.competition} 2025/2026 — Journée ${m.round || "?"} (test, calendrier en direct)`,
         date: m.date,
         time: null,
         home,
         away,
-        stadium: CLUBS[home] ? CLUBS[home].stadium : null,
+        stadium,
         status: isFutureDate(m.date) ? "upcoming" : "played",
-        note: "Donnée de test issue du calendrier en direct (échantillon limité, voir À propos).",
+        note,
       });
       added++;
     });

@@ -233,20 +233,36 @@ const SPORT_ILLUS = {
 SPORT_ILLUS.null  = SPORT_ILLUS.foot;
 SPORT_ILLUS.autre = SPORT_ILLUS.foot;
 
-function updateHeroIllus(sportKey) {
+function updateHeroIllus(sportKey, animate) {
   const key = sportKey || "null";
   const config = SPORT_ILLUS[key] || SPORT_ILLUS.null;
   const left  = document.getElementById("illus-left");
   const right = document.getElementById("illus-right");
   if (!left || !right) return;
-  left.classList.remove("visible");
-  right.classList.remove("visible");
-  setTimeout(() => {
+
+  if (animate) {
+    // Transition douce uniquement pour les changements de sport
+    left.classList.remove("visible");
+    right.classList.remove("visible");
+    setTimeout(() => {
+      left.innerHTML  = config.left;
+      right.innerHTML = config.right;
+      requestAnimationFrame(() => {
+        left.classList.add("visible");
+        right.classList.add("visible");
+      });
+    }, 280);
+  } else {
+    // Premier affichage : injection directe sans délai
     left.innerHTML  = config.left;
     right.innerHTML = config.right;
-    left.classList.add("visible");
-    right.classList.add("visible");
-  }, 250);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        left.classList.add("visible");
+        right.classList.add("visible");
+      });
+    });
+  }
 }
 
 /* -------------------- frise d'icônes sports (cliquables) -------------------- */
@@ -270,7 +286,7 @@ function renderSportStrip() {
       const val = btn.dataset.sport;
       state.sportFilter = val === "null" ? null : val;
       renderSportStrip();
-      updateHeroIllus(state.sportFilter);
+      updateHeroIllus(state.sportFilter, true);
       renderBoard();
     });
   });
@@ -478,7 +494,6 @@ function init() {
   renderLeaguesStrip();
   renderCompetitionsList();
   renderSportStrip();
-  updateHeroIllus(null);
   renderBoard();
 
   document.getElementById("search-input").addEventListener("input", (e) => {
@@ -516,7 +531,10 @@ function init() {
   }
 
   window.addEventListener("hashchange", router);
-  router();
+  router();  // rend la section accueil visible AVANT l'injection des illustrations
+
+  // Injection des illustrations après que la section soit dans le DOM visible
+  updateHeroIllus(null, false);
 
   if (typeof loadLiveCalendar === "function") loadLiveCalendar();
 }
