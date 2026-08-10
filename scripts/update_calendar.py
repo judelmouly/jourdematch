@@ -50,4 +50,5 @@ NATIONAL_TEAMS = {
     "fra_basket_f": {"team_id": 141525, "label": "France Basketball (F)"},
 }
 
-FRENCH_TOKENS =
+FRENCH_TOKENS = ["agen","aigles","ajaccio","alsace","amand","amiens","angers","anglet","auxerre","aviron","bayonnais","bayonne","begles","besancon","beziers","biarritz","bordeaux","boulazac","boulogne","bourg","bourges","brest","bretagne","brive","cannes","carcassonne","castres","cergy","cesson","chalon","chambery","chambray","chamonix","chartres","chaumont","cholet","clermont","colomiers","dijon","dunkerque","etienne","fenix","fleury","grenoble","guingamp","havre","herault","istres","landerneau","landes","lattes","laval","lens","levallois","lille","limoges","lorient","losc","lyon","lyonnais","lyonnes","mans","marcq","marsan","marseille","metz","monaco","montauban","montpellier","mulhouse","nancy","nanterre","nantes","narbonne","nevers","nice","nimes","oyonnax","paloise","perpignan","poitiers","provence","reims","rennais","rennes","roche","rochelais","rochelle","rodez","rouen","sambre","sarthe","section","selestat","sete","sluc","sochaux","strasbourg","tango","terville","toulon","toulousain","toulouse","tourcoing","tours","tremblay","troyes","usam","usdk","valence","vannes","vendee","villeneuve","villeurbanne","volero"]
+FRENCH_PHRASES = ["racing 92","racing metro 92"]
