@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-13T09:06:28Z",
-  "period": "2026-07-14 -> 2026-10-12",
+  "generated_at": "2026-08-14T09:07:08Z",
+  "period": "2026-07-15 -> 2026-10-13",
   "matches": [
     {
       "competition": "France Football (H)",
@@ -473,6 +473,14 @@
       "season": "2026-2027",
       "round": "3",
       "date": "2026-09-04",
+      "home": "Lyon",
+      "away": "Auxerre"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-04",
       "home": "Paris Saint-Germain",
       "away": "Monaco"
     },
@@ -522,14 +530,6 @@
       "season": "2026-2027",
       "round": "3",
       "date": "2026-09-05",
-      "home": "Lyon",
-      "away": "Auxerre"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-09-05",
       "home": "Nice",
       "away": "Le Mans"
     },
@@ -540,6 +540,14 @@
       "date": "2026-09-05",
       "home": "Le Havre",
       "away": "Brest"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-05",
+      "home": "Lens",
+      "away": "Lorient"
     },
     {
       "competition": "Ligue 2",
@@ -1661,6 +1669,14 @@
       "date": "2026-10-10",
       "home": "Boxers de Bordeaux",
       "away": "Brûleurs de Loups de Grenoble"
+    },
+    {
+      "competition": "Euroleague (basket)",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-13",
+      "home": "Lyon-Villeurbanne",
+      "away": "KK Crvena zvezda"
     }
   ]
 }
