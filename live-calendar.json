@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-14T09:07:08Z",
-  "period": "2026-07-15 -> 2026-10-13",
+  "generated_at": "2026-08-15T08:10:03Z",
+  "period": "2026-07-16 -> 2026-10-14",
   "matches": [
     {
       "competition": "France Football (H)",
@@ -282,6 +282,22 @@
       "date": "2026-08-27",
       "home": "Caen",
       "away": "Bastia"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-08-27",
+      "home": "Lillestrøm",
+      "away": "Egnatia"
+    },
+    {
+      "competition": "UEFA Conference League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-08-27",
+      "home": "Monaco",
+      "away": "Górnik Zabrze"
     },
     {
       "competition": "France Basketball (H)",
@@ -1555,16 +1571,16 @@
       "season": "2026-2027",
       "round": "8",
       "date": "2026-10-09",
-      "home": "Nantes",
-      "away": "Stade de Reims"
+      "home": "Nancy Lorraine",
+      "away": "Guingamp"
     },
     {
       "competition": "Ligue 2",
       "season": "2026-2027",
       "round": "8",
       "date": "2026-10-09",
-      "home": "Dijon",
-      "away": "Metz"
+      "home": "Sochaux",
+      "away": "Boulogne"
     },
     {
       "competition": "Ligue Magnus",
@@ -1613,6 +1629,30 @@
       "date": "2026-10-10",
       "home": "Paris Saint-Germain",
       "away": "Le Mans"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-10",
+      "home": "Nantes",
+      "away": "Stade de Reims"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-10",
+      "home": "Clermont Foot",
+      "away": "Red Star"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-10",
+      "home": "Saint-Étienne",
+      "away": "Rodez"
     },
     {
       "competition": "TOP 14",
@@ -1669,6 +1709,14 @@
       "date": "2026-10-10",
       "home": "Boxers de Bordeaux",
       "away": "Brûleurs de Loups de Grenoble"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-12",
+      "home": "Dijon",
+      "away": "Metz"
     },
     {
       "competition": "Euroleague (basket)",
