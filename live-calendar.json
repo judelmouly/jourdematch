@@ -1,16 +1,7 @@
 {
-  "generated_at": "2026-08-17T08:33:48Z",
-  "period": "2026-07-18 -> 2026-10-16",
+  "generated_at": "2026-08-18T08:19:28Z",
+  "period": "2026-07-19 -> 2026-10-17",
   "matches": [
-    {
-      "competition": "France Football (H)",
-      "season": "2026-2027",
-      "round": "FIFA World Cup",
-      "date": "2026-07-18",
-      "home": "France",
-      "away": "England",
-      "venue": "Hard Rock Stadium"
-    },
     {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
@@ -270,7 +261,7 @@
     {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "400",
       "date": "2026-08-26",
       "home": "Lyon",
       "away": "Fenerbahçe"
@@ -286,7 +277,7 @@
     {
       "competition": "UEFA Europa League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "400",
       "date": "2026-08-27",
       "home": "Lillestrøm",
       "away": "Egnatia"
@@ -294,7 +285,7 @@
     {
       "competition": "UEFA Conference League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "400",
       "date": "2026-08-27",
       "home": "Monaco",
       "away": "Górnik Zabrze"
@@ -1711,6 +1702,15 @@
       "away": "Brûleurs de Loups de Grenoble"
     },
     {
+      "competition": "France Football (F)",
+      "season": "2026-2027",
+      "round": "International Friendlies Women",
+      "date": "2026-10-10",
+      "home": "France Women",
+      "away": "Latvia Women",
+      "venue": ""
+    },
+    {
       "competition": "Ligue 2",
       "season": "2026-2027",
       "round": "8",
@@ -1797,6 +1797,118 @@
       "date": "2026-10-16",
       "home": "Edinburgh",
       "away": "RC Toulonnais"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-17",
+      "home": "Angers",
+      "away": "Marseille"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-17",
+      "home": "Lille",
+      "away": "Brest"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-17",
+      "home": "Lyon",
+      "away": "Nice"
+    },
+    {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-17",
+      "home": "Caen",
+      "away": "VFC La Roche-sur-Yon"
+    },
+    {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-17",
+      "home": "Valenciennes",
+      "away": "Amiens"
+    },
+    {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-17",
+      "home": "Bourg-Péronnas",
+      "away": "Fleury"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-17",
+      "home": "Béziers",
+      "away": "Aurillac"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-17",
+      "home": "Biarritz Olympique",
+      "away": "Soyaux Angoulême XV Charente"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-17",
+      "home": "CA Brive",
+      "away": "FC Grenoble"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-17",
+      "home": "Paris Saint-Germain Women",
+      "away": "OL Lyonnes"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-17",
+      "home": "Marseille Féminin",
+      "away": "Fleury Women"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-17",
+      "home": "Montpellier Women",
+      "away": "Le Havre Women"
+    },
+    {
+      "competition": "Champions Cup (rugby)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-17",
+      "home": "ASM Clermont Auvergne",
+      "away": "Leinster"
+    },
+    {
+      "competition": "Challenge Cup (rugby)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-17",
+      "home": "Lyon OU",
+      "away": "The Sharks"
     }
   ]
 }
