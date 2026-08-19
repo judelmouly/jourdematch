@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T08:19:28Z",
-  "period": "2026-07-19 -> 2026-10-17",
+  "generated_at": "2026-08-19T08:18:54Z",
+  "period": "2026-07-20 -> 2026-10-18",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -117,7 +117,7 @@
     {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "400",
       "date": "2026-08-18",
       "home": "Fenerbahçe",
       "away": "Lyon"
@@ -1909,6 +1909,46 @@
       "date": "2026-10-17",
       "home": "Lyon OU",
       "away": "The Sharks"
+    },
+    {
+      "competition": "Champions Cup (rugby)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-18",
+      "home": "Section Paloise",
+      "away": "Leicester Tigers"
+    },
+    {
+      "competition": "Champions Cup (rugby)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-18",
+      "home": "Stade Toulousain",
+      "away": "Exeter Chiefs"
+    },
+    {
+      "competition": "Challenge Cup (rugby)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-18",
+      "home": "Aviron Bayonnais",
+      "away": "Cheetahs"
+    },
+    {
+      "competition": "Challenge Cup (rugby)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-18",
+      "home": "Harlequins",
+      "away": "Vannes"
+    },
+    {
+      "competition": "Challenge Cup (rugby)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-18",
+      "home": "Castres Olympique",
+      "away": "Benetton"
     }
   ]
 }
