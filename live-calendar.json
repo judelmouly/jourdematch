@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-19T08:18:54Z",
-  "period": "2026-07-20 -> 2026-10-18",
+  "generated_at": "2026-08-20T08:18:20Z",
+  "period": "2026-07-21 -> 2026-10-19",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -275,6 +275,30 @@
       "away": "Bastia"
     },
     {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-08-27",
+      "home": "Soyaux Angoulême XV Charente",
+      "away": "Colomiers"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-08-27",
+      "home": "Biarritz Olympique",
+      "away": "Nissa Rugby"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-08-27",
+      "home": "FC Grenoble",
+      "away": "Aurillac"
+    },
+    {
       "competition": "UEFA Europa League",
       "season": "2026-2027",
       "round": "400",
@@ -330,6 +354,14 @@
       "date": "2026-08-28",
       "home": "Nancy Lorraine",
       "away": "Dunkerque"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-08-28",
+      "home": "CA Brive",
+      "away": "Valence Romans Drôme Rugby"
     },
     {
       "competition": "Ligue 1",
@@ -404,30 +436,6 @@
       "away": "Concarneau"
     },
     {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-29",
-      "home": "Soyaux Angoulême XV Charente",
-      "away": "Colomiers"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-29",
-      "home": "Biarritz Olympique",
-      "away": "Nissa Rugby"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-29",
-      "home": "CA Brive",
-      "away": "Valence Romans Drôme Rugby"
-    },
-    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "2",
@@ -476,6 +484,14 @@
       "away": "Valenciennes"
     },
     {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-09-03",
+      "home": "Colomiers",
+      "away": "Provence"
+    },
+    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "3",
@@ -514,6 +530,30 @@
       "date": "2026-09-04",
       "home": "Pau",
       "away": "Sochaux"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-09-04",
+      "home": "Narbonne",
+      "away": "Nevers"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-09-04",
+      "home": "Valence Romans Drôme Rugby",
+      "away": "Soyaux Angoulême XV Charente"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-09-04",
+      "home": "Oyonnax Rugby",
+      "away": "Biarritz Olympique"
     },
     {
       "competition": "Arkema Première Ligue",
@@ -629,30 +669,6 @@
       "away": "Vannes"
     },
     {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-09-05",
-      "home": "Narbonne",
-      "away": "Nevers"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-09-05",
-      "home": "Valence Romans Drôme Rugby",
-      "away": "Soyaux Angoulême XV Charente"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-09-05",
-      "home": "Oyonnax Rugby",
-      "away": "Biarritz Olympique"
-    },
-    {
       "competition": "Arkema Première Ligue",
       "season": "2026-2027",
       "round": "1",
@@ -733,6 +749,14 @@
       "away": "Amiens"
     },
     {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-10",
+      "home": "Biarritz Olympique",
+      "away": "Colomiers"
+    },
+    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "4",
@@ -763,6 +787,30 @@
       "date": "2026-09-11",
       "home": "Clermont Foot",
       "away": "Boulogne"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-11",
+      "home": "Soyaux Angoulême XV Charente",
+      "away": "US Montauban"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-11",
+      "home": "Béziers",
+      "away": "Nevers"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-11",
+      "home": "CA Brive",
+      "away": "Nissa Rugby"
     },
     {
       "competition": "Arkema Première Ligue",
@@ -869,30 +917,6 @@
       "away": "Aviron Bayonnais"
     },
     {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-09-12",
-      "home": "Soyaux Angoulême XV Charente",
-      "away": "US Montauban"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-09-12",
-      "home": "Béziers",
-      "away": "Nevers"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-09-12",
-      "home": "Biarritz Olympique",
-      "away": "Colomiers"
-    },
-    {
       "competition": "Arkema Première Ligue",
       "season": "2026-2027",
       "round": "2",
@@ -989,6 +1013,14 @@
       "away": "Cannes"
     },
     {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-09-17",
+      "home": "Aurillac",
+      "away": "CA Brive"
+    },
+    {
       "competition": "Ligue 2",
       "season": "2026-2027",
       "round": "7",
@@ -1011,6 +1043,30 @@
       "date": "2026-09-18",
       "home": "Laval",
       "away": "Sochaux"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-09-18",
+      "home": "Narbonne",
+      "away": "Soyaux Angoulême XV Charente"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-09-18",
+      "home": "Valence Romans Drôme Rugby",
+      "away": "Provence"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-09-18",
+      "home": "Nissa Rugby",
+      "away": "FC Grenoble"
     },
     {
       "competition": "Ligue Magnus",
@@ -1133,30 +1189,6 @@
       "away": "Section Paloise"
     },
     {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-09-19",
-      "home": "Narbonne",
-      "away": "Soyaux Angoulême XV Charente"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-09-19",
-      "home": "Valence Romans Drôme Rugby",
-      "away": "Provence"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-09-19",
-      "home": "Nissa Rugby",
-      "away": "FC Grenoble"
-    },
-    {
       "competition": "Arkema Première Ligue",
       "season": "2026-2027",
       "round": "3",
@@ -1227,6 +1259,38 @@
       "date": "2026-09-24",
       "home": "Caen",
       "away": "Rouen"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-09-24",
+      "home": "CA Brive",
+      "away": "Colomiers"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-09-25",
+      "home": "Soyaux Angoulême XV Charente",
+      "away": "SU Agen Lot-et-Garonne"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-09-25",
+      "home": "Béziers",
+      "away": "Narbonne"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-09-25",
+      "home": "Biarritz Olympique",
+      "away": "US Montauban"
     },
     {
       "competition": "Ligue Magnus",
@@ -1308,30 +1372,6 @@
       "date": "2026-09-26",
       "home": "ASM Clermont Auvergne",
       "away": "Castres Olympique"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "5",
-      "date": "2026-09-26",
-      "home": "Soyaux Angoulême XV Charente",
-      "away": "SU Agen Lot-et-Garonne"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "5",
-      "date": "2026-09-26",
-      "home": "Béziers",
-      "away": "Narbonne"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "5",
-      "date": "2026-09-26",
-      "home": "Biarritz Olympique",
-      "away": "US Montauban"
     },
     {
       "competition": "TOP 14",
