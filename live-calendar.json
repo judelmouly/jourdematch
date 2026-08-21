@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T08:18:20Z",
-  "period": "2026-07-21 -> 2026-10-19",
+  "generated_at": "2026-08-21T08:20:25Z",
+  "period": "2026-07-22 -> 2026-10-20",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -1771,14 +1771,6 @@
       "season": "2026-2027",
       "round": "9",
       "date": "2026-10-16",
-      "home": "Nantes",
-      "away": "Dunkerque"
-    },
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "9",
-      "date": "2026-10-16",
       "home": "Guingamp",
       "away": "Pau"
     },
@@ -1789,6 +1781,14 @@
       "date": "2026-10-16",
       "home": "Stade de Reims",
       "away": "Dijon"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-10-16",
+      "home": "Grenoble",
+      "away": "Boulogne"
     },
     {
       "competition": "Ligue Magnus",
@@ -1861,6 +1861,30 @@
       "date": "2026-10-17",
       "home": "Lyon",
       "away": "Nice"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-10-17",
+      "home": "Nantes",
+      "away": "Dunkerque"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-10-17",
+      "home": "Red Star",
+      "away": "Saint-Étienne"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-10-17",
+      "home": "Metz",
+      "away": "Sochaux"
     },
     {
       "competition": "Championnat National",
@@ -1989,6 +2013,14 @@
       "date": "2026-10-18",
       "home": "Castres Olympique",
       "away": "Benetton"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-10-19",
+      "home": "Rodez",
+      "away": "Montpellier"
     }
   ]
 }
