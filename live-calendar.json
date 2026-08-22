@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T08:20:25Z",
-  "period": "2026-07-22 -> 2026-10-20",
+  "generated_at": "2026-08-22T08:13:49Z",
+  "period": "2026-07-23 -> 2026-10-21",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -1093,6 +1093,30 @@
       "away": "Gothiques d'Amiens"
     },
     {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-18",
+      "home": "Paris Saint-Germain Women",
+      "away": "Nantes Women"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-18",
+      "home": "Le Havre Women",
+      "away": "OL Lyonnes"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-18",
+      "home": "Strasbourg Women",
+      "away": "Paris FC Women"
+    },
+    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "5",
@@ -1193,14 +1217,6 @@
       "season": "2026-2027",
       "round": "3",
       "date": "2026-09-19",
-      "home": "Paris Saint-Germain Women",
-      "away": "Nantes Women"
-    },
-    {
-      "competition": "Arkema Première Ligue",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-09-19",
       "home": "Montpellier Women",
       "away": "Marseille Féminin"
     },
@@ -1209,8 +1225,16 @@
       "season": "2026-2027",
       "round": "3",
       "date": "2026-09-19",
-      "home": "Le Havre Women",
-      "away": "OL Lyonnes"
+      "home": "Saint-Malo Féminines",
+      "away": "Fleury Women"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-09-19",
+      "home": "Lens Féminin",
+      "away": "Toulouse Féminines"
     },
     {
       "competition": "Ligue 1",
