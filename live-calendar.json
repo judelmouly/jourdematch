@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T08:13:11Z",
-  "period": "2026-07-24 -> 2026-10-22",
+  "generated_at": "2026-08-24T08:32:22Z",
+  "period": "2026-07-25 -> 2026-10-23",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -239,8 +239,8 @@
       "season": "2026-2027",
       "round": "1",
       "date": "2026-08-23",
-      "home": "Paris Saint-Germain",
-      "away": "Rennes"
+      "home": "Rennes",
+      "away": "Paris Saint-Germain"
     },
     {
       "competition": "Ligue 1",
@@ -2045,6 +2045,62 @@
       "date": "2026-10-19",
       "home": "Rodez",
       "away": "Montpellier"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-23",
+      "home": "Montpellier",
+      "away": "Red Star"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-23",
+      "home": "Dijon",
+      "away": "Rodez"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-23",
+      "home": "Clermont Foot",
+      "away": "Guingamp"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-10-23",
+      "home": "Spartiates de Marseille",
+      "away": "Hormadi Anglet"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-10-23",
+      "home": "Dragons de Rouen",
+      "away": "Ducs d'Angers"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-10-23",
+      "home": "Aigles de Nice",
+      "away": "Rapaces de Gap"
+    },
+    {
+      "competition": "Euroleague (basket)",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-23",
+      "home": "BC Žalgiris",
+      "away": "Lyon-Villeurbanne"
     }
   ]
 }
