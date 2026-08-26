@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T08:21:22Z",
-  "period": "2026-07-26 -> 2026-10-24",
+  "generated_at": "2026-08-26T08:24:26Z",
+  "period": "2026-07-27 -> 2026-10-25",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -1519,6 +1519,14 @@
       "away": "Spartiates de Marseille"
     },
     {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-29",
+      "home": "Napoli Basket",
+      "away": "Bourg-en-Bresse"
+    },
+    {
       "competition": "Euroleague (basket)",
       "season": "2026-2027",
       "round": "2",
@@ -1717,6 +1725,14 @@
       "date": "2026-10-04",
       "home": "Dragons de Rouen",
       "away": "Hormadi Anglet"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-06",
+      "home": "Bourg-en-Bresse",
+      "away": "Tofaş SK"
     },
     {
       "competition": "Basketball Champions League",
@@ -1982,6 +1998,14 @@
       "date": "2026-10-13",
       "home": "Lyon-Villeurbanne",
       "away": "KK Crvena zvezda"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-13",
+      "home": "Ulm",
+      "away": "AS Monaco Basket"
     },
     {
       "competition": "Ligue 2",
@@ -2534,6 +2558,62 @@
       "date": "2026-10-24",
       "home": "Fleury Women",
       "away": "Toulouse Féminines"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-25",
+      "home": "Paris Saint-Germain",
+      "away": "Lyon"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-25",
+      "home": "Chartres Basket Feminin",
+      "away": "Flammes Carolo Basket"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-25",
+      "home": "Landerneau Bretagne Basket",
+      "away": "Charnay Women"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-25",
+      "home": "BLMA Women",
+      "away": "La Tronche Meylan"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-10-25",
+      "home": "Gothiques d'Amiens",
+      "away": "Boxers de Bordeaux"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-10-25",
+      "home": "Hormadi Anglet",
+      "away": "Spartiates de Marseille"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-10-25",
+      "home": "Jokers de Cergy-Pontoise",
+      "away": "Diables Rouges de Briançon"
     }
   ]
 }
