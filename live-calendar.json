@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T08:24:26Z",
-  "period": "2026-07-27 -> 2026-10-25",
+  "generated_at": "2026-08-27T18:58:35Z",
+  "period": "2026-07-28 -> 2026-10-26",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -2224,6 +2224,30 @@
       "away": "Toulouse Métropole Basket"
     },
     {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-17",
+      "home": "Spacer's Toulouse Volley",
+      "away": "Arago de Sète"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-17",
+      "home": "Stade Poitevin VB",
+      "away": "AS Cannes"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-10-17",
+      "home": "Paris Volley",
+      "away": "Saint-Nazaire VBA"
+    },
+    {
       "competition": "Arkema Première Ligue",
       "season": "2026-2027",
       "round": "5",
@@ -2360,20 +2384,28 @@
       "away": "Levallois Metropolitans BC"
     },
     {
-      "competition": "Ligue 2",
+      "competition": "Marmara SpikeLigue",
       "season": "2026-2027",
-      "round": "10",
-      "date": "2026-10-23",
-      "home": "Montpellier",
-      "away": "Red Star"
+      "round": "2",
+      "date": "2026-10-20",
+      "home": "AS Cannes",
+      "away": "Arago de Sète"
     },
     {
-      "competition": "Ligue 2",
+      "competition": "Marmara SpikeLigue",
       "season": "2026-2027",
-      "round": "10",
-      "date": "2026-10-23",
-      "home": "Dijon",
-      "away": "Rodez"
+      "round": "2",
+      "date": "2026-10-20",
+      "home": "Tours Volley-Ball",
+      "away": "Tourcoing Lille Métropole"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-20",
+      "home": "Saint-Nazaire VBA",
+      "away": "Spacer's Toulouse Volley"
     },
     {
       "competition": "Ligue 2",
@@ -2382,6 +2414,22 @@
       "date": "2026-10-23",
       "home": "Clermont Foot",
       "away": "Guingamp"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-23",
+      "home": "Nancy Lorraine",
+      "away": "Laval"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-23",
+      "home": "Sochaux",
+      "away": "Annecy"
     },
     {
       "competition": "Pro B / Élite 2",
@@ -2414,6 +2462,14 @@
       "date": "2026-10-23",
       "home": "Lyon Féminin",
       "away": "ESB Villeneuve-dAscq Women"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-23",
+      "home": "Arago de Sète",
+      "away": "Chaumont Volley"
     },
     {
       "competition": "Ligue Magnus",
@@ -2470,6 +2526,30 @@
       "date": "2026-10-24",
       "home": "Monaco",
       "away": "Lille"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-24",
+      "home": "Montpellier",
+      "away": "Red Star"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-24",
+      "home": "Dijon",
+      "away": "Rodez"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-24",
+      "home": "Saint-Étienne",
+      "away": "Nantes"
     },
     {
       "competition": "TOP 14",
@@ -2536,6 +2616,30 @@
       "away": "Angers Women"
     },
     {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-24",
+      "home": "Spacer's Toulouse Volley",
+      "away": "AS Cannes"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-24",
+      "home": "Paris Volley",
+      "away": "Montpellier HSC"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-24",
+      "home": "Plessis-Robinson",
+      "away": "Narbonne Volley"
+    },
+    {
       "competition": "Arkema Première Ligue",
       "season": "2026-2027",
       "round": "6",
@@ -2592,6 +2696,22 @@
       "away": "La Tronche Meylan"
     },
     {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-25",
+      "home": "Stade Poitevin VB",
+      "away": "Saint-Nazaire VBA"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-25",
+      "home": "Tourcoing Lille Métropole",
+      "away": "Nice Volley-Ball"
+    },
+    {
       "competition": "Ligue Magnus",
       "season": "2026-2027",
       "round": "12",
@@ -2614,6 +2734,14 @@
       "date": "2026-10-25",
       "home": "Jokers de Cergy-Pontoise",
       "away": "Diables Rouges de Briançon"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-26",
+      "home": "Boulogne",
+      "away": "Stade de Reims"
     }
   ]
 }
