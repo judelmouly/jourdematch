@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28T19:51:30Z",
-  "period": "2026-07-29 -> 2026-10-27",
+  "generated_at": "2026-08-29T13:58:32Z",
+  "period": "2026-07-30 -> 2026-10-28",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -2774,6 +2774,14 @@
       "date": "2026-10-27",
       "home": "Pionniers de Chamonix Mont-Blanc",
       "away": "Ducs d'Angers"
+    },
+    {
+      "competition": "Euroleague (basket)",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-28",
+      "home": "Lyon-Villeurbanne",
+      "away": "KK Partizan"
     }
   ]
 }
