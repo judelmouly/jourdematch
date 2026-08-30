@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-29T13:58:32Z",
-  "period": "2026-07-30 -> 2026-10-28",
+  "generated_at": "2026-08-30T13:03:45Z",
+  "period": "2026-07-31 -> 2026-10-29",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -362,6 +362,15 @@
       "date": "2026-08-28",
       "home": "CA Brive",
       "away": "Valence Romans Drôme Rugby"
+    },
+    {
+      "competition": "France Basketball (F)",
+      "season": "2026-2027",
+      "round": "Basketball International Friendlies Women",
+      "date": "2026-08-28",
+      "home": "France Basketball Women",
+      "away": "Italy Basketball Women",
+      "venue": ""
     },
     {
       "competition": "Ligue 1",
@@ -748,6 +757,14 @@
       "date": "2026-09-07",
       "home": "Nantes",
       "away": "Nancy Lorraine"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-09-08",
+      "home": "Lille",
+      "away": "Real Betis"
     },
     {
       "competition": "Championnat National",
@@ -1992,6 +2009,22 @@
       "away": "Metz"
     },
     {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-13",
+      "home": "Arsenal",
+      "away": "Lille"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-13",
+      "home": "Lens",
+      "away": "Sporting CP"
+    },
+    {
       "competition": "Euroleague (basket)",
       "season": "2026-2027",
       "round": "5",
@@ -2414,6 +2447,14 @@
       "date": "2026-10-20",
       "home": "Saint-Nazaire VBA",
       "away": "Spacer's Toulouse Volley"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-21",
+      "home": "Lille",
+      "away": "Galatasaray"
     },
     {
       "competition": "Ligue 2",
