@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-30T13:03:45Z",
-  "period": "2026-07-31 -> 2026-10-29",
+  "generated_at": "2026-08-31T14:48:39Z",
+  "period": "2026-08-01 -> 2026-10-30",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -469,15 +469,6 @@
       "away": "Nice"
     },
     {
-      "competition": "France Basketball (H)",
-      "season": "2026-2027",
-      "round": "FIBA Basketball World Cup",
-      "date": "2026-08-30",
-      "home": "Sweden Basketball",
-      "away": "France Basketball",
-      "venue": ""
-    },
-    {
       "competition": "Ligue 2",
       "season": "2026-2027",
       "round": "4",
@@ -761,7 +752,7 @@
     {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "1",
       "date": "2026-09-08",
       "home": "Lille",
       "away": "Real Betis"
@@ -1045,6 +1036,14 @@
       "date": "2026-09-17",
       "home": "Aurillac",
       "away": "CA Brive"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-17",
+      "home": "Lillestrøm",
+      "away": "Torreense"
     },
     {
       "competition": "Ligue 2",
@@ -2011,7 +2010,7 @@
     {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "2",
       "date": "2026-10-13",
       "home": "Arsenal",
       "away": "Lille"
@@ -2019,7 +2018,7 @@
     {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "2",
       "date": "2026-10-13",
       "home": "Lens",
       "away": "Sporting CP"
@@ -2039,6 +2038,22 @@
       "date": "2026-10-13",
       "home": "Ulm",
       "away": "AS Monaco Basket"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-15",
+      "home": "Lyon",
+      "away": "Crystal Palace"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-15",
+      "home": "Marseille",
+      "away": "Olympiacos"
     },
     {
       "competition": "UEFA Conference League",
@@ -2451,10 +2466,18 @@
     {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "3",
       "date": "2026-10-21",
       "home": "Lille",
       "away": "Galatasaray"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-22",
+      "home": "Hoffenheim",
+      "away": "Lyon"
     },
     {
       "competition": "Ligue 2",
@@ -2823,6 +2846,102 @@
       "date": "2026-10-28",
       "home": "Lyon-Villeurbanne",
       "away": "KK Partizan"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-10-30",
+      "home": "Nantes",
+      "away": "Clermont Foot"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-10-30",
+      "home": "Guingamp",
+      "away": "Saint-Étienne"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-10-30",
+      "home": "Stade de Reims",
+      "away": "Sochaux"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-30",
+      "home": "ALM Évreux Basket",
+      "away": "STB Le Havre"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-30",
+      "home": "Rouen Métropole Basket",
+      "away": "HTV Basket"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-30",
+      "home": "Poitiers Basket 86",
+      "away": "Stade Rochelais Basket"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-30",
+      "home": "Nice Volley-Ball",
+      "away": "Arago de Sète"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-30",
+      "home": "Tours Volley-Ball",
+      "away": "Plessis-Robinson"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-30",
+      "home": "AS Cannes",
+      "away": "Paris Volley"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "14",
+      "date": "2026-10-30",
+      "home": "Brûleurs de Loups de Grenoble",
+      "away": "Boxers de Bordeaux"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "14",
+      "date": "2026-10-30",
+      "home": "Dragons de Rouen",
+      "away": "Pionniers de Chamonix Mont-Blanc"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "14",
+      "date": "2026-10-30",
+      "home": "Ducs d'Angers",
+      "away": "Aigles de Nice"
     }
   ]
 }
