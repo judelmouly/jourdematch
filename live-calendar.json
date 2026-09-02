@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T12:49:56Z",
-  "period": "2026-08-02 -> 2026-10-31",
+  "generated_at": "2026-09-02T12:24:08Z",
+  "period": "2026-08-03 -> 2026-11-01",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -1022,6 +1022,14 @@
       "away": "Spartiates de Marseille"
     },
     {
+      "competition": "EHF Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-09-16",
+      "home": "Vardar 1961",
+      "away": "HBC Nantes"
+    },
+    {
       "competition": "Championnat National",
       "season": "2026-2027",
       "round": "7",
@@ -1791,6 +1799,14 @@
       "away": "Lyon-Villeurbanne"
     },
     {
+      "competition": "EHF Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-08",
+      "home": "Skanderborg Aarhus Håndbold",
+      "away": "Montpellier Handball"
+    },
+    {
       "competition": "Ligue 2",
       "season": "2026-2027",
       "round": "8",
@@ -2038,6 +2054,14 @@
       "date": "2026-10-13",
       "home": "Ulm",
       "away": "AS Monaco Basket"
+    },
+    {
+      "competition": "EHF Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-14",
+      "home": "HBC Nantes",
+      "away": "MT Melsungen"
     },
     {
       "competition": "UEFA Europa League",
@@ -2478,6 +2502,14 @@
       "date": "2026-10-22",
       "home": "Monaco",
       "away": "Freiburg"
+    },
+    {
+      "competition": "EHF Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-22",
+      "home": "FC Barcelona Handbol",
+      "away": "Montpellier Handball"
     },
     {
       "competition": "Ligue 2",
@@ -3094,6 +3126,30 @@
       "date": "2026-10-31",
       "home": "Paris FC Women",
       "away": "Paris Saint-Germain Women"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-11-01",
+      "home": "Chartres Basket Feminin",
+      "away": "BLMA Women"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-11-01",
+      "home": "ESB Villeneuve-dAscq Women",
+      "away": "Angers Women"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-11-01",
+      "home": "Lyon Féminin",
+      "away": "Landerneau Bretagne Basket"
     }
   ]
 }
