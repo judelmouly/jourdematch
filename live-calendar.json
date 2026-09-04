@@ -1,15 +1,7 @@
 {
-  "generated_at": "2026-09-03T12:24:47Z",
-  "period": "2026-08-04 -> 2026-11-02",
+  "generated_at": "2026-09-04T12:21:12Z",
+  "period": "2026-08-05 -> 2026-11-03",
   "matches": [
-    {
-      "competition": "UEFA Champions League",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-08-04",
-      "home": "Sparta Prague",
-      "away": "Lyon"
-    },
     {
       "competition": "Championnat National",
       "season": "2026-2027",
@@ -301,7 +293,7 @@
     {
       "competition": "UEFA Europa League",
       "season": "2026-2027",
-      "round": "400",
+      "round": "0",
       "date": "2026-08-27",
       "home": "Lillestrøm",
       "away": "Egnatia"
@@ -309,7 +301,7 @@
     {
       "competition": "UEFA Conference League",
       "season": "2026-2027",
-      "round": "400",
+      "round": "0",
       "date": "2026-08-27",
       "home": "Monaco",
       "away": "Górnik Zabrze"
@@ -1374,6 +1366,14 @@
       "away": "US Montauban"
     },
     {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-25",
+      "home": "Dijon",
+      "away": "Strasbourg"
+    },
+    {
       "competition": "Pro B / Élite 2",
       "season": "2026-2027",
       "round": "1",
@@ -1479,6 +1479,30 @@
       "away": "Castres Olympique"
     },
     {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-26",
+      "home": "Boulazac Basket Dordogne",
+      "away": "Chorale Roanne Basket"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-26",
+      "home": "Élan Chalon",
+      "away": "Limoges"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-26",
+      "home": "Gravelines-Dunkerque",
+      "away": "Le Mans Sarthe Basket"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "1",
@@ -1509,6 +1533,22 @@
       "date": "2026-09-27",
       "home": "Stade Toulousain",
       "away": "Montpellier Hérault Rugby"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-27",
+      "home": "SLUC Nancy Basket",
+      "away": "Paris Basketball"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-27",
+      "home": "Cholet",
+      "away": "Lyon-Villeurbanne"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -1581,6 +1621,14 @@
       "date": "2026-09-30",
       "home": "Panathinaikos BC",
       "away": "Lyon-Villeurbanne"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-02",
+      "home": "Chorale Roanne Basket",
+      "away": "Nanterre"
     },
     {
       "competition": "Pro B / Élite 2",
@@ -1687,6 +1735,30 @@
       "away": "USA Perpignan"
     },
     {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-03",
+      "home": "SLUC Nancy Basket",
+      "away": "Cholet"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-03",
+      "home": "Strasbourg",
+      "away": "Boulazac Basket Dordogne"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-03",
+      "home": "Limoges",
+      "away": "Saint-Quentin Basket-Ball"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "2",
@@ -1741,6 +1813,22 @@
       "date": "2026-10-04",
       "home": "Montpellier Hérault Rugby",
       "away": "RC Toulonnais"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-04",
+      "home": "Gravelines-Dunkerque",
+      "away": "Lyon-Villeurbanne"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-04",
+      "home": "Le Mans Sarthe Basket",
+      "away": "Paris Basketball"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -1861,6 +1949,14 @@
       "date": "2026-10-09",
       "home": "Sochaux",
       "away": "Boulogne"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-09",
+      "home": "Dijon",
+      "away": "Limoges"
     },
     {
       "competition": "Pro B / Élite 2",
@@ -2007,6 +2103,30 @@
       "away": "Nevers"
     },
     {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-10",
+      "home": "Cholet",
+      "away": "Élan Béarnais"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-10",
+      "home": "Nanterre",
+      "away": "Gravelines-Dunkerque"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-10",
+      "home": "Élan Chalon",
+      "away": "SLUC Nancy Basket"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "4",
@@ -2070,6 +2190,30 @@
       "date": "2026-10-11",
       "home": "Troyes",
       "away": "Marseille"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-11",
+      "home": "Saint-Quentin Basket-Ball",
+      "away": "Le Mans Sarthe Basket"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-11",
+      "home": "Paris Basketball",
+      "away": "Strasbourg"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-11",
+      "home": "Lyon-Villeurbanne",
+      "away": "Chorale Roanne Basket"
     },
     {
       "competition": "Ligue 2",
@@ -2166,6 +2310,14 @@
       "date": "2026-10-16",
       "home": "Grenoble",
       "away": "Boulogne"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-16",
+      "home": "Strasbourg",
+      "away": "Chorale Roanne Basket"
     },
     {
       "competition": "Pro B / Élite 2",
@@ -2336,6 +2488,30 @@
       "away": "FC Grenoble"
     },
     {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-17",
+      "home": "SLUC Nancy Basket",
+      "away": "Nanterre"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-17",
+      "home": "Élan Béarnais",
+      "away": "Saint-Quentin Basket-Ball"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-17",
+      "home": "Cholet",
+      "away": "Élan Chalon"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "5",
@@ -2446,6 +2622,30 @@
       "date": "2026-10-18",
       "home": "Lorient",
       "away": "Monaco"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-18",
+      "home": "Gravelines-Dunkerque",
+      "away": "Dijon"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-18",
+      "home": "Paris Basketball",
+      "away": "Boulazac Basket Dordogne"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-18",
+      "home": "Le Mans Sarthe Basket",
+      "away": "Bourg-en-Bresse"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -2632,6 +2832,14 @@
       "away": "Annecy"
     },
     {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-23",
+      "home": "Saint-Quentin Basket-Ball",
+      "away": "Dijon"
+    },
+    {
       "competition": "Pro B / Élite 2",
       "season": "2026-2027",
       "round": "6",
@@ -2792,6 +3000,30 @@
       "away": "Béziers"
     },
     {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-24",
+      "home": "Boulazac Basket Dordogne",
+      "away": "Le Mans Sarthe Basket"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-24",
+      "home": "Bourg-en-Bresse",
+      "away": "Gravelines-Dunkerque"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-24",
+      "home": "Élan Chalon",
+      "away": "Strasbourg"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "6",
@@ -2878,6 +3110,30 @@
       "date": "2026-10-25",
       "home": "Monaco",
       "away": "Lille"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-25",
+      "home": "Chorale Roanne Basket",
+      "away": "Paris Basketball"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-25",
+      "home": "Lyon-Villeurbanne",
+      "away": "SLUC Nancy Basket"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-25",
+      "home": "Élan Béarnais",
+      "away": "Limoges"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -3006,6 +3262,14 @@
       "date": "2026-10-30",
       "home": "Metz",
       "away": "Pau"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-30",
+      "home": "Dijon",
+      "away": "SLUC Nancy Basket"
     },
     {
       "competition": "Pro B / Élite 2",
@@ -3200,6 +3464,30 @@
       "away": "SU Agen Lot-et-Garonne"
     },
     {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-31",
+      "home": "Gravelines-Dunkerque",
+      "away": "Chorale Roanne Basket"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-31",
+      "home": "Le Mans Sarthe Basket",
+      "away": "Élan Béarnais"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-31",
+      "home": "Strasbourg",
+      "away": "Cholet"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "7",
@@ -3256,6 +3544,22 @@
       "away": "Paris Saint-Germain Women"
     },
     {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-11-01",
+      "home": "Saint-Quentin Basket-Ball",
+      "away": "Lyon-Villeurbanne"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-11-01",
+      "home": "Paris Basketball",
+      "away": "Élan Chalon"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "7",
@@ -3286,6 +3590,14 @@
       "date": "2026-11-02",
       "home": "Red Star",
       "away": "Nancy Lorraine"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-11-03",
+      "home": "Bodø/Glimt",
+      "away": "Lille"
     }
   ]
 }
