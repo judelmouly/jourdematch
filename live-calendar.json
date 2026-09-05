@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T12:21:12Z",
-  "period": "2026-08-05 -> 2026-11-03",
+  "generated_at": "2026-09-05T11:44:53Z",
+  "period": "2026-08-06 -> 2026-11-04",
   "matches": [
     {
       "competition": "Championnat National",
@@ -565,15 +565,6 @@
       "away": "OL Lyonnes"
     },
     {
-      "competition": "France Basketball (F)",
-      "season": "2026-2027",
-      "round": "FIBA Womens World Cup",
-      "date": "2026-09-04",
-      "home": "Hungary Basketball Women",
-      "away": "France Basketball Women",
-      "venue": "Uber Arena"
-    },
-    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "3",
@@ -692,6 +683,15 @@
       "date": "2026-09-05",
       "home": "Strasbourg Women",
       "away": "Saint-Malo Féminines"
+    },
+    {
+      "competition": "France Basketball (F)",
+      "season": "2026-2027",
+      "round": "FIBA Womens World Cup",
+      "date": "2026-09-05",
+      "home": "France Basketball Women",
+      "away": "South Korea Basketball Women",
+      "venue": "Max-Schmeling-Halle"
     },
     {
       "competition": "Ligue 1",
@@ -1623,6 +1623,14 @@
       "away": "Lyon-Villeurbanne"
     },
     {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-10-01",
+      "home": "Bastia",
+      "away": "Orléans"
+    },
+    {
       "competition": "Betclic Élite",
       "season": "2026-2027",
       "round": "2",
@@ -1707,8 +1715,8 @@
       "season": "2026-2027",
       "round": "9",
       "date": "2026-10-03",
-      "home": "Bastia",
-      "away": "Orléans"
+      "home": "Le Puy-en-Velay",
+      "away": "Thionville Lusitanos"
     },
     {
       "competition": "TOP 14",
@@ -2264,6 +2272,14 @@
       "away": "MT Melsungen"
     },
     {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-15",
+      "home": "Caen",
+      "away": "VFC La Roche-sur-Yon"
+    },
+    {
       "competition": "UEFA Europa League",
       "season": "2026-2027",
       "round": "2",
@@ -2444,14 +2460,6 @@
       "season": "2026-2027",
       "round": "10",
       "date": "2026-10-17",
-      "home": "Caen",
-      "away": "VFC La Roche-sur-Yon"
-    },
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "10",
-      "date": "2026-10-17",
       "home": "Valenciennes",
       "away": "Amiens"
     },
@@ -2462,6 +2470,14 @@
       "date": "2026-10-17",
       "home": "Bourg-Péronnas",
       "away": "Fleury"
+    },
+    {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-10-17",
+      "home": "Quevilly-Rouen Métropole",
+      "away": "Orléans"
     },
     {
       "competition": "Pro D2",
@@ -3598,6 +3614,23 @@
       "date": "2026-11-03",
       "home": "Bodø/Glimt",
       "away": "Lille"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-11-04",
+      "home": "Lens",
+      "away": "Como"
+    },
+    {
+      "competition": "France Handball (H)",
+      "season": "2026-2027",
+      "round": "European Mens Handball Championship",
+      "date": "2026-11-04",
+      "home": "France Handball",
+      "away": "Poland Handball",
+      "venue": null
     }
   ]
 }
