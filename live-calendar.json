@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05T11:44:53Z",
-  "period": "2026-08-06 -> 2026-11-04",
+  "generated_at": "2026-09-06T12:04:42Z",
+  "period": "2026-08-07 -> 2026-11-05",
   "matches": [
     {
       "competition": "Championnat National",
@@ -354,15 +354,6 @@
       "date": "2026-08-28",
       "home": "CA Brive",
       "away": "Valence Romans Drôme Rugby"
-    },
-    {
-      "competition": "France Basketball (F)",
-      "season": "2026-2027",
-      "round": "Basketball International Friendlies Women",
-      "date": "2026-08-28",
-      "home": "France Basketball Women",
-      "away": "Italy Basketball Women",
-      "venue": ""
     },
     {
       "competition": "Ligue 1",
@@ -740,6 +731,15 @@
       "date": "2026-09-07",
       "home": "Nantes",
       "away": "Nancy Lorraine"
+    },
+    {
+      "competition": "France Basketball (F)",
+      "season": "2026-2027",
+      "round": "FIBA Womens World Cup",
+      "date": "2026-09-07",
+      "home": "Nigeria Basketball Women",
+      "away": "France Basketball Women",
+      "venue": "Uber Arena"
     },
     {
       "competition": "UEFA Champions League",
@@ -1879,14 +1879,6 @@
       "away": "Tofaş SK"
     },
     {
-      "competition": "Basketball Champions League",
-      "season": "2026-2027",
-      "round": "0",
-      "date": "2026-10-06",
-      "home": "BC Lietuvos rytas",
-      "away": "Nanterre"
-    },
-    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "3",
@@ -1917,6 +1909,22 @@
       "date": "2026-10-07",
       "home": "Paris Basketball",
       "away": "Lyon-Villeurbanne"
+    },
+    {
+      "competition": "Basketball Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-07",
+      "home": "Trabzonspor BK",
+      "away": "Nanterre"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-10-08",
+      "home": "Aigles de Nice",
+      "away": "Ducs d'Angers"
     },
     {
       "competition": "EHF Champions League",
@@ -2262,6 +2270,14 @@
       "date": "2026-10-13",
       "home": "Ulm",
       "away": "AS Monaco Basket"
+    },
+    {
+      "competition": "Basketball Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-13",
+      "home": "Nanterre",
+      "away": "BC Lietuvos rytas"
     },
     {
       "competition": "EHF Champions League",
@@ -2784,6 +2800,14 @@
       "away": "Spacer's Toulouse Volley"
     },
     {
+      "competition": "Basketball Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-20",
+      "home": "Galatasaray SK",
+      "away": "Strasbourg"
+    },
+    {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
       "round": "3",
@@ -3248,12 +3272,28 @@
       "away": "Ducs d'Angers"
     },
     {
+      "competition": "Basketball Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-27",
+      "home": "BK Sabah",
+      "away": "Nanterre"
+    },
+    {
       "competition": "Euroleague (basket)",
       "season": "2026-2027",
       "round": "8",
       "date": "2026-10-28",
       "home": "Lyon-Villeurbanne",
       "away": "KK Partizan"
+    },
+    {
+      "competition": "Basketball Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-10-28",
+      "home": "Cholet",
+      "away": "KK Spartak Subotica"
     },
     {
       "competition": "Ligue 2",
@@ -3616,6 +3656,14 @@
       "away": "Lille"
     },
     {
+      "competition": "Basketball Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-11-03",
+      "home": "Strasbourg",
+      "away": "Cibona Zagreb"
+    },
+    {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
       "round": "4",
@@ -3631,6 +3679,38 @@
       "home": "France Handball",
       "away": "Poland Handball",
       "venue": null
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-11-05",
+      "home": "Rennes",
+      "away": "Olympiacos"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-11-05",
+      "home": "Bayer Leverkusen",
+      "away": "Marseille"
+    },
+    {
+      "competition": "UEFA Conference League",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-11-05",
+      "home": "Monaco",
+      "away": "FC Nordsjælland"
+    },
+    {
+      "competition": "Euroleague (basket)",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-05",
+      "home": "Lyon-Villeurbanne",
+      "away": "Bayern München Basketball"
     }
   ]
 }
