@@ -1,31 +1,7 @@
 {
-  "generated_at": "2026-09-06T12:04:42Z",
-  "period": "2026-08-07 -> 2026-11-05",
+  "generated_at": "2026-09-07T13:28:21Z",
+  "period": "2026-08-08 -> 2026-11-06",
   "matches": [
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-07",
-      "home": "Caen",
-      "away": "Valenciennes"
-    },
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-07",
-      "home": "Bourg-Péronnas",
-      "away": "Villefranche Beaujolais"
-    },
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-07",
-      "home": "Concarneau",
-      "away": "Orléans"
-    },
     {
       "competition": "Ligue 2",
       "season": "2026-2027",
@@ -3711,6 +3687,78 @@
       "date": "2026-11-05",
       "home": "Lyon-Villeurbanne",
       "away": "Bayern München Basketball"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-06",
+      "home": "Montpellier",
+      "away": "Metz"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-06",
+      "home": "Dijon",
+      "away": "Red Star"
+    },
+    {
+      "competition": "Ligue 2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-06",
+      "home": "Clermont Foot",
+      "away": "Rodez"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-06",
+      "home": "Levallois Metropolitans BC",
+      "away": "Saint-Quentin Basket-Ball"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-06",
+      "home": "UJAP Quimper 29",
+      "away": "ADA Blois"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-06",
+      "home": "Poitiers Basket 86",
+      "away": "Antibes Sharks"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-06",
+      "home": "Nice Volley-Ball",
+      "away": "Chaumont Volley"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-06",
+      "home": "Stade Poitevin VB",
+      "away": "Paris Volley"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-06",
+      "home": "Tourcoing Lille Métropole",
+      "away": "Arago de Sète"
     }
   ]
 }
