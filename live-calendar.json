@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T12:23:30Z",
-  "period": "2026-08-09 -> 2026-11-07",
+  "generated_at": "2026-09-09T12:25:14Z",
+  "period": "2026-08-10 -> 2026-11-08",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -959,7 +959,7 @@
     {
       "competition": "EHF Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "2",
       "date": "2026-09-16",
       "home": "Vardar 1961",
       "away": "HBC Nantes"
@@ -1872,7 +1872,7 @@
     {
       "competition": "EHF Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "3",
       "date": "2026-10-08",
       "home": "Skanderborg Aarhus Håndbold",
       "away": "Montpellier Handball"
@@ -2225,7 +2225,7 @@
     {
       "competition": "EHF Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "4",
       "date": "2026-10-14",
       "home": "HBC Nantes",
       "away": "MT Melsungen"
@@ -2777,7 +2777,7 @@
     {
       "competition": "EHF Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "5",
       "date": "2026-10-22",
       "home": "FC Barcelona Handbol",
       "away": "Montpellier Handball"
