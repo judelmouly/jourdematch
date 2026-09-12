@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T12:23:49Z",
-  "period": "2026-08-12 -> 2026-11-10",
+  "generated_at": "2026-09-12T11:48:17Z",
+  "period": "2026-08-13 -> 2026-11-11",
   "matches": [
     {
       "competition": "Ligue 2",
@@ -2219,14 +2219,6 @@
       "season": "2026-2027",
       "round": "6",
       "date": "2026-10-09",
-      "home": "Limoges Handball",
-      "away": "USAM Nîmes Gard"
-    },
-    {
-      "competition": "Starligue",
-      "season": "2026-2027",
-      "round": "6",
-      "date": "2026-10-09",
       "home": "C Chartres Métropole Handball",
       "away": "Chambéry Savoie Handball"
     },
@@ -2357,6 +2349,14 @@
       "date": "2026-10-10",
       "home": "RC Toulonnais",
       "away": "Racing Métro 92"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-10",
+      "home": "Limoges Handball",
+      "away": "USAM Nîmes Gard"
     },
     {
       "competition": "Starligue",
@@ -4464,6 +4464,14 @@
       "date": "2026-11-10",
       "home": "KK Spartak Subotica",
       "away": "Cholet"
+    },
+    {
+      "competition": "Basketball Champions League",
+      "season": "2026-2027",
+      "round": "0",
+      "date": "2026-11-11",
+      "home": "BC Lietuvos rytas",
+      "away": "Nanterre"
     }
   ]
 }
