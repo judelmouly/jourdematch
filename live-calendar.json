@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-12T11:48:17Z",
-  "period": "2026-08-13 -> 2026-11-11",
+  "generated_at": "2026-09-13T12:49:28Z",
+  "period": "2026-08-14 -> 2026-11-12",
   "matches": [
     {
       "competition": "Ligue 2",
@@ -668,15 +668,6 @@
       "away": "Saint-Malo Féminines"
     },
     {
-      "competition": "France Basketball (F)",
-      "season": "2026-2027",
-      "round": "FIBA Womens World Cup",
-      "date": "2026-09-05",
-      "home": "France Basketball Women",
-      "away": "South Korea Basketball Women",
-      "venue": "Max-Schmeling-Halle"
-    },
-    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "3",
@@ -1028,6 +1019,15 @@
       "date": "2026-09-13",
       "home": "USAM Nîmes Gard",
       "away": "Montpellier Handball"
+    },
+    {
+      "competition": "France Basketball (F)",
+      "season": "2026-2027",
+      "round": "FIBA Womens World Cup",
+      "date": "2026-09-13",
+      "home": "United States Basketball Women",
+      "away": "France Basketball Women",
+      "venue": "Uber Arena"
     },
     {
       "competition": "Ligue 2",
