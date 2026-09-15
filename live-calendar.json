@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T13:44:15Z",
-  "period": "2026-08-15 -> 2026-11-13",
+  "generated_at": "2026-09-15T12:51:08Z",
+  "period": "2026-08-16 -> 2026-11-14",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -2084,14 +2084,6 @@
       "date": "2026-10-08",
       "home": "PAUC Handball",
       "away": "Saran Loiret HB"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "9",
-      "date": "2026-10-08",
-      "home": "Aigles de Nice",
-      "away": "Ducs d'Angers"
     },
     {
       "competition": "EHF Champions League",
@@ -4535,6 +4527,86 @@
       "date": "2026-11-13",
       "home": "Lyon-Villeurbanne",
       "away": "Besiktas Basketbol"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-14",
+      "home": "Le Mans Sarthe Basket",
+      "away": "Lyon-Villeurbanne"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-14",
+      "home": "Saint-Quentin Basket-Ball",
+      "away": "Cholet"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-14",
+      "home": "Élan Béarnais",
+      "away": "Strasbourg"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-11-14",
+      "home": "Narbonne Volley",
+      "away": "Nice Volley-Ball"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-11-14",
+      "home": "Paris Volley",
+      "away": "Tourcoing Lille Métropole"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-11-14",
+      "home": "Plessis-Robinson",
+      "away": "Stade Poitevin VB"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "19",
+      "date": "2026-11-14",
+      "home": "Hormadi Anglet",
+      "away": "Ducs d'Angers"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-11-14",
+      "home": "Marseille Féminin",
+      "away": "Paris Saint-Germain Women"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-11-14",
+      "home": "OL Lyonnes",
+      "away": "Saint-Malo Féminines"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-11-14",
+      "home": "Montpellier Women",
+      "away": "Fleury Women"
     }
   ]
 }
