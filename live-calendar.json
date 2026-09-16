@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T12:51:08Z",
-  "period": "2026-08-16 -> 2026-11-14",
+  "generated_at": "2026-09-16T12:38:06Z",
+  "period": "2026-08-17 -> 2026-11-15",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -1449,14 +1449,6 @@
       "season": "2026-2027",
       "round": "1",
       "date": "2026-09-25",
-      "home": "Antibes Sharks",
-      "away": "Hermine Nantes Basket"
-    },
-    {
-      "competition": "Pro B / Élite 2",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-09-25",
       "home": "Denain Voltaire Basket",
       "away": "ADA Blois"
     },
@@ -1467,6 +1459,14 @@
       "date": "2026-09-25",
       "home": "Stade Rochelais Basket",
       "away": "Alliance Sport Alsace"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-25",
+      "home": "Poitiers Basket 86",
+      "away": "ALM Évreux Basket"
     },
     {
       "competition": "Ligue Magnus",
@@ -1580,6 +1580,22 @@
       "date": "2026-09-26",
       "home": "Gravelines-Dunkerque",
       "away": "Le Mans Sarthe Basket"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-26",
+      "home": "Antibes Sharks",
+      "away": "Hermine Nantes Basket"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-26",
+      "home": "Orléans Loiret Basket",
+      "away": "Châlons-Reims"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -1754,16 +1770,16 @@
       "season": "2026-2027",
       "round": "2",
       "date": "2026-10-02",
-      "home": "Orléans Loiret Basket",
-      "away": "Rouen Métropole Basket"
+      "home": "Hermine Nantes Basket",
+      "away": "UJAP Quimper 29"
     },
     {
       "competition": "Pro B / Élite 2",
       "season": "2026-2027",
       "round": "2",
       "date": "2026-10-02",
-      "home": "Hermine Nantes Basket",
-      "away": "UJAP Quimper 29"
+      "home": "Alliance Sport Alsace",
+      "away": "Antibes Sharks"
     },
     {
       "competition": "Ligue Magnus",
@@ -1892,6 +1908,22 @@
       "date": "2026-10-03",
       "home": "Limoges",
       "away": "Saint-Quentin Basket-Ball"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-03",
+      "home": "Orléans Loiret Basket",
+      "away": "Rouen Métropole Basket"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-03",
+      "home": "ADA Blois",
+      "away": "Poitiers Basket 86"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -2332,6 +2364,14 @@
       "date": "2026-10-10",
       "home": "Élan Chalon",
       "away": "SLUC Nancy Basket"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-10",
+      "home": "UJAP Quimper 29",
+      "away": "Alliance Sport Alsace"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -2791,6 +2831,14 @@
       "away": "Élan Chalon"
     },
     {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-17",
+      "home": "ADA Blois",
+      "away": "Stade Rochelais Basket"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "5",
@@ -3195,8 +3243,8 @@
       "season": "2026-2027",
       "round": "6",
       "date": "2026-10-23",
-      "home": "UJAP Quimper 29",
-      "away": "Saint-Quentin Basket-Ball"
+      "home": "STB Le Havre",
+      "away": "Denain Voltaire Basket"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -3375,6 +3423,14 @@
       "away": "Strasbourg"
     },
     {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-24",
+      "home": "UJAP Quimper 29",
+      "away": "Saint-Quentin Basket-Ball"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "6",
@@ -3493,6 +3549,14 @@
       "date": "2026-10-25",
       "home": "Élan Béarnais",
       "away": "Limoges"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-25",
+      "home": "ADA Blois",
+      "away": "Antibes Sharks"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -3911,6 +3975,22 @@
       "away": "Cholet"
     },
     {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-31",
+      "home": "Orléans Loiret Basket",
+      "away": "UJAP Quimper 29"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-31",
+      "home": "ADA Blois",
+      "away": "JA Vichy"
+    },
+    {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "7",
@@ -4047,6 +4127,14 @@
       "away": "Nancy Lorraine"
     },
     {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-03",
+      "home": "Levallois Metropolitans BC",
+      "away": "Poitiers Basket 86"
+    },
+    {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
       "round": "4",
@@ -4156,16 +4244,16 @@
       "season": "2026-2027",
       "round": "8",
       "date": "2026-11-06",
-      "home": "UJAP Quimper 29",
-      "away": "ADA Blois"
+      "home": "Poitiers Basket 86",
+      "away": "Antibes Sharks"
     },
     {
       "competition": "Pro B / Élite 2",
       "season": "2026-2027",
       "round": "8",
       "date": "2026-11-06",
-      "home": "Poitiers Basket 86",
-      "away": "Antibes Sharks"
+      "home": "Hermine Nantes Basket",
+      "away": "JA Vichy"
     },
     {
       "competition": "Marmara SpikeLigue",
@@ -4302,6 +4390,14 @@
       "date": "2026-11-07",
       "home": "Lyon-Villeurbanne",
       "away": "Élan Béarnais"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-07",
+      "home": "UJAP Quimper 29",
+      "away": "ADA Blois"
     },
     {
       "competition": "La Boulangère Wonderligue",
