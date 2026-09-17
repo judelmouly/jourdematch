@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T12:38:06Z",
-  "period": "2026-08-17 -> 2026-11-15",
+  "generated_at": "2026-09-17T12:44:49Z",
+  "period": "2026-08-18 -> 2026-11-16",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -2487,6 +2487,14 @@
       "away": "Metz"
     },
     {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "29",
+      "date": "2026-10-12",
+      "home": "Dragons de Rouen",
+      "away": "Ducs d'Angers"
+    },
+    {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
       "round": "2",
@@ -2543,6 +2551,14 @@
       "away": "VFC La Roche-sur-Yon"
     },
     {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "35",
+      "date": "2026-10-15",
+      "home": "Dragons de Rouen",
+      "away": "Spartiates de Marseille"
+    },
+    {
       "competition": "UEFA Europa League",
       "season": "2026-2027",
       "round": "2",
@@ -2589,6 +2605,30 @@
       "date": "2026-10-16",
       "home": "Grenoble",
       "away": "Boulogne"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-16",
+      "home": "Béziers",
+      "away": "Aurillac"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-16",
+      "home": "Biarritz Olympique",
+      "away": "Soyaux Angoulême XV Charente"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-10-16",
+      "home": "Colomiers",
+      "away": "Narbonne"
     },
     {
       "competition": "Starligue",
@@ -2765,22 +2805,6 @@
       "date": "2026-10-17",
       "home": "Quevilly-Rouen Métropole",
       "away": "Orléans"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "7",
-      "date": "2026-10-17",
-      "home": "Béziers",
-      "away": "Aurillac"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "7",
-      "date": "2026-10-17",
-      "home": "Biarritz Olympique",
-      "away": "Soyaux Angoulême XV Charente"
     },
     {
       "competition": "Pro D2",
@@ -4703,6 +4727,14 @@
       "date": "2026-11-14",
       "home": "Montpellier Women",
       "away": "Fleury Women"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "36",
+      "date": "2026-11-16",
+      "home": "Ducs d'Angers",
+      "away": "Pionniers de Chamonix Mont-Blanc"
     }
   ]
 }
