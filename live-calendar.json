@@ -1,15 +1,7 @@
 {
-  "generated_at": "2026-09-17T12:44:49Z",
-  "period": "2026-08-18 -> 2026-11-16",
+  "generated_at": "2026-09-18T12:17:53Z",
+  "period": "2026-08-19 -> 2026-11-17",
   "matches": [
-    {
-      "competition": "UEFA Champions League",
-      "season": "2026-2027",
-      "round": "0",
-      "date": "2026-08-18",
-      "home": "Fenerbahçe",
-      "away": "Lyon"
-    },
     {
       "competition": "Championnat National",
       "season": "2026-2027",
@@ -3703,6 +3695,14 @@
       "away": "KK Spartak Subotica"
     },
     {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-10-29",
+      "home": "Amiens",
+      "away": "Thionville Lusitanos"
+    },
+    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "9",
@@ -3899,14 +3899,6 @@
       "season": "2026-2027",
       "round": "11",
       "date": "2026-10-31",
-      "home": "Amiens",
-      "away": "Thionville Lusitanos"
-    },
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "11",
-      "date": "2026-10-31",
       "home": "Orléans",
       "away": "Villefranche Beaujolais"
     },
@@ -3917,6 +3909,14 @@
       "date": "2026-10-31",
       "home": "Bastia",
       "away": "Quevilly-Rouen Métropole"
+    },
+    {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-10-31",
+      "home": "Le Puy-en-Velay",
+      "away": "Caen"
     },
     {
       "competition": "TOP 14",
@@ -4192,6 +4192,14 @@
       "venue": null
     },
     {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-05",
+      "home": "Valenciennes",
+      "away": "Orléans"
+    },
+    {
       "competition": "UEFA Europa League",
       "season": "2026-2027",
       "round": "4",
@@ -4332,16 +4340,16 @@
       "season": "2026-2027",
       "round": "12",
       "date": "2026-11-07",
-      "home": "Valenciennes",
-      "away": "Orléans"
+      "home": "Bourg-Péronnas",
+      "away": "Le Puy-en-Velay"
     },
     {
       "competition": "Championnat National",
       "season": "2026-2027",
       "round": "12",
       "date": "2026-11-07",
-      "home": "Bourg-Péronnas",
-      "away": "Le Puy-en-Velay"
+      "home": "Concarneau",
+      "away": "Fleury"
     },
     {
       "competition": "TOP 14",
@@ -4735,6 +4743,46 @@
       "date": "2026-11-16",
       "home": "Ducs d'Angers",
       "away": "Pionniers de Chamonix Mont-Blanc"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-17",
+      "home": "HTV Basket",
+      "away": "Hermine Nantes Basket"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-17",
+      "home": "Rouen Métropole Basket",
+      "away": "Saint-Quentin Basket-Ball"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-17",
+      "home": "Orléans Loiret Basket",
+      "away": "AMSB"
+    },
+    {
+      "competition": "Euroleague (basket)",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-17",
+      "home": "Fenerbahçe Basketbol",
+      "away": "Lyon-Villeurbanne"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-17",
+      "home": "Bourg-en-Bresse",
+      "away": "Napoli Basket"
     }
   ]
 }
