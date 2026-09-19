@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T12:17:53Z",
-  "period": "2026-08-19 -> 2026-11-17",
+  "generated_at": "2026-09-19T12:02:05Z",
+  "period": "2026-08-20 -> 2026-11-18",
   "matches": [
     {
       "competition": "Championnat National",
@@ -2429,6 +2429,14 @@
       "date": "2026-10-11",
       "home": "Troyes",
       "away": "Marseille"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-10-11",
+      "home": "Stade Toulousain",
+      "away": "Aviron Bayonnais"
     },
     {
       "competition": "Starligue",
