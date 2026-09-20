@@ -1,31 +1,7 @@
 {
-  "generated_at": "2026-09-19T12:02:05Z",
-  "period": "2026-08-20 -> 2026-11-18",
+  "generated_at": "2026-09-20T12:26:19Z",
+  "period": "2026-08-21 -> 2026-11-19",
   "matches": [
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-08-20",
-      "home": "Caen",
-      "away": "Aubagne Air Bel"
-    },
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-08-20",
-      "home": "Bourg-Péronnas",
-      "away": "Thionville Lusitanos"
-    },
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-08-20",
-      "home": "Concarneau",
-      "away": "Villefranche Beaujolais"
-    },
     {
       "competition": "Ligue 1",
       "season": "2026-2027",
@@ -1702,20 +1678,20 @@
       "away": "Spartiates de Marseille"
     },
     {
-      "competition": "EuroCup (basket)",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-09-29",
-      "home": "Napoli Basket",
-      "away": "Bourg-en-Bresse"
-    },
-    {
       "competition": "Euroleague (basket)",
       "season": "2026-2027",
       "round": "2",
       "date": "2026-09-30",
       "home": "Panathinaikos BC",
       "away": "Lyon-Villeurbanne"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-30",
+      "home": "Napoli Basket",
+      "away": "Bourg-en-Bresse"
     },
     {
       "competition": "Championnat National",
@@ -2084,6 +2060,14 @@
       "date": "2026-10-07",
       "home": "Paris Basketball",
       "away": "Lyon-Villeurbanne"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-10-07",
+      "home": "Derthona Basket",
+      "away": "Le Mans Sarthe Basket"
     },
     {
       "competition": "Basketball Champions League",
@@ -2525,6 +2509,14 @@
       "date": "2026-10-13",
       "home": "Ulm",
       "away": "AS Monaco Basket"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-13",
+      "home": "BC Neptūnas",
+      "away": "Bourg-en-Bresse"
     },
     {
       "competition": "Basketball Champions League",
@@ -3235,8 +3227,8 @@
       "season": "2026-2027",
       "round": "8",
       "date": "2026-10-23",
-      "home": "Montpellier Handball",
-      "away": "Saran Loiret HB"
+      "home": "Limoges Handball",
+      "away": "Dunkerque Handball Grand Littoral"
     },
     {
       "competition": "Betclic Élite",
@@ -3541,6 +3533,14 @@
       "date": "2026-10-25",
       "home": "Monaco",
       "away": "Lille"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-25",
+      "home": "Montpellier Handball",
+      "away": "Saran Loiret HB"
     },
     {
       "competition": "Starligue",
@@ -4561,6 +4561,14 @@
       "away": "Cholet"
     },
     {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "7",
+      "date": "2026-11-11",
+      "home": "Le Mans Sarthe Basket",
+      "away": "CB San Pablo Burgos"
+    },
+    {
       "competition": "Basketball Champions League",
       "season": "2026-2027",
       "round": "0",
@@ -4789,8 +4797,24 @@
       "season": "2026-2027",
       "round": "8",
       "date": "2026-11-17",
+      "home": "AS Monaco Basket",
+      "away": "BC Lietkabelis"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-18",
       "home": "Bourg-en-Bresse",
       "away": "Napoli Basket"
+    },
+    {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "13",
+      "date": "2026-11-19",
+      "home": "Amiens",
+      "away": "Caen"
     }
   ]
 }
