@@ -1,15 +1,7 @@
 {
-  "generated_at": "2026-09-23T12:34:33Z",
-  "period": "2026-08-24 -> 2026-11-22",
+  "generated_at": "2026-09-24T12:49:21Z",
+  "period": "2026-08-25 -> 2026-11-23",
   "matches": [
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-08-24",
-      "home": "Stade de Reims",
-      "away": "Annecy"
-    },
     {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
@@ -1363,7 +1355,7 @@
       "date": "2026-09-25",
       "home": "Turkey",
       "away": "France",
-      "venue": ""
+      "venue": "Kocaeli Stadyumu"
     },
     {
       "competition": "Championnat National",
