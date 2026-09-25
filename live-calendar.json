@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T12:49:21Z",
-  "period": "2026-08-25 -> 2026-11-23",
+  "generated_at": "2026-09-25T12:57:21Z",
+  "period": "2026-08-26 -> 2026-11-24",
   "matches": [
     {
       "competition": "UEFA Champions League",
@@ -3039,6 +3039,14 @@
       "away": "Galatasaray"
     },
     {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-22",
+      "home": "US Montauban",
+      "away": "Oyonnax Rugby"
+    },
+    {
       "competition": "UEFA Europa League",
       "season": "2026-2027",
       "round": "3",
@@ -3093,6 +3101,30 @@
       "date": "2026-10-23",
       "home": "Sochaux",
       "away": "Annecy"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-23",
+      "home": "Valence Romans Drôme Rugby",
+      "away": "Colomiers"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-23",
+      "home": "Provence",
+      "away": "Béziers"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-10-23",
+      "home": "Narbonne",
+      "away": "CA Brive"
     },
     {
       "competition": "Starligue",
@@ -3269,30 +3301,6 @@
       "date": "2026-10-24",
       "home": "Stade Toulousain",
       "away": "USA Perpignan"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "8",
-      "date": "2026-10-24",
-      "home": "US Montauban",
-      "away": "Oyonnax Rugby"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "8",
-      "date": "2026-10-24",
-      "home": "Valence Romans Drôme Rugby",
-      "away": "Colomiers"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "8",
-      "date": "2026-10-24",
-      "home": "Provence",
-      "away": "Béziers"
     },
     {
       "competition": "Starligue",
@@ -5055,6 +5063,14 @@
       "date": "2026-11-22",
       "home": "Boxers de Bordeaux",
       "away": "Aigles de Nice"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-24",
+      "home": "RB Leipzig",
+      "away": "Lens"
     }
   ]
 }
