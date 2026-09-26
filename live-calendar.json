@@ -1,15 +1,7 @@
 {
-  "generated_at": "2026-09-25T12:57:21Z",
-  "period": "2026-08-26 -> 2026-11-24",
+  "generated_at": "2026-09-26T12:33:27Z",
+  "period": "2026-08-27 -> 2026-11-25",
   "matches": [
-    {
-      "competition": "UEFA Champions League",
-      "season": "2026-2027",
-      "round": "0",
-      "date": "2026-08-26",
-      "home": "Lyon",
-      "away": "Fenerbahçe"
-    },
     {
       "competition": "Championnat National",
       "season": "2026-2027",
@@ -1349,15 +1341,6 @@
       "away": "Rapaces de Gap"
     },
     {
-      "competition": "France Football (H)",
-      "season": "2026-2027",
-      "round": "UEFA Nations League",
-      "date": "2026-09-25",
-      "home": "Turkey",
-      "away": "France",
-      "venue": "Kocaeli Stadyumu"
-    },
-    {
       "competition": "Championnat National",
       "season": "2026-2027",
       "round": "8",
@@ -1540,6 +1523,15 @@
       "date": "2026-09-27",
       "home": "Boxers de Bordeaux",
       "away": "Dragons de Rouen"
+    },
+    {
+      "competition": "France Football (H)",
+      "season": "2026-2027",
+      "round": "UEFA Nations League",
+      "date": "2026-09-28",
+      "home": "Belgium",
+      "away": "France",
+      "venue": "Stade Roi Baudouin"
     },
     {
       "competition": "Ligue Magnus",
@@ -4533,14 +4525,6 @@
       "season": "2026-2027",
       "round": "15",
       "date": "2026-11-13",
-      "home": "Hormadi Anglet",
-      "away": "Dragons de Rouen"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "15",
-      "date": "2026-11-13",
       "home": "Boxers de Bordeaux",
       "away": "Ducs d'Angers"
     },
@@ -4551,6 +4535,14 @@
       "date": "2026-11-13",
       "home": "Diables Rouges de Briançon",
       "away": "Rapaces de Gap"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "15",
+      "date": "2026-11-13",
+      "home": "Jokers de Cergy-Pontoise",
+      "away": "Gothiques d'Amiens"
     },
     {
       "competition": "Euroleague (basket)",
@@ -5071,6 +5063,14 @@
       "date": "2026-11-24",
       "home": "RB Leipzig",
       "away": "Lens"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-25",
+      "home": "Lille",
+      "away": "Bayern Munich"
     }
   ]
 }
