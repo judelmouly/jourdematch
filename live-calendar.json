@@ -1,64 +1,7 @@
 {
-  "generated_at": "2026-09-26T12:33:27Z",
-  "period": "2026-08-27 -> 2026-11-25",
+  "generated_at": "2026-09-27T13:09:13Z",
+  "period": "2026-08-28 -> 2026-11-26",
   "matches": [
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-27",
-      "home": "Caen",
-      "away": "Bastia"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-27",
-      "home": "Soyaux Angoulême XV Charente",
-      "away": "Colomiers"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-27",
-      "home": "Biarritz Olympique",
-      "away": "Nissa Rugby"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-27",
-      "home": "FC Grenoble",
-      "away": "Aurillac"
-    },
-    {
-      "competition": "UEFA Europa League",
-      "season": "2026-2027",
-      "round": "0",
-      "date": "2026-08-27",
-      "home": "Lillestrøm",
-      "away": "Egnatia"
-    },
-    {
-      "competition": "UEFA Conference League",
-      "season": "2026-2027",
-      "round": "0",
-      "date": "2026-08-27",
-      "home": "Monaco",
-      "away": "Górnik Zabrze"
-    },
-    {
-      "competition": "France Basketball (H)",
-      "season": "2026-2027",
-      "round": "FIBA Basketball World Cup",
-      "date": "2026-08-27",
-      "home": "France Basketball",
-      "away": "Slovenia Basketball",
-      "venue": ""
-    },
     {
       "competition": "Ligue 1",
       "season": "2026-2027",
@@ -1449,16 +1392,16 @@
       "season": "2026-2027",
       "round": "1",
       "date": "2026-09-26",
-      "home": "Angers Women",
-      "away": "Basket Landes Women"
+      "home": "Bourges Women",
+      "away": "Landerneau Bretagne Basket"
     },
     {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
       "round": "1",
       "date": "2026-09-26",
-      "home": "Bourges Women",
-      "away": "Landerneau Bretagne Basket"
+      "home": "Charnay Women",
+      "away": "BLMA Women"
     },
     {
       "competition": "TOP 14",
@@ -1491,6 +1434,14 @@
       "date": "2026-09-27",
       "home": "Cholet",
       "away": "Lyon-Villeurbanne"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-09-27",
+      "home": "Angers Women",
+      "away": "Basket Landes Women"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -5071,6 +5022,22 @@
       "date": "2026-11-25",
       "home": "Lille",
       "away": "Bayern Munich"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-26",
+      "home": "Lyon",
+      "away": "Lillestrøm"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-26",
+      "home": "Marseille",
+      "away": "Levski Sofia"
     }
   ]
 }
