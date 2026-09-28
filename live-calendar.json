@@ -1,47 +1,7 @@
 {
-  "generated_at": "2026-09-27T13:09:13Z",
-  "period": "2026-08-28 -> 2026-11-26",
+  "generated_at": "2026-09-28T14:53:22Z",
+  "period": "2026-08-29 -> 2026-11-27",
   "matches": [
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-08-28",
-      "home": "Lille",
-      "away": "Paris Saint-Germain"
-    },
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-28",
-      "home": "Montpellier",
-      "away": "Boulogne"
-    },
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-28",
-      "home": "Clermont Foot",
-      "away": "Sochaux"
-    },
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-28",
-      "home": "Nancy Lorraine",
-      "away": "Dunkerque"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-08-28",
-      "home": "CA Brive",
-      "away": "Valence Romans Drôme Rugby"
-    },
     {
       "competition": "Ligue 1",
       "season": "2026-2027",
@@ -5038,6 +4998,71 @@
       "date": "2026-11-26",
       "home": "Marseille",
       "away": "Levski Sofia"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-27",
+      "home": "Brest",
+      "away": "Paris FC"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-27",
+      "home": "Tremblay-en-France Handball",
+      "away": "Fenix Toulouse Handball"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-27",
+      "home": "Sélestat Alsace Handball",
+      "away": "Saint-Raphaël Var Handball"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-27",
+      "home": "Montpellier Handball",
+      "away": "Cesson Rennes MHB"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "18",
+      "date": "2026-11-27",
+      "home": "Ducs d'Angers",
+      "away": "Jokers de Cergy-Pontoise"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "18",
+      "date": "2026-11-27",
+      "home": "Pionniers de Chamonix Mont-Blanc",
+      "away": "Diables Rouges de Briançon"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "18",
+      "date": "2026-11-27",
+      "home": "Rapaces de Gap",
+      "away": "Gothiques d'Amiens"
+    },
+    {
+      "competition": "France Basketball (H)",
+      "season": "2026-2027",
+      "round": "FIBA Basketball World Cup",
+      "date": "2026-11-27",
+      "home": "Estonia Basketball",
+      "away": "France Basketball",
+      "venue": ""
     }
   ]
 }
