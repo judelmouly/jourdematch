@@ -1,79 +1,7 @@
 {
-  "generated_at": "2026-09-28T14:53:22Z",
-  "period": "2026-08-29 -> 2026-11-27",
+  "generated_at": "2026-09-29T13:53:29Z",
+  "period": "2026-08-30 -> 2026-11-28",
   "matches": [
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-08-29",
-      "home": "Lyon",
-      "away": "Le Havre"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-08-29",
-      "home": "Strasbourg",
-      "away": "Lens"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-08-29",
-      "home": "Lorient",
-      "away": "Troyes"
-    },
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-29",
-      "home": "Guingamp",
-      "away": "Nantes"
-    },
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-29",
-      "home": "Red Star",
-      "away": "Stade de Reims"
-    },
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-29",
-      "home": "Annecy",
-      "away": "Metz"
-    },
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-29",
-      "home": "Amiens",
-      "away": "Versailles"
-    },
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-29",
-      "home": "Orléans",
-      "away": "VFC La Roche-sur-Yon"
-    },
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-08-29",
-      "home": "Valenciennes",
-      "away": "Concarneau"
-    },
     {
       "competition": "Ligue 1",
       "season": "2026-2027",
@@ -1436,15 +1364,6 @@
       "away": "Dragons de Rouen"
     },
     {
-      "competition": "France Football (H)",
-      "season": "2026-2027",
-      "round": "UEFA Nations League",
-      "date": "2026-09-28",
-      "home": "Belgium",
-      "away": "France",
-      "venue": "Stade Roi Baudouin"
-    },
-    {
       "competition": "Ligue Magnus",
       "season": "2026-2027",
       "round": "6",
@@ -1571,6 +1490,15 @@
       "date": "2026-10-02",
       "home": "Lyon-Villeurbanne",
       "away": "Valencia Basket"
+    },
+    {
+      "competition": "France Football (H)",
+      "season": "2026-2027",
+      "round": "UEFA Nations League",
+      "date": "2026-10-02",
+      "home": "France",
+      "away": "Italy",
+      "venue": "Stade de France"
     },
     {
       "competition": "Championnat National",
@@ -5063,6 +4991,126 @@
       "home": "Estonia Basketball",
       "away": "France Basketball",
       "venue": ""
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-28",
+      "home": "Angers",
+      "away": "Lens"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-28",
+      "home": "Nice",
+      "away": "Troyes"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-28",
+      "home": "Paris Saint-Germain",
+      "away": "Lorient"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-28",
+      "home": "Racing Métro 92",
+      "away": "Section Paloise"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-28",
+      "home": "Stade Français Paris",
+      "away": "Vannes"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-28",
+      "home": "Stade Rochelais",
+      "away": "USA Perpignan"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-28",
+      "home": "Provence",
+      "away": "US Montauban"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-28",
+      "home": "Valence Romans Drôme Rugby",
+      "away": "Aurillac"
+    },
+    {
+      "competition": "Pro D2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-28",
+      "home": "US Dax",
+      "away": "Oyonnax Rugby"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-28",
+      "home": "Angers Women",
+      "away": "Charnay Women"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-28",
+      "home": "Landerneau Bretagne Basket",
+      "away": "Toulouse Métropole Basket"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "10",
+      "date": "2026-11-28",
+      "home": "Flammes Carolo Basket",
+      "away": "La Tronche Meylan"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-28",
+      "home": "Spacer's Toulouse Volley",
+      "away": "Paris Volley"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-28",
+      "home": "Plessis-Robinson",
+      "away": "Saint-Nazaire VBA"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-28",
+      "home": "Tourcoing Lille Métropole",
+      "away": "Stade Poitevin VB"
     }
   ]
 }
