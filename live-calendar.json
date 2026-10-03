@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-02T13:36:22Z",
-  "period": "2026-09-02 -> 2026-12-01",
+  "generated_at": "2026-10-03T12:46:46Z",
+  "period": "2026-09-03 -> 2026-12-02",
   "matches": [
     {
       "competition": "Ligue 1",
@@ -1707,6 +1707,15 @@
       "date": "2026-10-04",
       "home": "Fleury Women",
       "away": "Paris Saint-Germain Women"
+    },
+    {
+      "competition": "France Football (H)",
+      "season": "2026-2027",
+      "round": "UEFA Nations League",
+      "date": "2026-10-05",
+      "home": "France",
+      "away": "Belgium",
+      "venue": "Stade de France"
     },
     {
       "competition": "EuroCup (basket)",
