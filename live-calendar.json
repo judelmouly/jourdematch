@@ -1,47 +1,7 @@
 {
-  "generated_at": "2026-10-06T14:32:23Z",
-  "period": "2026-09-06 -> 2026-12-05",
+  "generated_at": "2026-10-07T14:26:13Z",
+  "period": "2026-09-07 -> 2026-12-06",
   "matches": [
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-09-06",
-      "home": "Angers",
-      "away": "Rennes"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-09-06",
-      "home": "Marseille",
-      "away": "Paris FC"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-09-06",
-      "home": "Troyes",
-      "away": "Strasbourg"
-    },
-    {
-      "competition": "TOP 14",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-09-06",
-      "home": "Stade Rochelais",
-      "away": "Stade Toulousain"
-    },
-    {
-      "competition": "Arkema Première Ligue",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-09-06",
-      "home": "Paris FC Women",
-      "away": "Nantes Women"
-    },
     {
       "competition": "Ligue 2",
       "season": "2026-2027",
@@ -1495,7 +1455,7 @@
     {
       "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "1",
       "date": "2026-10-07",
       "home": "Trabzonspor BK",
       "away": "Nanterre"
@@ -1944,7 +1904,7 @@
     {
       "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "2",
       "date": "2026-10-13",
       "home": "Nanterre",
       "away": "BC Lietuvos rytas"
@@ -2560,7 +2520,7 @@
     {
       "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "2",
       "date": "2026-10-20",
       "home": "Galatasaray SK",
       "away": "Strasbourg"
@@ -3120,7 +3080,7 @@
     {
       "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "3",
       "date": "2026-10-27",
       "home": "BK Sabah",
       "away": "Nanterre"
@@ -3136,7 +3096,7 @@
     {
       "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "3",
       "date": "2026-10-28",
       "home": "Cholet",
       "away": "KK Spartak Subotica"
@@ -3632,7 +3592,7 @@
     {
       "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "3",
       "date": "2026-11-03",
       "home": "Strasbourg",
       "away": "Cibona Zagreb"
@@ -4010,7 +3970,7 @@
     {
       "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "4",
       "date": "2026-11-10",
       "home": "KK Spartak Subotica",
       "away": "Cholet"
@@ -4026,7 +3986,7 @@
     {
       "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "0",
+      "round": "4",
       "date": "2026-11-11",
       "home": "BC Lietuvos rytas",
       "away": "Nanterre"
@@ -5296,6 +5256,54 @@
       "date": "2026-12-05",
       "home": "Plessis-Robinson",
       "away": "Arago de Sète"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "13",
+      "date": "2026-12-06",
+      "home": "PAUC Handball",
+      "away": "Montpellier Handball"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-12-06",
+      "home": "Chartres Basket Feminin",
+      "away": "Toulouse Métropole Basket"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-12-06",
+      "home": "BLMA Women",
+      "away": "Lyon Féminin"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-12-06",
+      "home": "Landerneau Bretagne Basket",
+      "away": "Basket Landes Women"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "15",
+      "date": "2026-12-06",
+      "home": "Hormadi Anglet",
+      "away": "Dragons de Rouen"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "17",
+      "date": "2026-12-06",
+      "home": "Diables Rouges de Briançon",
+      "away": "Ducs d'Angers"
     }
   ]
 }
