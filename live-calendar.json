@@ -1,15 +1,7 @@
 {
-  "generated_at": "2026-10-07T14:26:13Z",
-  "period": "2026-09-07 -> 2026-12-06",
+  "generated_at": "2026-10-08T14:31:43Z",
+  "period": "2026-09-08 -> 2026-12-07",
   "matches": [
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "5",
-      "date": "2026-09-07",
-      "home": "Nantes",
-      "away": "Nancy Lorraine"
-    },
     {
       "competition": "UEFA Champions League",
       "season": "2026-2027",
@@ -2240,6 +2232,14 @@
     {
       "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-17",
+      "home": "Bourges Women",
+      "away": "Chartres Basket Feminin"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
       "round": "5",
       "date": "2026-10-17",
       "home": "Charnay Women",
@@ -2252,14 +2252,6 @@
       "date": "2026-10-17",
       "home": "Angers Women",
       "away": "Lyon Féminin"
-    },
-    {
-      "competition": "La Boulangère Wonderligue",
-      "season": "2026-2027",
-      "round": "5",
-      "date": "2026-10-17",
-      "home": "Bourges Women",
-      "away": "Toulouse Métropole Basket"
     },
     {
       "competition": "Marmara SpikeLigue",
