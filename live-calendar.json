@@ -1,15 +1,7 @@
 {
-  "generated_at": "2026-10-08T14:31:43Z",
-  "period": "2026-09-08 -> 2026-12-07",
+  "generated_at": "2026-10-09T14:21:13Z",
+  "period": "2026-09-09 -> 2026-12-08",
   "matches": [
-    {
-      "competition": "UEFA Champions League",
-      "season": "2026-2027",
-      "round": "1",
-      "date": "2026-09-08",
-      "home": "Lille",
-      "away": "Real Betis"
-    },
     {
       "competition": "Championnat National",
       "season": "2026-2027",
@@ -2534,6 +2526,14 @@
       "away": "Oyonnax Rugby"
     },
     {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "3",
+      "date": "2026-10-22",
+      "home": "Arago de Sète",
+      "away": "Chaumont Volley"
+    },
+    {
       "competition": "UEFA Europa League",
       "season": "2026-2027",
       "round": "3",
@@ -2676,14 +2676,6 @@
       "date": "2026-10-23",
       "home": "Lyon Féminin",
       "away": "ESB Villeneuve-dAscq Women"
-    },
-    {
-      "competition": "Marmara SpikeLigue",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-10-23",
-      "home": "Arago de Sète",
-      "away": "Chaumont Volley"
     },
     {
       "competition": "Ligue Magnus",
@@ -3110,6 +3102,14 @@
       "away": "Provence"
     },
     {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-29",
+      "home": "Narbonne Volley",
+      "away": "Stade Poitevin VB"
+    },
+    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "9",
@@ -3446,14 +3446,6 @@
       "away": "Charnay Women"
     },
     {
-      "competition": "Marmara SpikeLigue",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-10-31",
-      "home": "Narbonne Volley",
-      "away": "Stade Poitevin VB"
-    },
-    {
       "competition": "Arkema Première Ligue",
       "season": "2026-2027",
       "round": "7",
@@ -3623,6 +3615,14 @@
       "away": "Biarritz Olympique"
     },
     {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-05",
+      "home": "Tourcoing Lille Métropole",
+      "away": "Arago de Sète"
+    },
+    {
       "competition": "UEFA Europa League",
       "season": "2026-2027",
       "round": "4",
@@ -3741,14 +3741,6 @@
       "date": "2026-11-06",
       "home": "Stade Poitevin VB",
       "away": "Paris Volley"
-    },
-    {
-      "competition": "Marmara SpikeLigue",
-      "season": "2026-2027",
-      "round": "5",
-      "date": "2026-11-06",
-      "home": "Tourcoing Lille Métropole",
-      "away": "Arago de Sète"
     },
     {
       "competition": "Ligue 1",
@@ -3982,6 +3974,14 @@
       "date": "2026-11-11",
       "home": "BC Lietuvos rytas",
       "away": "Nanterre"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-11-12",
+      "home": "Chaumont Volley",
+      "away": "Spacer's Toulouse Volley"
     },
     {
       "competition": "France Football (H)",
@@ -5296,6 +5296,46 @@
       "date": "2026-12-06",
       "home": "Diables Rouges de Briançon",
       "away": "Ducs d'Angers"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "13",
+      "date": "2026-12-08",
+      "home": "Orléans Loiret Basket",
+      "away": "Denain Voltaire Basket"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "13",
+      "date": "2026-12-08",
+      "home": "UJAP Quimper 29",
+      "away": "Rouen Métropole Basket"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "13",
+      "date": "2026-12-08",
+      "home": "Poitiers Basket 86",
+      "away": "Alliance Sport Alsace"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-12-08",
+      "home": "PAOK BC",
+      "away": "AS Monaco Basket"
+    },
+    {
+      "competition": "CEV Champions League (volley)",
+      "season": "2026-2027",
+      "round": "1",
+      "date": "2026-12-08",
+      "home": "Ziraat Bankası",
+      "away": "Montpellier HSC"
     }
   ]
 }
