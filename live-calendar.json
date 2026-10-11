@@ -1,31 +1,7 @@
 {
-  "generated_at": "2026-10-10T13:36:35Z",
-  "period": "2026-09-10 -> 2026-12-09",
+  "generated_at": "2026-10-11T13:52:28Z",
+  "period": "2026-09-11 -> 2026-12-10",
   "matches": [
-    {
-      "competition": "Championnat National",
-      "season": "2026-2027",
-      "round": "6",
-      "date": "2026-09-10",
-      "home": "Cannes",
-      "away": "Amiens"
-    },
-    {
-      "competition": "Pro D2",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-09-10",
-      "home": "Biarritz Olympique",
-      "away": "Colomiers"
-    },
-    {
-      "competition": "Starligue",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-09-10",
-      "home": "Limoges Handball",
-      "away": "Saran Loiret HB"
-    },
     {
       "competition": "Ligue 1",
       "season": "2026-2027",
@@ -1828,6 +1804,14 @@
       "date": "2026-10-11",
       "home": "Lyon-Villeurbanne",
       "away": "Chorale Roanne Basket"
+    },
+    {
+      "competition": "La Boulangère Wonderligue",
+      "season": "2026-2027",
+      "round": "4",
+      "date": "2026-10-11",
+      "home": "Lyon Féminin",
+      "away": "Bourges Women"
     },
     {
       "competition": "Ligue 2",
@@ -5384,6 +5368,46 @@
       "date": "2026-12-09",
       "home": "Nanterre",
       "away": "BK Sabah"
+    },
+    {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "15",
+      "date": "2026-12-10",
+      "home": "Orléans",
+      "away": "Caen"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-12-10",
+      "home": "Lyon",
+      "away": "Union Saint-Gilloise"
+    },
+    {
+      "competition": "UEFA Europa League",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-12-10",
+      "home": "Marseille",
+      "away": "Celta Vigo"
+    },
+    {
+      "competition": "UEFA Conference League",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-12-10",
+      "home": "Brighton and Hove Albion",
+      "away": "Monaco"
+    },
+    {
+      "competition": "Euroleague (basket)",
+      "season": "2026-2027",
+      "round": "16",
+      "date": "2026-12-10",
+      "home": "Hapoel Tel Aviv BC",
+      "away": "Lyon-Villeurbanne"
     }
   ]
 }
