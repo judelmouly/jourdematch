@@ -1,47 +1,7 @@
 {
-  "generated_at": "2026-10-13T15:18:53Z",
-  "period": "2026-09-13 -> 2026-12-12",
+  "generated_at": "2026-10-14T12:58:24Z",
+  "period": "2026-09-14 -> 2026-12-13",
   "matches": [
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-09-13",
-      "home": "Lille",
-      "away": "Troyes"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-09-13",
-      "home": "Brest",
-      "away": "Paris Saint-Germain"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2026-2027",
-      "round": "4",
-      "date": "2026-09-13",
-      "home": "Le Mans",
-      "away": "Lens"
-    },
-    {
-      "competition": "TOP 14",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-09-13",
-      "home": "Stade Toulousain",
-      "away": "Union Bordeaux Bègles"
-    },
-    {
-      "competition": "Starligue",
-      "season": "2026-2027",
-      "round": "2",
-      "date": "2026-09-13",
-      "home": "USAM Nîmes Gard",
-      "away": "Montpellier Handball"
-    },
     {
       "competition": "Ligue 2",
       "season": "2026-2027",
@@ -2025,6 +1985,14 @@
       "season": "2026-2027",
       "round": "5",
       "date": "2026-10-17",
+      "home": "Paris Saint-Germain Women",
+      "away": "OL Lyonnes"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-10-17",
       "home": "Montpellier Women",
       "away": "Le Havre Women"
     },
@@ -2035,14 +2003,6 @@
       "date": "2026-10-17",
       "home": "Saint-Malo Féminines",
       "away": "Nantes Women"
-    },
-    {
-      "competition": "Arkema Première Ligue",
-      "season": "2026-2027",
-      "round": "5",
-      "date": "2026-10-17",
-      "home": "Toulouse Féminines",
-      "away": "Paris FC Women"
     },
     {
       "competition": "Champions Cup (rugby)",
@@ -2147,14 +2107,6 @@
       "date": "2026-10-18",
       "home": "La Tronche Meylan",
       "away": "Landerneau Bretagne Basket"
-    },
-    {
-      "competition": "Arkema Première Ligue",
-      "season": "2026-2027",
-      "round": "5",
-      "date": "2026-10-18",
-      "home": "Paris Saint-Germain Women",
-      "away": "OL Lyonnes"
     },
     {
       "competition": "Champions Cup (rugby)",
@@ -4004,6 +3956,14 @@
       "season": "2026-2027",
       "round": "8",
       "date": "2026-11-15",
+      "home": "Gravelines-Dunkerque",
+      "away": "SLUC Nancy Basket"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-15",
       "home": "Dijon",
       "away": "Nanterre"
     },
@@ -5591,6 +5551,54 @@
       "date": "2026-12-12",
       "home": "Benetton",
       "away": "Lyon OU"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2026-2027",
+      "round": "14",
+      "date": "2026-12-13",
+      "home": "Lyon",
+      "away": "Marseille"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "14",
+      "date": "2026-12-13",
+      "home": "HBC Nantes",
+      "away": "Paris Saint-Germain Handball"
+    },
+    {
+      "competition": "Champions Cup (rugby)",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-12-13",
+      "home": "Union Bordeaux Bègles",
+      "away": "Stormers"
+    },
+    {
+      "competition": "Champions Cup (rugby)",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-12-13",
+      "home": "Racing Métro 92",
+      "away": "Gloucester"
+    },
+    {
+      "competition": "Challenge Cup (rugby)",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-12-13",
+      "home": "Vannes",
+      "away": "Edinburgh"
+    },
+    {
+      "competition": "Challenge Cup (rugby)",
+      "season": "2026-2027",
+      "round": "2",
+      "date": "2026-12-13",
+      "home": "USA Perpignan",
+      "away": "Zebre"
     }
   ]
 }
