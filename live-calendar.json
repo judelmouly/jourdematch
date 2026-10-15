@@ -1,15 +1,7 @@
 {
-  "generated_at": "2026-10-14T12:58:24Z",
-  "period": "2026-09-14 -> 2026-12-13",
+  "generated_at": "2026-10-15T12:33:47Z",
+  "period": "2026-09-15 -> 2026-12-14",
   "matches": [
-    {
-      "competition": "Ligue 2",
-      "season": "2026-2027",
-      "round": "6",
-      "date": "2026-09-14",
-      "home": "Red Star",
-      "away": "Metz"
-    },
     {
       "competition": "Ligue Magnus",
       "season": "2026-2027",
@@ -3317,6 +3309,14 @@
       "away": "Como"
     },
     {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "6",
+      "date": "2026-11-04",
+      "home": "Śląsk Wrocław",
+      "away": "Bourg-en-Bresse"
+    },
+    {
       "competition": "France Handball (H)",
       "season": "2026-2027",
       "round": "European Mens Handball Championship",
@@ -3679,6 +3679,14 @@
       "away": "Lyon"
     },
     {
+      "competition": "TOP 14",
+      "season": "2026-2027",
+      "round": "9",
+      "date": "2026-11-08",
+      "home": "Stade Rochelais",
+      "away": "Aviron Bayonnais"
+    },
+    {
       "competition": "Betclic Élite",
       "season": "2026-2027",
       "round": "7",
@@ -3697,8 +3705,16 @@
     {
       "competition": "Ligue Magnus",
       "season": "2026-2027",
+      "round": "11",
+      "date": "2026-11-10",
+      "home": "Pionniers de Chamonix Mont-Blanc",
+      "away": "Brûleurs de Loups de Grenoble"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
       "round": "12",
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "home": "Ducs d'Angers",
       "away": "Dragons de Rouen"
     },
@@ -4032,6 +4048,14 @@
       "away": "Caen"
     },
     {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-11-19",
+      "home": "Dunkerque Handball Grand Littoral",
+      "away": "Cesson Rennes MHB"
+    },
+    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "11",
@@ -4068,14 +4092,6 @@
       "season": "2026-2027",
       "round": "11",
       "date": "2026-11-20",
-      "home": "Dunkerque Handball Grand Littoral",
-      "away": "Cesson Rennes MHB"
-    },
-    {
-      "competition": "Starligue",
-      "season": "2026-2027",
-      "round": "11",
-      "date": "2026-11-20",
       "home": "Limoges Handball",
       "away": "PAUC Handball"
     },
@@ -4084,8 +4100,16 @@
       "season": "2026-2027",
       "round": "11",
       "date": "2026-11-20",
-      "home": "HBC Nantes",
-      "away": "Sélestat Alsace Handball"
+      "home": "Paris Saint-Germain Handball",
+      "away": "Tremblay-en-France Handball"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-11-20",
+      "home": "Saint-Raphaël Var Handball",
+      "away": "C Chartres Métropole Handball"
     },
     {
       "competition": "Betclic Élite",
@@ -4254,6 +4278,14 @@
       "date": "2026-11-21",
       "home": "Biarritz Olympique",
       "away": "Narbonne"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "11",
+      "date": "2026-11-21",
+      "home": "HBC Nantes",
+      "away": "Sélestat Alsace Handball"
     },
     {
       "competition": "Starligue",
@@ -4484,14 +4516,6 @@
       "season": "2026-2027",
       "round": "12",
       "date": "2026-11-27",
-      "home": "Tremblay-en-France Handball",
-      "away": "Fenix Toulouse Handball"
-    },
-    {
-      "competition": "Starligue",
-      "season": "2026-2027",
-      "round": "12",
-      "date": "2026-11-27",
       "home": "Sélestat Alsace Handball",
       "away": "Saint-Raphaël Var Handball"
     },
@@ -4502,6 +4526,14 @@
       "date": "2026-11-27",
       "home": "Montpellier Handball",
       "away": "Cesson Rennes MHB"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-27",
+      "home": "USAM Nîmes Gard",
+      "away": "HBC Nantes"
     },
     {
       "competition": "Ligue Magnus",
@@ -4607,6 +4639,14 @@
       "date": "2026-11-28",
       "home": "US Dax",
       "away": "Oyonnax Rugby"
+    },
+    {
+      "competition": "Starligue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-11-28",
+      "home": "Tremblay-en-France Handball",
+      "away": "Fenix Toulouse Handball"
     },
     {
       "competition": "La Boulangère Wonderligue",
