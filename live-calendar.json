@@ -1,15 +1,7 @@
 {
-  "generated_at": "2026-11-20T16:28:31Z",
-  "period": "2026-10-21 -> 2027-01-19",
+  "generated_at": "2026-11-21T15:48:16Z",
+  "period": "2026-10-22 -> 2027-01-20",
   "matches": [
-    {
-      "competition": "UEFA Europa League",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-10-22",
-      "home": "Hoffenheim",
-      "away": "Lyon"
-    },
     {
       "competition": "Ligue 1",
       "season": "2026-2027",
@@ -19,28 +11,12 @@
       "away": "Nice"
     },
     {
-      "competition": "Ligue Magnus",
+      "competition": "Betclic Élite",
       "season": "2026-2027",
-      "round": "11",
+      "round": "5",
       "date": "2026-10-23",
-      "home": "Spartiates de Marseille",
-      "away": "Hormadi Anglet"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "11",
-      "date": "2026-10-23",
-      "home": "Dragons de Rouen",
-      "away": "Ducs d'Angers"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "11",
-      "date": "2026-10-23",
-      "home": "Aigles de Nice",
-      "away": "Rapaces de Gap"
+      "home": "Saint-Quentin Basket-Ball",
+      "away": "Dijon"
     },
     {
       "competition": "Ligue 1",
@@ -99,28 +75,12 @@
       "away": "Lille"
     },
     {
-      "competition": "Ligue Magnus",
+      "competition": "TOP 14",
       "season": "2026-2027",
-      "round": "12",
+      "round": "7",
       "date": "2026-10-25",
-      "home": "Gothiques d'Amiens",
-      "away": "Boxers de Bordeaux"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "12",
-      "date": "2026-10-25",
-      "home": "Hormadi Anglet",
-      "away": "Spartiates de Marseille"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "12",
-      "date": "2026-10-25",
-      "home": "Jokers de Cergy-Pontoise",
-      "away": "Diables Rouges de Briançon"
+      "home": "Stade Rochelais",
+      "away": "Union Bordeaux Bègles"
     },
     {
       "competition": "Ligue 1",
@@ -131,28 +91,20 @@
       "away": "Lyon"
     },
     {
-      "competition": "Ligue Magnus",
+      "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "13",
+      "round": "3",
       "date": "2026-10-27",
-      "home": "Boxers de Bordeaux",
-      "away": "Rapaces de Gap"
+      "home": "BK Sabah",
+      "away": "Nanterre"
     },
     {
-      "competition": "Ligue Magnus",
+      "competition": "Basketball Champions League",
       "season": "2026-2027",
-      "round": "13",
-      "date": "2026-10-27",
-      "home": "Diables Rouges de Briançon",
-      "away": "Hormadi Anglet"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "13",
-      "date": "2026-10-27",
-      "home": "Pionniers de Chamonix Mont-Blanc",
-      "away": "Ducs d'Angers"
+      "round": "3",
+      "date": "2026-10-28",
+      "home": "Cholet",
+      "away": "KK Spartak Subotica"
     },
     {
       "competition": "Ligue 1",
@@ -179,60 +131,12 @@
       "away": "Paris Saint-Germain"
     },
     {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "14",
-      "date": "2026-10-30",
-      "home": "Brûleurs de Loups de Grenoble",
-      "away": "Boxers de Bordeaux"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "14",
-      "date": "2026-10-30",
-      "home": "Dragons de Rouen",
-      "away": "Pionniers de Chamonix Mont-Blanc"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "14",
-      "date": "2026-10-30",
-      "home": "Ducs d'Angers",
-      "away": "Aigles de Nice"
-    },
-    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "9",
       "date": "2026-10-31",
       "home": "Troyes",
       "away": "Le Mans"
-    },
-    {
-      "competition": "La Boulangère Wonderligue",
-      "season": "2026-2027",
-      "round": "7",
-      "date": "2026-10-31",
-      "home": "Flammes Carolo Basket",
-      "away": "Bourges Women"
-    },
-    {
-      "competition": "La Boulangère Wonderligue",
-      "season": "2026-2027",
-      "round": "7",
-      "date": "2026-10-31",
-      "home": "Toulouse Métropole Basket",
-      "away": "Basket Landes Women"
-    },
-    {
-      "competition": "La Boulangère Wonderligue",
-      "season": "2026-2027",
-      "round": "7",
-      "date": "2026-10-31",
-      "home": "La Tronche Meylan",
-      "away": "Charnay Women"
     },
     {
       "competition": "Ligue 1",
@@ -259,36 +163,28 @@
       "away": "Auxerre"
     },
     {
-      "competition": "La Boulangère Wonderligue",
+      "competition": "Ligue 1",
       "season": "2026-2027",
-      "round": "7",
-      "date": "2026-11-01",
-      "home": "Chartres Basket Feminin",
-      "away": "BLMA Women"
+      "round": "9",
+      "date": "2026-11-02",
+      "home": "Lorient",
+      "away": "Brest"
     },
     {
-      "competition": "La Boulangère Wonderligue",
+      "competition": "UEFA Europa League",
       "season": "2026-2027",
-      "round": "7",
-      "date": "2026-11-01",
-      "home": "ESB Villeneuve-dAscq Women",
-      "away": "Angers Women"
+      "round": "4",
+      "date": "2026-11-04",
+      "home": "Rennes",
+      "away": "Olympiacos"
     },
     {
-      "competition": "La Boulangère Wonderligue",
+      "competition": "UEFA Europa League",
       "season": "2026-2027",
-      "round": "7",
-      "date": "2026-11-01",
-      "home": "Lyon Féminin",
-      "away": "Landerneau Bretagne Basket"
-    },
-    {
-      "competition": "Basketball Champions League",
-      "season": "2026-2027",
-      "round": "3",
-      "date": "2026-11-03",
-      "home": "Strasbourg",
-      "away": "Cibona Zagreb"
+      "round": "4",
+      "date": "2026-11-05",
+      "home": "Bayer Leverkusen",
+      "away": "Marseille"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -347,12 +243,52 @@
       "away": "Saint-Raphaël Var Handball"
     },
     {
-      "competition": "Pro B / Élite 2",
+      "competition": "Starligue",
       "season": "2026-2027",
-      "round": "11",
-      "date": "2026-11-22",
-      "home": "Levallois Metropolitans BC",
-      "away": "Rouen Métropole Basket"
+      "round": "10",
+      "date": "2026-11-15",
+      "home": "PAUC Handball",
+      "away": "Paris Saint-Germain Handball"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-17",
+      "home": "AS Monaco Basket",
+      "away": "BC Lietkabelis"
+    },
+    {
+      "competition": "EuroCup (basket)",
+      "season": "2026-2027",
+      "round": "8",
+      "date": "2026-11-18",
+      "home": "Bourg-en-Bresse",
+      "away": "Napoli Basket"
+    },
+    {
+      "competition": "Championnat National",
+      "season": "2026-2027",
+      "round": "13",
+      "date": "2026-11-19",
+      "home": "Amiens",
+      "away": "Caen"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-24",
+      "home": "RB Leipzig",
+      "away": "Lens"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "season": "2026-2027",
+      "round": "5",
+      "date": "2026-11-25",
+      "home": "Lille",
+      "away": "Bayern Munich"
     },
     {
       "competition": "Pro D2",
@@ -361,6 +297,14 @@
       "date": "2026-12-03",
       "home": "Biarritz Olympique",
       "away": "Provence"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-03",
+      "home": "ALM Évreux Basket",
+      "away": "Caen Basket Calvados"
     },
     {
       "competition": "Ligue 2",
@@ -411,6 +355,38 @@
       "away": "Valence Romans Drôme Rugby"
     },
     {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-04",
+      "home": "Rouen Métropole Basket",
+      "away": "Antibes Sharks"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-04",
+      "home": "Hermine Nantes Basket",
+      "away": "STB Le Havre"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-04",
+      "home": "JA Vichy",
+      "away": "Alliance Sport Alsace"
+    },
+    {
+      "competition": "Pro B / Élite 2",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-05",
+      "home": "ADA Blois",
+      "away": "Saint-Quentin Basket-Ball"
+    },
+    {
       "competition": "CEV Champions League (volley)",
       "season": "2026-2027",
       "round": "1",
@@ -419,20 +395,20 @@
       "away": "Montpellier HSC"
     },
     {
-      "competition": "Marmara SpikeLigue",
+      "competition": "Pro D2",
       "season": "2026-2027",
-      "round": "10",
+      "round": "14",
       "date": "2026-12-10",
-      "home": "Nice Volley-Ball",
-      "away": "Saint-Nazaire VBA"
+      "home": "Provence",
+      "away": "CA Brive"
     },
     {
-      "competition": "UEFA Conference League",
+      "competition": "Euroleague (basket)",
       "season": "2026-2027",
-      "round": "5",
+      "round": "16",
       "date": "2026-12-10",
-      "home": "Brighton and Hove Albion",
-      "away": "Monaco"
+      "home": "Hapoel Tel Aviv BC",
+      "away": "Lyon-Villeurbanne"
     },
     {
       "competition": "Ligue 2",
@@ -461,90 +437,18 @@
     {
       "competition": "Marmara SpikeLigue",
       "season": "2026-2027",
-      "round": "10",
-      "date": "2026-12-11",
-      "home": "Arago de Sète",
-      "away": "Paris Volley"
-    },
-    {
-      "competition": "Marmara SpikeLigue",
-      "season": "2026-2027",
-      "round": "10",
-      "date": "2026-12-12",
-      "home": "Narbonne Volley",
-      "away": "AS Cannes"
-    },
-    {
-      "competition": "Marmara SpikeLigue",
-      "season": "2026-2027",
-      "round": "10",
-      "date": "2026-12-12",
-      "home": "Stade Poitevin VB",
-      "away": "Montpellier HSC"
-    },
-    {
-      "competition": "Marmara SpikeLigue",
-      "season": "2026-2027",
-      "round": "10",
-      "date": "2026-12-12",
-      "home": "Tourcoing Lille Métropole",
-      "away": "Plessis-Robinson"
-    },
-    {
-      "competition": "Arkema Première Ligue",
-      "season": "2026-2027",
-      "round": "11",
-      "date": "2026-12-12",
-      "home": "Montpellier Women",
-      "away": "Strasbourg Women"
-    },
-    {
-      "competition": "Arkema Première Ligue",
-      "season": "2026-2027",
-      "round": "11",
-      "date": "2026-12-12",
-      "home": "Fleury Women",
-      "away": "Le Havre Women"
-    },
-    {
-      "competition": "Arkema Première Ligue",
-      "season": "2026-2027",
-      "round": "11",
-      "date": "2026-12-12",
-      "home": "Nantes Women",
-      "away": "OL Lyonnes"
-    },
-    {
-      "competition": "Betclic Élite",
-      "season": "2026-2027",
-      "round": "13",
-      "date": "2026-12-17",
-      "home": "Nanterre",
-      "away": "Le Mans Sarthe Basket"
-    },
-    {
-      "competition": "Marmara SpikeLigue",
-      "season": "2026-2027",
       "round": "11",
       "date": "2026-12-17",
       "home": "Spacer's Toulouse Volley",
       "away": "Stade Poitevin VB"
     },
     {
-      "competition": "Euroleague (basket)",
+      "competition": "UEFA Conference League",
       "season": "2026-2027",
-      "round": "18",
+      "round": "6",
       "date": "2026-12-17",
-      "home": "Lyon-Villeurbanne",
-      "away": "Dubai Basketball"
-    },
-    {
-      "competition": "Betclic Élite",
-      "season": "2026-2027",
-      "round": "12",
-      "date": "2026-12-18",
-      "home": "Chorale Roanne Basket",
-      "away": "SLUC Nancy Basket"
+      "home": "Monaco",
+      "away": "Lincoln Red Imps"
     },
     {
       "competition": "Marmara SpikeLigue",
@@ -611,12 +515,28 @@
       "away": "Narbonne Volley"
     },
     {
-      "competition": "TOP 14",
+      "competition": "Arkema Première Ligue",
       "season": "2026-2027",
       "round": "12",
-      "date": "2026-12-20",
-      "home": "Union Bordeaux Bègles",
-      "away": "Section Paloise"
+      "date": "2026-12-19",
+      "home": "OL Lyonnes",
+      "away": "Fleury Women"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-19",
+      "home": "Le Havre Women",
+      "away": "Toulouse Féminines"
+    },
+    {
+      "competition": "Arkema Première Ligue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-19",
+      "home": "Nantes Women",
+      "away": "Saint-Malo Féminines"
     },
     {
       "competition": "Betclic Élite",
@@ -643,6 +563,14 @@
       "away": "Nanterre"
     },
     {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-21",
+      "home": "Arago de Sète",
+      "away": "Tours Volley-Ball"
+    },
+    {
       "competition": "Betclic Élite",
       "season": "2026-2027",
       "round": "13",
@@ -651,12 +579,28 @@
       "away": "Boulazac Basket Dordogne"
     },
     {
-      "competition": "Euroleague (basket)",
+      "competition": "Marmara SpikeLigue",
       "season": "2026-2027",
-      "round": "19",
+      "round": "12",
       "date": "2026-12-22",
-      "home": "Lyon-Villeurbanne",
-      "away": "FC Barcelona Basquet"
+      "home": "Narbonne Volley",
+      "away": "Paris Volley"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-22",
+      "home": "Stade Poitevin VB",
+      "away": "Chaumont Volley"
+    },
+    {
+      "competition": "Marmara SpikeLigue",
+      "season": "2026-2027",
+      "round": "12",
+      "date": "2026-12-22",
+      "home": "Tourcoing Lille Métropole",
+      "away": "Spacer's Toulouse Volley"
     },
     {
       "competition": "Betclic Élite",
@@ -707,28 +651,36 @@
       "away": "Saint-Quentin Basket-Ball"
     },
     {
-      "competition": "Ligue Magnus",
+      "competition": "Betclic Élite",
       "season": "2026-2027",
-      "round": "26",
-      "date": "2026-12-30",
-      "home": "Gothiques d'Amiens",
-      "away": "Pionniers de Chamonix Mont-Blanc"
+      "round": "14",
+      "date": "2026-12-27",
+      "home": "Strasbourg",
+      "away": "SLUC Nancy Basket"
     },
     {
-      "competition": "Ligue Magnus",
+      "competition": "Betclic Élite",
       "season": "2026-2027",
-      "round": "26",
-      "date": "2026-12-30",
-      "home": "Hormadi Anglet",
-      "away": "Dragons de Rouen"
+      "round": "14",
+      "date": "2026-12-27",
+      "home": "Chorale Roanne Basket",
+      "away": "Élan Chalon"
     },
     {
-      "competition": "Ligue Magnus",
+      "competition": "Betclic Élite",
       "season": "2026-2027",
-      "round": "26",
-      "date": "2026-12-30",
-      "home": "Diables Rouges de Briançon",
-      "away": "Boxers de Bordeaux"
+      "round": "14",
+      "date": "2026-12-27",
+      "home": "Le Mans Sarthe Basket",
+      "away": "Cholet"
+    },
+    {
+      "competition": "Betclic Élite",
+      "season": "2026-2027",
+      "round": "13",
+      "date": "2026-12-28",
+      "home": "Élan Chalon",
+      "away": "Lyon-Villeurbanne"
     },
     {
       "competition": "Ligue 1",
@@ -755,6 +707,30 @@
       "away": "Auxerre"
     },
     {
+      "competition": "TOP 14",
+      "season": "2026-2027",
+      "round": "14",
+      "date": "2027-01-02",
+      "home": "RC Toulonnais",
+      "away": "Montpellier Hérault Rugby"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2026-2027",
+      "round": "14",
+      "date": "2027-01-02",
+      "home": "Stade Rochelais",
+      "away": "Section Paloise"
+    },
+    {
+      "competition": "TOP 14",
+      "season": "2026-2027",
+      "round": "14",
+      "date": "2027-01-02",
+      "home": "Stade Français Paris",
+      "away": "Castres Olympique"
+    },
+    {
       "competition": "Ligue 1",
       "season": "2026-2027",
       "round": "15",
@@ -779,36 +755,36 @@
       "away": "Paris Saint-Germain"
     },
     {
-      "competition": "La Boulangère Wonderligue",
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "28",
+      "date": "2027-01-08",
+      "home": "Brûleurs de Loups de Grenoble",
+      "away": "Ducs d'Angers"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "28",
+      "date": "2027-01-08",
+      "home": "Spartiates de Marseille",
+      "away": "Boxers de Bordeaux"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "28",
+      "date": "2027-01-08",
+      "home": "Dragons de Rouen",
+      "away": "Diables Rouges de Briançon"
+    },
+    {
+      "competition": "Challenge Cup (rugby)",
       "season": "2026-2027",
       "round": "3",
-      "date": "2027-01-03",
-      "home": "Bourges Women",
-      "away": "Chartres Basket Feminin"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "27",
-      "date": "2027-01-03",
-      "home": "Pionniers de Chamonix Mont-Blanc",
-      "away": "Spartiates de Marseille"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "27",
-      "date": "2027-01-03",
-      "home": "Aigles de Nice",
-      "away": "Jokers de Cergy-Pontoise"
-    },
-    {
-      "competition": "Ligue Magnus",
-      "season": "2026-2027",
-      "round": "27",
-      "date": "2027-01-03",
-      "home": "Dragons de Rouen",
-      "away": "Brûleurs de Loups de Grenoble"
+      "date": "2027-01-08",
+      "home": "Dragons",
+      "away": "Aviron Bayonnais"
     },
     {
       "competition": "La Boulangère Wonderligue",
@@ -851,12 +827,76 @@
       "away": "Lyon Féminin"
     },
     {
-      "competition": "Champions Cup (rugby)",
+      "competition": "Ligue Magnus",
       "season": "2026-2027",
-      "round": "4",
+      "round": "29",
+      "date": "2027-01-10",
+      "home": "Hormadi Anglet",
+      "away": "Spartiates de Marseille"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "29",
+      "date": "2027-01-10",
+      "home": "Boxers de Bordeaux",
+      "away": "Jokers de Cergy-Pontoise"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "29",
+      "date": "2027-01-10",
+      "home": "Diables Rouges de Briançon",
+      "away": "Gothiques d'Amiens"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "30",
+      "date": "2027-01-12",
+      "home": "Spartiates de Marseille",
+      "away": "Diables Rouges de Briançon"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "30",
+      "date": "2027-01-12",
+      "home": "Brûleurs de Loups de Grenoble",
+      "away": "Pionniers de Chamonix Mont-Blanc"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "30",
+      "date": "2027-01-12",
+      "home": "Jokers de Cergy-Pontoise",
+      "away": "Hormadi Anglet"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "31",
       "date": "2027-01-15",
-      "home": "Cardiff Rugby",
-      "away": "Montpellier Hérault Rugby"
+      "home": "Diables Rouges de Briançon",
+      "away": "Jokers de Cergy-Pontoise"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "31",
+      "date": "2027-01-15",
+      "home": "Pionniers de Chamonix Mont-Blanc",
+      "away": "Ducs d'Angers"
+    },
+    {
+      "competition": "Ligue Magnus",
+      "season": "2026-2027",
+      "round": "31",
+      "date": "2027-01-15",
+      "home": "Dragons de Rouen",
+      "away": "Aigles de Nice"
     },
     {
       "competition": "Championnat National",
@@ -883,52 +923,44 @@
       "away": "Amiens"
     },
     {
-      "competition": "Champions Cup (rugby)",
+      "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
-      "round": "4",
+      "round": "16",
       "date": "2027-01-16",
-      "home": "Section Paloise",
-      "away": "Sale Sharks"
+      "home": "Basket Landes Women",
+      "away": "Charnay Women"
     },
     {
-      "competition": "Champions Cup (rugby)",
+      "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
-      "round": "4",
+      "round": "16",
       "date": "2027-01-16",
-      "home": "Bristol Bears",
-      "away": "Union Bordeaux Bègles"
+      "home": "Lyon Féminin",
+      "away": "Angers Women"
     },
     {
-      "competition": "Challenge Cup (rugby)",
+      "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
-      "round": "4",
+      "round": "16",
       "date": "2027-01-16",
-      "home": "Aviron Bayonnais",
-      "away": "Zebre"
+      "home": "Toulouse Métropole Basket",
+      "away": "Bourges Women"
     },
     {
-      "competition": "Challenge Cup (rugby)",
+      "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
-      "round": "4",
-      "date": "2027-01-16",
-      "home": "Castres Olympique",
-      "away": "Scarlets"
-    },
-    {
-      "competition": "Champions Cup (rugby)",
-      "season": "2026-2027",
-      "round": "4",
+      "round": "16",
       "date": "2027-01-17",
-      "home": "Stade Toulousain",
-      "away": "Saracens"
+      "home": "Chartres Basket Feminin",
+      "away": "ESB Villeneuve-dAscq Women"
     },
     {
-      "competition": "UEFA Champions League",
+      "competition": "La Boulangère Wonderligue",
       "season": "2026-2027",
-      "round": "7",
-      "date": "2027-01-19",
-      "home": "Lille",
-      "away": "Slovan Bratislava"
+      "round": "16",
+      "date": "2027-01-17",
+      "home": "BLMA Women",
+      "away": "Flammes Carolo Basket"
     }
   ]
 }
